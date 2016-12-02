@@ -8,8 +8,8 @@ namespace OpenClassic.Server.Networking
         readonly IByteBufferAllocator DelegateAllocator = PooledByteBufferAllocator.Default;
 
         public const int BufferFrontPadding = 4;
-        const int DefaultInitialCapacity = 256; // This is the same as DotNetty's (at least at 3 Dec 2016).
-        const int PaddingMask = unchecked((int)0xAAAAAAAA);
+        public const int DefaultInitialCapacity = 256; // This is the same as DotNetty's (at least at 3 Dec 2016).
+        public const int PaddingMask = unchecked((int)0xAAAAAAAA);
 
         public static readonly IByteBufferAllocator Default = new GamePooledByteBufferAllocator();
 
@@ -31,6 +31,7 @@ namespace OpenClassic.Server.Networking
                 return DelegateAllocator.Buffer(0, 0); // Will returned a reusable EmptyBuffer.
             }
 
+            // If the capacity values, after adding padding, are too large then clamp them at int.MaxValue.
             long maxCapLong = (long) maxCapacity + BufferFrontPadding;
             long initCapLong = (long)initialCapacity + BufferFrontPadding;
 
@@ -40,6 +41,8 @@ namespace OpenClassic.Server.Networking
             Debug.Assert(clampedMaxCapacity >= 0 && clampedMaxCapacity <= int.MaxValue);
             Debug.Assert(clampedInitialCapacity >= 0 && clampedInitialCapacity <= int.MaxValue);
 
+            // Allocate the buffer, and write the padding mask in the padding section
+            // so that it's easy to see it when debugging.
             var buffer = DelegateAllocator.Buffer(clampedInitialCapacity, clampedMaxCapacity);
             var writerIndex = buffer.WriterIndex;
             var writerIndexAfterPadding = writerIndex + BufferFrontPadding;

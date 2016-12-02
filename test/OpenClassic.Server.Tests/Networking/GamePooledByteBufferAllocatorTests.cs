@@ -79,7 +79,7 @@ namespace OpenClassic.Server.Tests.Networking
         {
             var buffer = GamePooledByteBufferAllocator.Default.Buffer(initialCapacity, maxCapacity);
 
-            var expectedMask = unchecked((int)0xAAAAAAAA);
+            var expectedMask = GamePooledByteBufferAllocator.PaddingMask;
             var actualMask = buffer.GetInt(0);
 
             Assert.NotNull(buffer);
