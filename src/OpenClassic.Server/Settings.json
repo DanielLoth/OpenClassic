@@ -1,0 +1,5 @@
+﻿{
+  "BoolTest": true,
+  "IntTest": 1337,
+  "StringTest": "Hello World"
+}

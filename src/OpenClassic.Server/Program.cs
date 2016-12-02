@@ -1,6 +1,6 @@
-﻿using OpenClassic.Server.Networking;
+﻿using OpenClassic.Server.Configuration;
+using OpenClassic.Server.Networking;
 using System;
-using System.Threading;
 
 namespace OpenClassic.Server
 {
@@ -8,15 +8,20 @@ namespace OpenClassic.Server
     {
         private static readonly GameServer Server = new GameServer();
 
+#pragma warning disable RECS0154 // Parameter is never used
         public static void Main(string[] args)
+#pragma warning restore RECS0154 // Parameter is never used
         {
             Console.WriteLine("Starting listener...");
             Server.Start().Wait();
             Console.WriteLine("Listening");
 
+            var configProvider = new JsonConfigProvider();
+            var config = configProvider.GetConfig();
+
             Console.CancelKeyPress += Console_CancelKeyPress;
 
-            for (;;) { Thread.Sleep(1000); }
+            Console.ReadLine();
         }
 
         private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)

@@ -16,7 +16,7 @@ namespace OpenClassic.Server.Tests
         [InlineData(2)]
         public void Blah2(int a)
         {
-            Assert.Null(null);
+            Assert.True(a > 0 || a <= 0);
         }
     }
 }
