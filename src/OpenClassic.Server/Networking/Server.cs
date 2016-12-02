@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using DotNetty.Codecs;
+using DotNetty.Transport.Bootstrapping;
+using DotNetty.Transport.Channels;
+using DotNetty.Transport.Channels.Sockets;
+using System;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,127 +12,52 @@ namespace OpenClassic.Server.Networking
 {
     public class Server
     {
-        private readonly IPEndPoint listenerEndpoint;
-        private readonly Socket listener;
+        private readonly IEventLoopGroup BossGroup;
+        private readonly IEventLoopGroup WorkerGroup;
 
-        private readonly TaskScheduler scheduler;
-        private readonly Thread loopThread;
+        private IChannel BootstrapChannel;
 
-        private readonly EventHandler<SocketAsyncEventArgs> IsCompletedCallback;
-
-        public Server(IPEndPoint endpoint)
+        public Server()
         {
-            listenerEndpoint = endpoint;
-            listener = new Socket(SocketType.Stream, ProtocolType.Tcp);
-
-            scheduler = TaskScheduler.Default; // TODO: Replace
-            loopThread = new Thread(Loop)
-            {
-                IsBackground = true,
-                Name = "LoopThread"
-            };
-
-            IsCompletedCallback = OnIoCompleted;
+            BossGroup = new MultithreadEventLoopGroup(1);
+            WorkerGroup = new MultithreadEventLoopGroup(1);
         }
 
-        public void Start()
+        public async Task Start()
         {
-            loopThread.Start();
-
-            listener.Bind(listenerEndpoint);
-            listener.Listen(100);
-            StartAccept(NewEventArgs());
-        }
-
-        private void Loop()
-        {
-            //Task.Factory.StartNew(async () =>
-            //{
-            //    while (true)
-            //    {
-            //        Console.WriteLine($"Looping - On loop thread = {IsOnLoopThread} ({Thread.CurrentThread.Name} - {loopThread.Name})");
-            //        Thread.Sleep(1000);
-            //        await Task.Delay(100);
-            //    }
-            //}, CancellationToken.None,
-            //TaskCreationOptions.None,
-            //scheduler);
-
-            while (true)
+            if (BootstrapChannel != null)
             {
-                Console.WriteLine($"Looping - On loop thread = {IsOnLoopThread} ({Thread.CurrentThread.Name} - {loopThread.Name})");
-                Thread.Sleep(1000);
-                //await Task.Delay(100);
+                throw new InvalidOperationException("This Server object has already been started.");
             }
+
+            var bootstrap = new ServerBootstrap()
+                .Group(BossGroup, WorkerGroup)
+                .Channel<TcpServerSocketChannel>()
+                .Option(ChannelOption.SoBacklog, 100)
+                .ChildHandler(new ActionChannelInitializer<ISocketChannel>(channel =>
+                {
+                    var pipeline = channel.Pipeline;
+
+                    pipeline.AddLast(new DelimiterBasedFrameDecoder(8192, Delimiters.LineDelimiter()));
+                }));
+
+            BootstrapChannel = await bootstrap.BindAsync(43594);
         }
 
-        public bool IsOnLoopThread => Thread.CurrentThread == loopThread;
-
-        private SocketOperation NewEventArgs()
+        public async Task Stop()
         {
-            var args = new SocketOperation();
-
-            args.AcceptSocket = null;
-            args.Completed += IsCompletedCallback;
-
-            return args;
-        }
-
-        private void StartAccept(SocketOperation args)
-        {
-            if (args == null)
-                throw new ArgumentNullException(nameof(args));
-
-            args.AcceptSocket = null;
-
-            var willRaiseEvent = listener.AcceptAsync(args);
-            if (!willRaiseEvent)
+            if (BootstrapChannel == null)
             {
-                ProcessAccept(args);
+                throw new InvalidOperationException("This Server object has already been stopped (or was never started).");
             }
-        }
 
-        private void ProcessAccept(SocketOperation args)
-        {
-            if (args == null)
-                throw new ArgumentNullException(nameof(args));
-
-            var client = new Client();
-            var readArgs = new SocketAsyncEventArgs();
-
-            StartAccept(args);
-        }
-
-        private void ProcessReceive(SocketOperation args)
-        {
-            if (args == null)
-                throw new ArgumentNullException(nameof(args));
-        }
-
-        public void OnIoCompleted(object sender, SocketAsyncEventArgs args)
-        {
-            if (sender == null)
-                throw new ArgumentNullException(nameof(sender));
-            if (args == null)
-                throw new ArgumentNullException(nameof(args));
-
-            var socketOp = args as SocketOperation;
-            if (socketOp == null)
-                throw new ArgumentException("Expected to receive an instance of SocketOperation.");
-
-            switch (socketOp.LastOperation)
+            try
             {
-                case SocketAsyncOperation.Accept:
-                    ProcessAccept(socketOp);
-                    break;
-                case SocketAsyncOperation.Connect:
-                    break;
-                case SocketAsyncOperation.Receive:
-                    break;
-                case SocketAsyncOperation.Send:
-                    break;
-                default:
-                    throw new ArgumentException("Invalid socket operation (something other than Accept/Connect/Receive/Send).");
+                await BootstrapChannel.CloseAsync();
+            }
+            finally
+            {
+                await Task.WhenAll(BossGroup.ShutdownGracefullyAsync(), WorkerGroup.ShutdownGracefullyAsync());
             }
         }
     }

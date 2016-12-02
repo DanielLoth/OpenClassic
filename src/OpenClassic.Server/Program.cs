@@ -1,21 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace OpenClassic.Server
 {
     public class Program
     {
+        private static readonly Networking.Server Server = new Networking.Server();
+
         public static void Main(string[] args)
         {
-            var s = new OpenClassic.Server.Networking.Server(new IPEndPoint(IPAddress.Loopback, 43594));
-            s.Start();
+            Console.WriteLine("Starting listener...");
+            Server.Start().Wait();
+            Console.WriteLine("Listening");
 
-            var xxx = args;
+            Console.CancelKeyPress += Console_CancelKeyPress;
 
-            Console.WriteLine("Listening...");
+            for (;;) { Thread.Sleep(1000); }
+        }
+
+        private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)
+        {
+            Console.WriteLine("Shutting down...");
+            Server.Stop().Wait();
+            Console.WriteLine("Shutdown complete. Press any key to terminate this window.");
+
             Console.ReadLine();
         }
     }
