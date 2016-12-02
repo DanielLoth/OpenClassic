@@ -115,5 +115,25 @@ namespace OpenClassic.Server.Tests.Networking
             Assert.NotNull(buffer);
             Assert.Equal(expectedWriterIndex, actualWriterIndex);
         }
+
+        [Fact]
+        public void HasCorrectBytesWrittenCountBeforeAnythingWritten()
+        {
+            var buffer = GamePooledByteBufferAllocator.Default.Buffer();
+
+            Assert.NotNull(buffer);
+            Assert.Equal(0, buffer.ReadableBytes);
+        }
+
+        [Fact]
+        public void HasCorrectBytesWrittenCountAfterWrite()
+        {
+            var buffer = GamePooledByteBufferAllocator.Default.Buffer();
+
+            buffer.WriteInt(1337);
+
+            Assert.NotNull(buffer);
+            Assert.Equal(4, buffer.ReadableBytes);
+        }
     }
 }
