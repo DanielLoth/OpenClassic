@@ -1,12 +1,12 @@
-﻿using System;
+﻿using OpenClassic.Server.Networking;
+using System;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace OpenClassic.Server
 {
     public class Program
     {
-        private static readonly Networking.Server Server = new Networking.Server();
+        private static readonly GameServer Server = new GameServer();
 
         public static void Main(string[] args)
         {

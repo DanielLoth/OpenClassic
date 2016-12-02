@@ -3,21 +3,18 @@ using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
 using System;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace OpenClassic.Server.Networking
 {
-    public class Server
+    public class GameServer
     {
         private readonly IEventLoopGroup BossGroup;
         private readonly IEventLoopGroup WorkerGroup;
 
         private IChannel BootstrapChannel;
 
-        public Server()
+        public GameServer()
         {
             BossGroup = new MultithreadEventLoopGroup(1);
             WorkerGroup = new MultithreadEventLoopGroup(1);
