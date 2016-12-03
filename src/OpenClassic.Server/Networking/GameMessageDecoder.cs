@@ -1,6 +1,7 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Codecs;
 using DotNetty.Transport.Channels;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
@@ -8,7 +9,12 @@ namespace OpenClassic.Server.Networking
 {
     public class GameMessageDecoder : ByteToMessageDecoder
     {
-        public override bool IsSharable => true;
+        public override bool IsSharable => false;
+
+        public GameMessageDecoder(IChannel channel)
+        {
+            Debug.Assert(channel != null);
+        }
 
         protected override void Decode(IChannelHandlerContext context, IByteBuffer input, List<object> output)
         {
@@ -38,8 +44,8 @@ namespace OpenClassic.Server.Networking
                 return;
             }
 
-            var dataLen = payloadLength - 1;
-            if (dataLen == 0)
+            var packetLenExcludingOpcode = payloadLength - 1;
+            if (packetLenExcludingOpcode == 0)
             {
                 var opcode = input.ReadByte();
                 var emptyBuffer = context.Allocator.Buffer(0, 0);
@@ -52,19 +58,24 @@ namespace OpenClassic.Server.Networking
                 var lastPayloadByte = input.ReadByte();
                 var opcode = input.ReadByte();
                 var newBuffer = context.Allocator.Buffer(payloadLength);
+                var dataLen = packetLenExcludingOpcode - 1;
 
-                input.ReadBytes(newBuffer, dataLen - 1);
+                newBuffer.SetByte(0, opcode);
+                newBuffer.SetShort(1, dataLen);
+
+                input.ReadBytes(newBuffer, dataLen);
                 newBuffer.WriteByte(lastPayloadByte);
 
-                var packet = new Packet(opcode, newBuffer);
+                var hex = ByteBufferUtil.PrettyHexDump(newBuffer);
+                var hex2 = ByteBufferUtil.HexDump(newBuffer);
 
-                output.Add(packet);
+                output.Add(newBuffer);
             }
             else
             {
                 var opcode = input.ReadByte();
                 var newBuffer = context.Allocator.Buffer(payloadLength);
-                input.ReadBytes(newBuffer, dataLen);
+                input.ReadBytes(newBuffer, packetLenExcludingOpcode);
 
                 var packet = new Packet(opcode, newBuffer);
                 output.Add(packet);
