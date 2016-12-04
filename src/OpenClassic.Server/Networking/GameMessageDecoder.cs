@@ -1,7 +1,6 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Codecs;
 using DotNetty.Transport.Channels;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
@@ -67,10 +66,15 @@ namespace OpenClassic.Server.Networking
                     }
                     input.SetByte(writeIndex, lastPayloadByte);
 
+                    // Get a slice of the input buffer, and then set the reader
+                    // index so that it starts at the second byte (which is the
+                    // first byte of the payload after the opcode).
                     var packet = input.Slice(firstByteInPacketIndex, payloadLengthIncludingOpcode);
                     packet.SetReaderIndex(1);
                     packet.MarkReaderIndex();
 
+                    // Make sure Retain() is called on the slice so that the
+                    // underlying buffer isn't prematurely recycled by DotNetty.
                     output.Add(packet.Retain());
                 }
                 else

@@ -57,8 +57,8 @@ namespace OpenClassic.Server.Networking
 
             // Retain the buffer slice so that it (and its underlying buffer) isn't
             // prematurely re-cycled by DotNetty.
-            // TODO: Verify that this is necessary here, as it might not be.
-            buffer.Retain();
+            // NOTE: Unit test suggests this isn't necessary?
+            // buffer.Retain();
 
             // TODO: Queue this packet.
         }

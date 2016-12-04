@@ -1,15 +1,14 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Transport.Channels.Embedded;
 using OpenClassic.Server.Networking;
-using System;
 using Xunit;
 
 namespace OpenClassic.Server.Tests.Networking
 {
     public class GameMessageDecoderTests
     {
-        private byte[] RequestSession = { 2, 55, 32 };
-        private byte[] SendPrivacySetings = { 5, 4, 64, 1, 2, 3 };
+        readonly byte[] RequestSession = { 2, 55, 32 };
+        readonly byte[] SendPrivacySetings = { 5, 4, 64, 1, 2, 3 };
 
         [Fact]
         public void OnePacketSingleByteLen()
@@ -24,9 +23,27 @@ namespace OpenClassic.Server.Tests.Networking
         }
 
         [Fact]
-        public void DecodesMultiplePacketsWith1ByteLenInOneInvocation()
+        public void DotNettyDoesNotDecreaseReferenceCount()
         {
             var channel = new EmbeddedChannel(new GameMessageDecoder());
+            var buffer = Unpooled.Buffer();
+
+            buffer.WriteBytes(RequestSession);
+            var startingRefCount = buffer.ReferenceCount;
+
+            channel.WriteInbound(buffer);
+            var result = channel.ReadInbound<IByteBuffer>();
+
+            Assert.NotNull(result);
+            Assert.Equal(0, buffer.ReadableBytes);
+            Assert.Equal(startingRefCount, result.ReferenceCount);
+        }
+
+        [Fact]
+        public void DecodesMultiplePacketsWith1ByteLenInOneInvocation()
+        {
+            var decoder = new GameMessageDecoder();
+            var channel = new EmbeddedChannel(decoder);
             var buffer = Unpooled.Buffer();
             const int packetCount = 10;
 
@@ -36,6 +53,8 @@ namespace OpenClassic.Server.Tests.Networking
             }
 
             channel.WriteInbound(buffer);
+
+            Assert.Equal(packetCount, buffer.ReferenceCount);
 
             for (var i = 0; i < packetCount; i++)
             {
@@ -52,18 +71,51 @@ namespace OpenClassic.Server.Tests.Networking
 
             // Verify that there are no more results (there shouldn't be at this point).
             Assert.Null(channel.ReadInbound<IByteBuffer>());
-
-            Assert.Equal(packetCount, buffer.ReferenceCount);
         }
 
-        private static IByteBuffer GetPaddedByteBuffer(byte[] contents)
+        [Fact]
+        public void DecoderReadsAllBytesFromUnderlyingBuffer()
         {
-            if (contents == null) throw new ArgumentNullException();
+            var decoder = new GameMessageDecoder();
+            var channel = new EmbeddedChannel(decoder);
+            var buffer = Unpooled.Buffer();
+            const int packetCount = 10;
 
-            var buffer = GamePooledByteBufferAllocator.Default.Buffer(contents.Length);
-            buffer.WriteBytes(contents);
+            for (var i = 0; i < packetCount; i++)
+            {
+                buffer.WriteBytes(RequestSession);
+            }
 
-            return buffer;
+            channel.WriteInbound(buffer);
+
+            Assert.Equal(0, buffer.ReadableBytes);
+        }
+
+        [Fact]
+        public void UnderlyingBufferReferenceCountEqualsZeroWhenAllSlicesReleased()
+        {
+            var decoder = new GameMessageDecoder();
+            var channel = new EmbeddedChannel(decoder);
+            var buffer = Unpooled.Buffer();
+            const int packetCount = 10;
+
+            for (var i = 0; i < packetCount; i++)
+            {
+                buffer.WriteBytes(RequestSession);
+            }
+
+            channel.WriteInbound(buffer);
+
+            Assert.Equal(packetCount, buffer.ReferenceCount);
+
+            for (var i = 0; i < packetCount; i++)
+            {
+                var packet = channel.ReadInbound<IByteBuffer>();
+
+                packet.Release();
+            }
+
+            Assert.Equal(0, buffer.ReferenceCount);
         }
     }
 }
