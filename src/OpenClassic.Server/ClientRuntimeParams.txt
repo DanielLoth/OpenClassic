@@ -1,0 +1,7 @@
+﻿Notes for running eXemplar's RSC client in IntelliJ idea (note: these details go in Run -> Edit Configurations...)
+
+Working directory: C:\Users\daniel\IdeaProjects\exemplarrscfork\204
+
+The 'clean' branch - Program arguments: members localhost 43594
+
+The 'master' branch - Program arguments: --members --server localhost --port 43594 --version 204 --height 668 --width 1024
