@@ -12,7 +12,7 @@ namespace OpenClassic.Server.Networking
 
             var pipeline = channel.Pipeline;
 
-            pipeline.AddLast(new GameMessageDecoder(channel));
+            pipeline.AddLast(new GameMessageDecoder());
             pipeline.AddLast(new GameConnectionHandler(channel));
         }
     }

@@ -52,7 +52,15 @@ namespace OpenClassic.Server.Networking
             Debug.Assert(message != null);
             Debug.Assert(message is IByteBuffer);
 
-            base.ChannelRead(context, message);
+            var buffer = message as IByteBuffer;
+            var contents = ByteBufferUtil.HexDump(buffer);
+
+            // Retain the buffer slice so that it (and its underlying buffer) isn't
+            // prematurely re-cycled by DotNetty.
+            // TODO: Verify that this is necessary here, as it might not be.
+            buffer.Retain();
+
+            // TODO: Queue this packet.
         }
 
         public bool Pulse()
