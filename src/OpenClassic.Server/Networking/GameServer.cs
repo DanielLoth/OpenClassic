@@ -1,4 +1,5 @@
-﻿using DotNetty.Transport.Bootstrapping;
+﻿using DotNetty.Buffers;
+using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
 using System;
@@ -29,10 +30,10 @@ namespace OpenClassic.Server.Networking
             var bootstrap = new ServerBootstrap()
                 .Group(BossGroup, WorkerGroup)
                 .Channel<TcpServerSocketChannel>()
-                .Option(ChannelOption.Allocator, GamePooledByteBufferAllocator.Default)
+                .Option(ChannelOption.Allocator, PooledByteBufferAllocator.Default)
                 .Option(ChannelOption.SoBacklog, 100)
                 .Option(ChannelOption.TcpNodelay, true)
-                .ChildOption(ChannelOption.Allocator, GamePooledByteBufferAllocator.Default)
+                .ChildOption(ChannelOption.Allocator, PooledByteBufferAllocator.Default)
                 .ChildOption(ChannelOption.SoKeepalive, true)
                 .ChildOption(ChannelOption.TcpNodelay, true)
                 .ChildHandler(new GameChannelInitializer());
