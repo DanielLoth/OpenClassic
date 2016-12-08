@@ -52,6 +52,8 @@ namespace OpenClassic.Server.Networking
                     packet.SetReaderIndex(1);
                     packet.MarkReaderIndex();
 
+                    Debug.Assert(packet.ReadableBytes == 0);
+
                     // Finally, add it to the output. Calling Retain() ensures that
                     // the underlying IByteBuffer, if freed by DotNetty, doesn't
                     // result in this slice being released prematurely.
@@ -59,33 +61,40 @@ namespace OpenClassic.Server.Networking
                 }
                 else if (!isTwoByteLen)
                 {
-                    var lastPayloadByte = input.ReadByte();
-                    var opcode = input.ReadByte();
-                    var payloadLenExclOpcodeAndLastByte = payloadLengthExcludingOpcode - 1;
+                    var packet = input.ReadSlice(payloadLengthIncludingOpcode);
 
-                    var packet = input.Allocator.Buffer(payloadLengthIncludingOpcode);
-                    packet.WriteByte(opcode);
+                    var lastPayloadByte = packet.ReadByte();
+                    var opcode = packet.ReadByte();
+
+                    // Move bytes along to make room for the last byte at the
+                    // end of the packet.
+                    for (int rIdx = 2, wIdx = 1; rIdx < payloadLengthExcludingOpcode; rIdx++, wIdx++)
+                    {
+                        var val = packet.GetByte(rIdx);
+                        packet.SetByte(wIdx, val);
+                    }
+
+                    // Opcode goes in index 0
+                    packet.SetByte(0, opcode);
+
+                    // Last byte goes to the end of the packet.
+                    packet.SetByte(packet.Capacity - 1, lastPayloadByte);
+
                     packet.SetReaderIndex(1);
                     packet.MarkReaderIndex();
 
-                    input.ReadBytes(packet, payloadLenExclOpcodeAndLastByte);
-
-                    packet.WriteByte(lastPayloadByte);
-
-                    output.Add(packet);
+                    output.Add(packet.Retain());
                 }
                 else
                 {
-                    var opcode = input.ReadByte();
+                    var packet = input.ReadSlice(payloadLengthIncludingOpcode);
 
-                    var packet = input.Allocator.Buffer(payloadLengthIncludingOpcode);
-                    packet.WriteByte(opcode);
                     packet.SetReaderIndex(1);
                     packet.MarkReaderIndex();
 
-                    input.ReadBytes(packet, payloadLengthExcludingOpcode);
+                    Debug.Assert(packet.ReadableBytes == payloadLengthExcludingOpcode);
 
-                    output.Add(packet);
+                    output.Add(packet.Retain());
                 }
             }
         }

@@ -2,6 +2,7 @@
 using DotNetty.Transport.Channels.Embedded;
 using OpenClassic.Server.Networking;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace OpenClassic.Server.Tests.Networking
@@ -92,7 +93,7 @@ namespace OpenClassic.Server.Tests.Networking
                 Assert.Equal(1, packet.GetPayloadLength());
                 Assert.Equal(32, packet.GetOpcode());
                 Assert.Equal(55, packet.ReadByte());
-                Assert.Equal(1, packet.ReferenceCount);
+                Assert.Equal(packetCount, packet.ReferenceCount);
             }
 
             // Verify that there are no more results (there shouldn't be at this point).
