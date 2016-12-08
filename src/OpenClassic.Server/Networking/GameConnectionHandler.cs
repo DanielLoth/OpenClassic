@@ -30,6 +30,8 @@ namespace OpenClassic.Server.Networking
             Debug.Assert(channel != null);
 
             this.gameChannel = channel;
+
+            CurrentPacketQueue = packetQueueOne;
         }
 
         public override void ChannelInactive(IChannelHandlerContext context)
@@ -53,48 +55,44 @@ namespace OpenClassic.Server.Networking
             Debug.Assert(message is IByteBuffer);
 
             var buffer = message as IByteBuffer;
-            var contents = ByteBufferUtil.HexDump(buffer);
 
-            // Retain the buffer slice so that it (and its underlying buffer) isn't
-            // prematurely re-cycled by DotNetty.
-            // NOTE: Unit test suggests this isn't necessary?
-            // buffer.Retain();
-
-            // TODO: Queue this packet.
+            // Add the message to the queue. Use AddMessage(IByteBuffer) so that
+            // the message is added while the packetQueueLock is held.
+            AddMessageThreadSafe(buffer);
         }
 
-        public bool Pulse()
+        public int Pulse()
         {
-            List<IByteBuffer> messages = null;
+            // Get the list of messages requiring processing. Make use of the
+            // GetAndSwapPacketQueueThreadSafe() method to ensure that the
+            // correct lock is held while retrieving queued packets.
+            var messages = GetAndSwapPacketQueueThreadSafe();
 
             try
             {
-                // We need to lock here to guarantee memory visibility.
-                lock (packetQueueLock)
-                {
-                    var currentQueue = CurrentPacketQueue;
-                    Debug.Assert(currentQueue != null);
-
-                    var otherQueue = ReferenceEquals(currentQueue, packetQueueTwo) ? packetQueueOne : packetQueueTwo;
-                    Debug.Assert(otherQueue.Count == 0); // The other queue should currently be empty.
-
-                    // Assign the current queue to our messages variable so that we can iterate
-                    // over it in a moment once we're outside of this mutex.
-                    messages = currentQueue;
-
-                    // Finally, also swap the queues over while inside the mutex.
-                    CurrentPacketQueue = otherQueue;
-
-                    Debug.Assert(messages != null);
-                    Debug.Assert(messages != CurrentPacketQueue);
-                }
+                var packetsHandled = 0;
 
                 foreach (var buffer in messages)
                 {
-                    // TODO: Handle each packet in succession.
+                    try
+                    {
+                        // TODO: Handle each packet in succession.
+
+                        packetsHandled++;
+                    }
+#pragma warning disable RECS0022 // A catch clause that catches System.Exception and has an empty body
+                    catch
+#pragma warning restore RECS0022 // A catch clause that catches System.Exception and has an empty body
+                    {
+                        // TODO: Determine what we want to do on packet handler failure.
+                    }
+                    finally
+                    {
+                        buffer.Release();
+                    }
                 }
 
-                return true;
+                return packetsHandled;
             }
             finally
             {
@@ -112,7 +110,7 @@ namespace OpenClassic.Server.Networking
 
         #region Message queueing
 
-        private void AddMessage(IByteBuffer message)
+        private void AddMessageThreadSafe(IByteBuffer message)
         {
             Debug.Assert(message != null);
 
@@ -125,6 +123,35 @@ namespace OpenClassic.Server.Networking
 
                 currentQueue.Add(message);
             }
+        }
+
+        private List<IByteBuffer> GetAndSwapPacketQueueThreadSafe()
+        {
+            List<IByteBuffer> messages = null;
+
+            // We need to lock here to guarantee memory visibility.
+            lock (packetQueueLock)
+            {
+                var currentQueue = CurrentPacketQueue;
+                Debug.Assert(currentQueue != null);
+
+                var otherQueue = ReferenceEquals(currentQueue, packetQueueTwo) ? packetQueueOne : packetQueueTwo;
+
+                Debug.Assert(otherQueue != null);
+                Debug.Assert(otherQueue.Count == 0); // The other queue should currently be empty.
+
+                // Assign the current queue to our messages variable so that we can iterate
+                // over it in a moment once we're outside of this mutex.
+                messages = currentQueue;
+
+                // Finally, also swap the queues over while inside the mutex.
+                CurrentPacketQueue = otherQueue;
+
+                Debug.Assert(messages != null);
+                Debug.Assert(messages != CurrentPacketQueue);
+            }
+
+            return messages;
         }
 
         #endregion

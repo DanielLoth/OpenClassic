@@ -1,8 +1,6 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Transport.Channels.Embedded;
 using OpenClassic.Server.Networking;
-using System;
-using System.Collections.Generic;
 using Xunit;
 
 namespace OpenClassic.Server.Tests.Networking
@@ -172,6 +170,16 @@ namespace OpenClassic.Server.Tests.Networking
             Assert.NotNull(result);
             Assert.Equal(0, buffer.ReadableBytes);
             Assert.Equal(startingRefCount, result.ReferenceCount);
+        }
+
+        [Fact]
+        public void GameMessageDecoderIsNotSharable()
+        {
+            var decoder = new GameMessageDecoder();
+
+            // DotNetty does not allow sharing of these pipeline items.
+
+            Assert.False(decoder.IsSharable);
         }
 
         #endregion

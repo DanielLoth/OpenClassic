@@ -6,7 +6,7 @@ namespace OpenClassic.Server.Networking
     {
         IChannel ClientChannel { get; }
 
-        bool Pulse();
+        int Pulse();
 
         bool AllowedToDisconnect { get; }
     }
