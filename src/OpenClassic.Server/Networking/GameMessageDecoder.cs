@@ -44,47 +44,48 @@ namespace OpenClassic.Server.Networking
                 var payloadLengthExcludingOpcode = payloadLengthIncludingOpcode - 1;
                 if (payloadLengthExcludingOpcode == 0)
                 {
-                    var opcode = input.ReadByte();
+                    // Read a 1-byte slice, which is the opcode.
+                    var packet = input.ReadSlice(1);
 
-                    //input.SetOpcode(opcode);
-                    //input.SetPayloadLength(0);
+                    // Update the reader index to 1, which means that there are zero
+                    // readable bytes in the slice.
+                    packet.SetReaderIndex(1);
+                    packet.MarkReaderIndex();
 
-                    output.Add(input.Retain());
+                    // Finally, add it to the output. Calling Retain() ensures that
+                    // the underlying IByteBuffer, if freed by DotNetty, doesn't
+                    // result in this slice being released prematurely.
+                    output.Add(packet.Retain());
                 }
                 else if (!isTwoByteLen)
                 {
                     var lastPayloadByte = input.ReadByte();
-                    var firstByteToMoveLeftIndex = input.ReaderIndex;
                     var opcode = input.ReadByte();
+                    var payloadLenExclOpcodeAndLastByte = payloadLengthExcludingOpcode - 1;
 
-                    var bytesToMoveLeft = payloadLengthExcludingOpcode;
-
-                    var writeIndex = firstByteInPacketIndex;
-                    for (int i = 0, readIndex = firstByteToMoveLeftIndex; i < bytesToMoveLeft; i++, readIndex++, writeIndex++)
-                    {
-                        input.SetByte(writeIndex, input.GetByte(readIndex));
-                    }
-                    input.SetByte(writeIndex, lastPayloadByte);
-
-                    // Get a slice of the input buffer, and then set the reader
-                    // index so that it starts at the second byte (which is the
-                    // first byte of the payload after the opcode).
-                    var packet = input.Slice(firstByteInPacketIndex, payloadLengthIncludingOpcode);
+                    var packet = input.Allocator.Buffer(payloadLengthIncludingOpcode);
+                    packet.WriteByte(opcode);
                     packet.SetReaderIndex(1);
                     packet.MarkReaderIndex();
 
-                    // Make sure Retain() is called on the slice so that the
-                    // underlying buffer isn't prematurely recycled by DotNetty.
-                    output.Add(packet.Retain());
+                    input.ReadBytes(packet, payloadLenExclOpcodeAndLastByte);
+
+                    packet.WriteByte(lastPayloadByte);
+
+                    output.Add(packet);
                 }
                 else
                 {
                     var opcode = input.ReadByte();
-                    var newBuffer = context.Allocator.Buffer(payloadLengthIncludingOpcode);
-                    input.ReadBytes(newBuffer, payloadLengthExcludingOpcode);
 
-                    var packet = new Packet(opcode, newBuffer);
-                    output.Add(input.Retain());
+                    var packet = input.Allocator.Buffer(payloadLengthIncludingOpcode);
+                    packet.WriteByte(opcode);
+                    packet.SetReaderIndex(1);
+                    packet.MarkReaderIndex();
+
+                    input.ReadBytes(packet, payloadLengthExcludingOpcode);
+
+                    output.Add(packet);
                 }
             }
         }

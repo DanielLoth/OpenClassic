@@ -8,7 +8,7 @@ namespace OpenClassic.Server.Tests.Networking
     public class GameConnectionHandlerTests
     {
         readonly byte[] RequestSession = { 32, 55 };
-        readonly byte[] SendPrivacySetings = { 5, 4, 64, 1, 2, 3 };
+        readonly byte[] SendPrivacySetings = { 64, 1, 2, 3, 4 };
 
         [Fact]
         public void DotNettyDoesNotDecreaseReferenceCount()
