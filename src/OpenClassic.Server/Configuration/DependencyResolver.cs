@@ -1,4 +1,6 @@
 ﻿using DryIoc;
+using OpenClassic.Server.Domain;
+using OpenClassic.Server.Networking;
 using System;
 
 namespace OpenClassic.Server.Configuration
@@ -20,6 +22,10 @@ namespace OpenClassic.Server.Configuration
         {
             if (container == null)
                 throw new ArgumentNullException(nameof(container));
+
+            container.Register<GameServer>(Reuse.Singleton);
+            container.Register<IGameEngine, GameEngine>(Reuse.Singleton);
+            container.Register<IWorld, World>(Reuse.Singleton);
         }
     }
 }
