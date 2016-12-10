@@ -1,4 +1,6 @@
-﻿using DotNetty.Transport.Channels;
+﻿using DotNetty.Buffers;
+using DotNetty.Transport.Channels;
+using System.Threading.Tasks;
 
 namespace OpenClassic.Server.Networking
 {
@@ -9,5 +11,7 @@ namespace OpenClassic.Server.Networking
         int Pulse();
 
         bool AllowedToDisconnect { get; }
+
+        Task WriteAndFlushAsync(IByteBuffer buffer);
     }
 }

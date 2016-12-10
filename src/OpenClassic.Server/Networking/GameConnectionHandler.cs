@@ -1,12 +1,17 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Transport.Channels;
+using DryIoc;
+using OpenClassic.Server.Configuration;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace OpenClassic.Server.Networking
 {
     public class GameConnectionHandler : ChannelHandlerAdapter, ISession
     {
+        private static readonly IPacketHandler[] PacketHandlerMap;
+
         private readonly IChannel gameChannel;
 
         public override bool IsSharable => false;
@@ -24,6 +29,29 @@ namespace OpenClassic.Server.Networking
         private List<IByteBuffer> CurrentPacketQueue { get; set; }
 
         #endregion
+
+        static GameConnectionHandler()
+        {
+            var resolver = DependencyResolver.Current;
+
+            var packetHandlers = resolver.Resolve<IPacketHandler[]>();
+            var handlerMap = new IPacketHandler[255];
+
+            foreach (var handler in packetHandlers)
+            {
+                handlerMap[handler.Opcode] = handler;
+            }
+
+            for (var i = 0; i < handlerMap.Length; i++)
+            {
+                if (handlerMap[i] == null)
+                {
+                    handlerMap[i] = new NoOpPacketHandler();
+                }
+            }
+
+            PacketHandlerMap = handlerMap;
+        }
 
         public GameConnectionHandler(IChannel channel)
         {
@@ -76,7 +104,10 @@ namespace OpenClassic.Server.Networking
                 {
                     try
                     {
-                        // TODO: Handle each packet in succession.
+                        var opcode = buffer.GetOpcode();
+                        var handler = PacketHandlerMap[opcode];
+
+                        handler.Handle(this, buffer);
 
                         packetsHandled++;
                     }
@@ -155,5 +186,10 @@ namespace OpenClassic.Server.Networking
         }
 
         #endregion
+
+        public Task WriteAndFlushAsync(IByteBuffer buffer)
+        {
+            return gameChannel.WriteAndFlushAsync(buffer);
+        }
     }
 }

@@ -3,6 +3,7 @@ using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
 using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace OpenClassic.Server.Networking
@@ -11,13 +12,18 @@ namespace OpenClassic.Server.Networking
     {
         private readonly IEventLoopGroup BossGroup;
         private readonly IEventLoopGroup WorkerGroup;
+        private readonly ChannelInitializer<ISocketChannel> ChannelInitializer;
 
         private IChannel BootstrapChannel;
 
-        public GameServer()
+        public GameServer(ChannelInitializer<ISocketChannel> channelInitializer)
         {
+            Debug.Assert(channelInitializer != null);
+
             BossGroup = new MultithreadEventLoopGroup(1);
             WorkerGroup = new MultithreadEventLoopGroup(1);
+
+            ChannelInitializer = channelInitializer;
         }
 
         public async Task Start()
@@ -36,7 +42,7 @@ namespace OpenClassic.Server.Networking
                 .ChildOption(ChannelOption.Allocator, PooledByteBufferAllocator.Default)
                 .ChildOption(ChannelOption.SoKeepalive, true)
                 .ChildOption(ChannelOption.TcpNodelay, true)
-                .ChildHandler(new GameChannelInitializer());
+                .ChildHandler(ChannelInitializer);
 
             BootstrapChannel = await bootstrap.BindAsync(43594);
         }

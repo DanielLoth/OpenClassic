@@ -7,29 +7,28 @@ namespace OpenClassic.Server
 {
     public class Program
     {
-        private static readonly GameServer Server = DependencyResolver.Current.Resolve<GameServer>();
-        private static readonly IGameEngine Engine = DependencyResolver.Current.Resolve<IGameEngine>();
+        private static readonly GameServer Server;
+        private static readonly IGameEngine Engine;
+
+        static Program()
+        {
+            var resolver = DependencyResolver.Current;
+
+            Server = resolver.Resolve<GameServer>();
+            Engine = resolver.Resolve<IGameEngine>();
+        }
 
 #pragma warning disable RECS0154 // Parameter is never used
         public static void Main(string[] args)
 #pragma warning restore RECS0154 // Parameter is never used
         {
-            try
-            {
-                var configProvider = new JsonConfigProvider();
-                var config = configProvider.GetConfig();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-                return;
-            }
-
             Console.WriteLine("Starting listener...");
             Server.Start().Wait();
             Console.WriteLine("Listening");
 
             Console.CancelKeyPress += Console_CancelKeyPress;
+
+            GC.Collect();
 
             Engine.GameLoop();
         }
