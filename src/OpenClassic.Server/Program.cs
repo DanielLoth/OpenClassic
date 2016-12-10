@@ -14,12 +14,20 @@ namespace OpenClassic.Server
         public static void Main(string[] args)
 #pragma warning restore RECS0154 // Parameter is never used
         {
+            try
+            {
+                var configProvider = new JsonConfigProvider();
+                var config = configProvider.GetConfig();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return;
+            }
+
             Console.WriteLine("Starting listener...");
             Server.Start().Wait();
             Console.WriteLine("Listening");
-
-            var configProvider = new JsonConfigProvider();
-            var config = configProvider.GetConfig();
 
             Console.CancelKeyPress += Console_CancelKeyPress;
 

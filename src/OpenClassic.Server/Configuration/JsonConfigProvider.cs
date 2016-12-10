@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System.IO;
 
 namespace OpenClassic.Server.Configuration
 {
@@ -13,8 +12,8 @@ namespace OpenClassic.Server.Configuration
                 .Build();
 
             var config = new Config();
-
             configBuilder.Bind(config);
+            config.Validate();
 
             return config;
         }
