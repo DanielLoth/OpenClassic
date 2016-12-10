@@ -1,5 +1,13 @@
 ﻿{
   "BoolTest": true,
   "IntTest": 1337,
-  "StringTest": "Hello World"
+  "StringTest": "Hello World",
+
+  // RsaDecryptionKey is the private key that corresponds with the public key in the client.
+  // The current value here is the private key that corresponds with the RSCDv25 client's public key.
+  "RsaDecryptionKey": "730546719878348732291497161314617369560443701473303681965331739205703475535302276087891130348991033265134162275669215460061940182844329219743687403068279",
+
+  // RsaDecryptionModulus must match the modulus used by the client.
+  // The current value here is the modulus in the RSCDv25 client.
+  "RsaDecryptionModulus": "1549611057746979844352781944553705273443228154042066840514290174539588436243191882510185738846985723357723362764835928526260868977814405651690121789896823"
 }
