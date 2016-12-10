@@ -35,11 +35,8 @@ namespace OpenClassic.Server
                 throw new InvalidOperationException("An attempt has been made to re-enter GameEngine.GameLoop() even though the game loop has been shutdown.");
             }
 
-            long counter = 0;
             while (IsRunning)
             {
-                //Console.WriteLine(counter++ % 2 == 0 ? "Tick" : "Tock");
-
                 PulseSessions();
                 ProcessTasks();
 
