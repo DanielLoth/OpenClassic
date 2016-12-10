@@ -11,7 +11,14 @@ namespace OpenClassic.Server.Networking.Rscd
     {
         public int Opcode => 32;
 
-        private Random Random { get; } = new Random();
+        private readonly RscdPacketWriter packetWriter;
+
+        public SessionRequestMessageHandler(RscdPacketWriter packetWriter)
+        {
+            Debug.Assert(packetWriter != null);
+
+            this.packetWriter = packetWriter;
+        }
 
         public void Handle(ISession session, IByteBuffer packet)
         {
@@ -33,10 +40,15 @@ namespace OpenClassic.Server.Networking.Rscd
         private readonly IConfig config;
         private readonly BigInteger rsaPrivateKey;
         private readonly BigInteger rsaModulus;
+        private readonly RscdPacketWriter packetWriter;
 
-        public LoginMessageHandler(IConfig config)
+        public LoginMessageHandler(IConfig config, RscdPacketWriter packetWriter)
         {
+            Debug.Assert(config != null);
+            Debug.Assert(packetWriter != null);
+
             this.config = config;
+            this.packetWriter = packetWriter;
 
             rsaPrivateKey = BigInteger.Parse(config.RsaDecryptionKey);
             rsaModulus = BigInteger.Parse(config.RsaModulus);

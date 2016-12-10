@@ -52,7 +52,7 @@ namespace OpenClassic.Server.Configuration
             }
             else
             {
-                throw new InvalidConfigException("DependencyResolver coult not finish initialisation. " +
+                throw new InvalidConfigException("DependencyResolver could not finish initialisation. " +
                     "Please only use 'RSCD' for the ServerProtocol value in Settings.json");
             }
         }
@@ -62,6 +62,7 @@ namespace OpenClassic.Server.Configuration
             Debug.Assert(container != null);
 
             container.Register<ChannelInitializer<ISocketChannel>, RscdChannelInitializer>(Reuse.Singleton);
+            container.Register<RscdPacketWriter>(Reuse.Singleton);
 
             var packetHandlerConcreteTypes = GetChildrenOfInterface(typeof(IRscdPacketHandlerMarker));
             foreach (var handlerType in packetHandlerConcreteTypes)
