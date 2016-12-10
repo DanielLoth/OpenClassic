@@ -1,6 +1,20 @@
 {
   "version": "1.0.0-*",
 
+  "buildOptions": {
+    "copyToOutput": {
+      "include": [
+        "Settings.json"
+      ]
+    }
+  },
+
+  "publishOptions": {
+    "include": [
+      "Settings.json"
+    ]
+  },
+
   "dependencies": {
     "dotnet-test-xunit": "2.2.0-*",
     "xunit": "2.2.0-*",
