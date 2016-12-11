@@ -13,5 +13,17 @@ namespace OpenClassic.Server.Networking
         bool AllowedToDisconnect { get; }
 
         Task WriteAndFlushAsync(IByteBuffer buffer);
+
+        IByteBuffer Buffer { get; }
+
+        int CurrentPacketStartIndex { get; set; }
+
+        int? CurrentPacketId { get; set; }
+
+        int CurrentPacketBitfieldPosition { get; set; }
+
+        int MaxPacketLength { get; }
+
+        Task WriteAndFlushSessionBuffer();
     }
 }

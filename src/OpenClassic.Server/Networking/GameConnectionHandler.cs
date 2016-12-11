@@ -17,6 +17,7 @@ namespace OpenClassic.Server.Networking
         public override bool IsSharable => false;
 
         public IChannel ClientChannel => gameChannel;
+        private IByteBuffer _buffer;
 
         public bool AllowedToDisconnect => false;
 
@@ -27,6 +28,16 @@ namespace OpenClassic.Server.Networking
         private readonly object packetQueueLock = new object();
 
         private List<IByteBuffer> CurrentPacketQueue { get; set; }
+
+        public IByteBuffer Buffer => _buffer;
+
+        public int CurrentPacketStartIndex { get; set; }
+
+        public int? CurrentPacketId { get; set; }
+
+        public int CurrentPacketBitfieldPosition { get; set; }
+
+        public int MaxPacketLength => _buffer?.Capacity ?? 0;
 
         #endregion
 
@@ -58,6 +69,10 @@ namespace OpenClassic.Server.Networking
             Debug.Assert(channel != null);
 
             this.gameChannel = channel;
+
+            AllocateBuffer();
+            Debug.Assert(_buffer != null);
+            Debug.Assert(_buffer.ReferenceCount == 1);
 
             CurrentPacketQueue = packetQueueOne;
         }
@@ -189,7 +204,28 @@ namespace OpenClassic.Server.Networking
 
         public Task WriteAndFlushAsync(IByteBuffer buffer)
         {
+            Debug.Assert(buffer != null);
+            Debug.Assert(buffer.ReferenceCount == 1);
+
             return gameChannel.WriteAndFlushAsync(buffer);
+        }
+
+        public Task WriteAndFlushSessionBuffer()
+        {
+            Debug.Assert(_buffer != null);
+            Debug.Assert(_buffer.ReferenceCount == 1);
+
+            var writeAndFlushResult = gameChannel.WriteAndFlushAsync(_buffer);
+
+            AllocateBuffer();
+            Debug.Assert(_buffer != null);
+
+            return writeAndFlushResult;
+        }
+
+        private void AllocateBuffer()
+        {
+            _buffer = gameChannel.Allocator.Buffer();
         }
     }
 }
