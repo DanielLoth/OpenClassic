@@ -16,6 +16,8 @@ namespace OpenClassic.Server
 
         private readonly List<ISession> Sessions = new List<ISession>();
 
+        private bool IsOnGameThread => Thread.CurrentThread == GameThread;
+
         static GameEngine()
         {
             GameThread = Thread.CurrentThread;
@@ -23,9 +25,7 @@ namespace OpenClassic.Server
 
         public void GameLoop()
         {
-            var currentThread = Thread.CurrentThread;
-
-            if (currentThread != GameThread)
+            if (!IsOnGameThread)
             {
                 throw new InvalidOperationException("A thread that is not the game thread attempted to invoke GameEngine.GameLoop().");
             }
@@ -42,21 +42,44 @@ namespace OpenClassic.Server
 
                 Thread.Sleep(600);
             }
+
+            // TODO: Loop stopped - gracefully disconnect all users.
         }
 
         public void StopGameLoop()
         {
-            IsRunning = false;
+            if (IsOnGameThread)
+            {
+                IsRunning = false;
+            }
+            else
+            {
+                QueueGameLoopTask(() => IsRunning = false);
+            }
         }
 
         public void RegisterSession(ISession session)
         {
-            Sessions.Add(session);
+            if (IsOnGameThread)
+            {
+                Sessions.Add(session);
+            }
+            else
+            {
+                QueueGameLoopTask(() => Sessions.Add(session));
+            }
         }
 
         public void UnregisterSession(ISession session)
         {
-            Sessions.Remove(session);
+            if (IsOnGameThread)
+            {
+                Sessions.Remove(session);
+            }
+            else
+            {
+                QueueGameLoopTask(() => Sessions.Remove(session));
+            }
         }
 
         public void QueueGameLoopTask(Action action)

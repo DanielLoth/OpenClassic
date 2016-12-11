@@ -26,10 +26,7 @@ namespace OpenClassic.Server.Networking.Rscd
             var session = new GameConnectionHandler(channel);
             pipeline.AddLast(session);
 
-            engine.QueueGameLoopTask(() =>
-            {
-                engine.RegisterSession(session);
-            });
+            engine.RegisterSession(session);
         }
     }
 }

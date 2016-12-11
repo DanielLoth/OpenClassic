@@ -30,7 +30,11 @@ namespace OpenClassic.Server
 
             GC.Collect();
 
+            // This call blocks the main thread until the server is shut down.
             Engine.GameLoop();
+
+            Console.WriteLine("Game loop shut down.");
+            Console.WriteLine("Shutdown complete.");
         }
 
         private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)
@@ -40,8 +44,6 @@ namespace OpenClassic.Server
 
             Console.WriteLine("Shutting down game loop...");
             Engine.StopGameLoop();
-
-            Console.WriteLine("Shutdown complete. Press any key to terminate this window.");
         }
     }
 }

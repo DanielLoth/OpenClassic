@@ -1,6 +1,6 @@
 ﻿namespace OpenClassic.Server.Domain
 {
-    public interface IWorld
+    public class Player : IPlayer
     {
     }
 }
