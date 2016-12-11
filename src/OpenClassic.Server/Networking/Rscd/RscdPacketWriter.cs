@@ -85,5 +85,13 @@ namespace OpenClassic.Server.Networking.Rscd
 
             FormatPacket(session);
         }
+
+        public void SendCantLogout(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            CreatePacket(session, 136);
+            FormatPacket(session);
+        }
     }
 }

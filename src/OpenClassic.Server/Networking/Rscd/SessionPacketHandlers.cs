@@ -143,4 +143,52 @@ namespace OpenClassic.Server.Networking.Rscd
             Debug.Assert(packet.ReadableBytes == 0);
         }
     }
+
+    internal class LogoutRequestMessageHandler : IRscdPacketHandlerMarker
+    {
+        public int Opcode => 129;
+
+        private readonly RscdPacketWriter packetWriter;
+
+        public LogoutRequestMessageHandler(RscdPacketWriter packetWriter)
+        {
+            Debug.Assert(packetWriter != null);
+
+            this.packetWriter = packetWriter;
+        }
+
+        public void Handle(ISession session, IByteBuffer packet)
+        {
+            Debug.Assert(session != null);
+            Debug.Assert(packet != null);
+            Debug.Assert(packet.ReadableBytes == 0);
+
+            packetWriter.SendCantLogout(session);
+            session.WriteAndFlushSessionBuffer();
+        }
+    }
+
+    internal class LogoutMessageHandler : IRscdPacketHandlerMarker
+    {
+        public int Opcode => 39;
+
+        private readonly RscdPacketWriter packetWriter;
+
+        public LogoutMessageHandler(RscdPacketWriter packetWriter)
+        {
+            Debug.Assert(packetWriter != null);
+
+            this.packetWriter = packetWriter;
+        }
+
+        public void Handle(ISession session, IByteBuffer packet)
+        {
+            Debug.Assert(session != null);
+            Debug.Assert(packet != null);
+            Debug.Assert(packet.ReadableBytes == 0);
+
+            packetWriter.SendCantLogout(session);
+            session.WriteAndFlushSessionBuffer();
+        }
+    }
 }
