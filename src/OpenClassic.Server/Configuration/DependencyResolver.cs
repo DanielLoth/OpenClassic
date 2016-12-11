@@ -38,6 +38,8 @@ namespace OpenClassic.Server.Configuration
             container.Register<GameServer>(Reuse.Singleton);
             container.Register<IGameEngine, GameEngine>(Reuse.Singleton);
             container.Register<IWorld, World>(Reuse.Singleton);
+
+            container.Register<IPlayer, Player>(Reuse.Transient);
         }
 
         static void RegisterProtocolSpecificDependencies(IContainer container)

@@ -2,5 +2,6 @@
 {
     public interface IPlayer
     {
+        bool IsActive { get; set; }
     }
 }
