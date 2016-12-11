@@ -1,5 +1,6 @@
 ﻿using DotNetty.Buffers;
 using OpenClassic.Server.Configuration;
+using OpenClassic.Server.Domain;
 using System;
 using System.Diagnostics;
 using System.Linq;
@@ -27,9 +28,8 @@ namespace OpenClassic.Server.Networking.Rscd
 
             var userByte = packet.ReadByte();
 
-            var response = packet.Allocator.Buffer(8);
-            response.WriteLong(1337);
-            session.WriteAndFlushAsync(response);
+            session.Buffer.WriteLong(1337);
+            session.WriteAndFlushSessionBuffer();
         }
     }
 
@@ -38,16 +38,22 @@ namespace OpenClassic.Server.Networking.Rscd
         public int Opcode => 0;
 
         private readonly IConfig config;
+        private readonly IGameEngine engine;
+        private readonly IWorld world;
         private readonly BigInteger rsaPrivateKey;
         private readonly BigInteger rsaModulus;
         private readonly RscdPacketWriter packetWriter;
 
-        public LoginMessageHandler(IConfig config, RscdPacketWriter packetWriter)
+        public LoginMessageHandler(IConfig config, IGameEngine engine, IWorld world, RscdPacketWriter packetWriter)
         {
             Debug.Assert(config != null);
+            Debug.Assert(engine != null);
+            Debug.Assert(world != null);
             Debug.Assert(packetWriter != null);
 
             this.config = config;
+            this.engine = engine;
+            this.world = world;
             this.packetWriter = packetWriter;
 
             rsaPrivateKey = BigInteger.Parse(config.RsaDecryptionKey);
@@ -79,6 +85,20 @@ namespace OpenClassic.Server.Networking.Rscd
             var password = loginBuffer.ReadString(20).Trim();
 
             Console.WriteLine($"Login: {uid} - {username}:{password}");
+
+            var newPlayer = world.GetAvailablePlayer();
+            if (newPlayer == null)
+            {
+                session.Buffer.WriteByte(5);
+                session.WriteFlushClose();
+                return;
+            }
+            else
+            {
+                session.Buffer.WriteByte(6);
+                session.WriteFlushClose();
+                return;
+            }
 
             //var newPlayer = EntityFactory.NewPlayer();
             //newPlayer.Username = username;
