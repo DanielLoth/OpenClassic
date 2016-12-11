@@ -125,7 +125,7 @@ namespace OpenClassic.Server.Networking
 
             var index = GetWriteStartIndex(session);
             session.Buffer.SetByte(index, value);
-            IncrementBitsWritte(session, 8);
+            IncrementBitsWritten(session, 8);
         }
 
         public void WriteBytes(ISession session, byte[] src)
@@ -135,7 +135,7 @@ namespace OpenClassic.Server.Networking
 
             var index = GetWriteStartIndex(session);
             session.Buffer.SetBytes(index, src);
-            IncrementBitsWritte(session, src.Length * 8);
+            IncrementBitsWritten(session, src.Length * 8);
         }
 
         public void WriteBytes(ISession session, byte[] src, int srcIndex, int length)
@@ -145,7 +145,7 @@ namespace OpenClassic.Server.Networking
 
             var index = GetWriteStartIndex(session);
             session.Buffer.SetBytes(index, src, srcIndex, length);
-            IncrementBitsWritte(session, length * 8);
+            IncrementBitsWritten(session, length * 8);
         }
 
         public void WriteShort(ISession session, int value)
@@ -155,7 +155,7 @@ namespace OpenClassic.Server.Networking
 
             var index = GetWriteStartIndex(session);
             session.Buffer.SetShort(index, value);
-            IncrementBitsWritte(session, 16);
+            IncrementBitsWritten(session, 16);
         }
 
         public void WriteInt(ISession session, int value)
@@ -165,7 +165,7 @@ namespace OpenClassic.Server.Networking
 
             var index = GetWriteStartIndex(session);
             session.Buffer.SetInt(index, value);
-            IncrementBitsWritte(session, 32);
+            IncrementBitsWritten(session, 32);
         }
 
         public void WriteLong(ISession session, long value)
@@ -175,7 +175,7 @@ namespace OpenClassic.Server.Networking
 
             var index = GetWriteStartIndex(session);
             session.Buffer.SetLong(index, value);
-            IncrementBitsWritte(session, 64);
+            IncrementBitsWritten(session, 64);
         }
 
         #region Protected methods
@@ -220,7 +220,7 @@ namespace OpenClassic.Server.Networking
             return session.CurrentPacketStartIndex + ThreeByteOffset + (session.CurrentPacketBitfieldPosition / 8);
         }
 
-        protected void IncrementBitsWritte(ISession session, int bitsWritten)
+        protected void IncrementBitsWritten(ISession session, int bitsWritten)
         {
             session.CurrentPacketBitfieldPosition += bitsWritten;
         }

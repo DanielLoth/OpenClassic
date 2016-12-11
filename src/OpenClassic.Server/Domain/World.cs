@@ -25,6 +25,7 @@ namespace OpenClassic.Server.Domain
             for (var i = 0; i < playerCount; i++)
             {
                 var newPlayer = resolver.Resolve<IPlayer>();
+                newPlayer.Index = (short)i;
                 players.Add(newPlayer);
             }
         }

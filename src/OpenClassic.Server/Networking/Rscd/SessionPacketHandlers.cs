@@ -109,6 +109,17 @@ namespace OpenClassic.Server.Networking.Rscd
                 packetWriter.SendStats(session);
                 packetWriter.SendLoginBox(session);
 
+                packetWriter.SendPlayerPositionUpdate(session);
+
+                packetWriter.SendInventory(session);
+                packetWriter.SendCombatStyle(session);
+                packetWriter.SendClientConfig(session);
+
+                packetWriter.SendBank(session);
+
+                //packetWriter.SendShowAppearanceScreen(session);
+                //packetWriter.SendDied(session);
+
                 session.WriteAndFlushSessionBuffer();
                 return;
             }
