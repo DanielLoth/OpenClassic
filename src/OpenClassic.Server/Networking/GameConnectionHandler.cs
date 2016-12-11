@@ -2,6 +2,7 @@
 using DotNetty.Transport.Channels;
 using DryIoc;
 using OpenClassic.Server.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace OpenClassic.Server.Networking
 {
     public class GameConnectionHandler : ChannelHandlerAdapter, ISession
     {
+        private static readonly IGameEngine gameEngine;
         private static readonly IPacketHandler[] PacketHandlerMap;
 
         private readonly IChannel gameChannel;
@@ -17,17 +19,12 @@ namespace OpenClassic.Server.Networking
         public override bool IsSharable => false;
 
         public IChannel ClientChannel => gameChannel;
-        private IByteBuffer _buffer;
+
+        // This needs to be volatile because this field can be set by either
+        // a worker thread OR the game thread.
+        private volatile IByteBuffer _buffer;
 
         public bool AllowedToDisconnect => false;
-
-        #region Packet queue fields and properties
-
-        private readonly List<IByteBuffer> packetQueueOne = new List<IByteBuffer>(128);
-        private readonly List<IByteBuffer> packetQueueTwo = new List<IByteBuffer>(128);
-        private readonly object packetQueueLock = new object();
-
-        private List<IByteBuffer> CurrentPacketQueue { get; set; }
 
         public IByteBuffer Buffer => _buffer;
 
@@ -39,11 +36,32 @@ namespace OpenClassic.Server.Networking
 
         public int MaxPacketLength => _buffer?.Capacity ?? 0;
 
+        #region Packet queue fields and properties
+
+        private readonly List<IByteBuffer> packetQueueOne = new List<IByteBuffer>(128);
+        private readonly List<IByteBuffer> packetQueueTwo = new List<IByteBuffer>(128);
+        private readonly object packetQueueLock = new object();
+
+        private List<IByteBuffer> CurrentPacketQueue { get; set; }
+
         #endregion
+
+        public static void Init()
+        {
+            // Do nothing - this is just to invoke the static 
+            // GameConnectionHandler() constructor.
+        }
 
         static GameConnectionHandler()
         {
             var resolver = DependencyResolver.Current;
+
+            gameEngine = resolver.Resolve<IGameEngine>();
+
+            // This needs to be executed on the game thread. Otherwise the
+            // game thread won't necessarily see the loaded IPacketHandler map
+            // when it invokes the Pulse() method each game tick.
+            Debug.Assert(gameEngine.IsOnGameThread);
 
             var packetHandlers = resolver.Resolve<IPacketHandler[]>();
             var handlerMap = new IPacketHandler[255];
@@ -106,6 +124,9 @@ namespace OpenClassic.Server.Networking
 
         public int Pulse()
         {
+            // Pulse must only ever be invoked on the game thread.
+            Debug.Assert(gameEngine.IsOnGameThread);
+
             // Get the list of messages requiring processing. Make use of the
             // GetAndSwapPacketQueueThreadSafe() method to ensure that the
             // correct lock is held while retrieving queued packets.
@@ -127,9 +148,10 @@ namespace OpenClassic.Server.Networking
                         packetsHandled++;
                     }
 #pragma warning disable RECS0022 // A catch clause that catches System.Exception and has an empty body
-                    catch
+                    catch (Exception ex)
 #pragma warning restore RECS0022 // A catch clause that catches System.Exception and has an empty body
                     {
+                        var inner = ex.InnerException;
                         // TODO: Determine what we want to do on packet handler failure.
                     }
                     finally
@@ -158,6 +180,9 @@ namespace OpenClassic.Server.Networking
 
         private void AddMessageThreadSafe(IByteBuffer message)
         {
+            // This method should only ever be called by DotNetty worker threads.
+            Debug.Assert(!gameEngine.IsOnGameThread);
+
             Debug.Assert(message != null);
 
             // We need to lock here to guarantee memory visibility of the queue contents.
@@ -202,29 +227,58 @@ namespace OpenClassic.Server.Networking
 
         #endregion
 
-        public Task WriteAndFlushAsync(IByteBuffer buffer)
-        {
-            Debug.Assert(buffer != null);
-            Debug.Assert(buffer.ReferenceCount == 1);
-
-            return gameChannel.WriteAndFlushAsync(buffer);
-        }
-
         public Task WriteAndFlushSessionBuffer()
         {
-            Debug.Assert(_buffer != null);
-            Debug.Assert(_buffer.ReferenceCount == 1);
+            // Invocation of this method should be on the game thread.
+            Debug.Assert(gameEngine.IsOnGameThread);
 
-            var writeAndFlushResult = gameChannel.WriteAndFlushAsync(_buffer);
+            var bufferBeforeFlush = _buffer;
+            Debug.Assert(bufferBeforeFlush != null);
+            Debug.Assert(bufferBeforeFlush.ReferenceCount == 1);
+
+            var writeAndFlushResult = gameChannel.WriteAndFlushAsync(bufferBeforeFlush);
 
             AllocateBuffer();
-            Debug.Assert(_buffer != null);
+
+            var bufferAfterFlush = _buffer;
+            Debug.Assert(bufferAfterFlush != null);
+            Debug.Assert(bufferBeforeFlush != bufferAfterFlush);
+            Debug.Assert(bufferAfterFlush.ReferenceCount == 1);
 
             return writeAndFlushResult;
         }
 
+        public Task WriteFlushClose()
+        {
+            // Invocation of this method should be on the game thread.
+            Debug.Assert(gameEngine.IsOnGameThread);
+
+            Debug.Assert(_buffer != null);
+            Debug.Assert(_buffer.ReferenceCount == 1);
+
+            var writeFinishedFuture = gameChannel.WriteAndFlushAsync(_buffer);
+
+            var unregisterAndCloseOnGameEngineThread = writeFinishedFuture.ContinueWith(async (t) =>
+            {
+                // This callback is running on a worker thread.
+                Debug.Assert(!gameEngine.IsOnGameThread);
+
+                // Worker thread awaits channel closure.
+                await gameChannel.CloseAsync();
+
+                // And now that the channel is closed, unregister the session
+                // in the GameEngine.
+                gameEngine.UnregisterSession(this);
+            });
+
+            return unregisterAndCloseOnGameEngineThread;
+        }
+
         private void AllocateBuffer()
         {
+            // This method could be called by either thread, which is why
+            // the _buffer field is volatile.
+
             _buffer = gameChannel.Allocator.Buffer();
         }
     }

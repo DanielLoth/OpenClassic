@@ -12,8 +12,6 @@ namespace OpenClassic.Server.Networking
 
         bool AllowedToDisconnect { get; }
 
-        Task WriteAndFlushAsync(IByteBuffer buffer);
-
         IByteBuffer Buffer { get; }
 
         int CurrentPacketStartIndex { get; set; }
@@ -25,5 +23,7 @@ namespace OpenClassic.Server.Networking
         int MaxPacketLength { get; }
 
         Task WriteAndFlushSessionBuffer();
+
+        Task WriteFlushClose();
     }
 }

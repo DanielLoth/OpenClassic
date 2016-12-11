@@ -5,6 +5,8 @@ namespace OpenClassic.Server
 {
     public interface IGameEngine
     {
+        bool IsOnGameThread { get; }
+
         void GameLoop();
         void StopGameLoop();
 

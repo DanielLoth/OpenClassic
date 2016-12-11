@@ -1,6 +1,7 @@
 ﻿using OpenClassic.Server.Networking;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
 
 namespace OpenClassic.Server
@@ -12,11 +13,10 @@ namespace OpenClassic.Server
         private volatile bool IsRunning = true;
 
         private readonly List<Action> TaskQueue = new List<Action>(2000);
-        private readonly object TaskQueueLock = new object();
 
         private readonly List<ISession> Sessions = new List<ISession>();
 
-        private bool IsOnGameThread => Thread.CurrentThread == GameThread;
+        public bool IsOnGameThread => Thread.CurrentThread == GameThread;
 
         static GameEngine()
         {
@@ -54,44 +54,55 @@ namespace OpenClassic.Server
             }
             else
             {
-                QueueGameLoopTask(() => IsRunning = false);
+                QueueGameLoopTask(StopGameLoop);
             }
         }
 
         public void RegisterSession(ISession session)
         {
+            Debug.Assert(session != null);
+
             if (IsOnGameThread)
             {
                 Sessions.Add(session);
             }
             else
             {
-                QueueGameLoopTask(() => Sessions.Add(session));
+                QueueGameLoopTask(() => RegisterSession(session));
             }
         }
 
         public void UnregisterSession(ISession session)
         {
+            Debug.Assert(session != null);
+
             if (IsOnGameThread)
             {
                 Sessions.Remove(session);
             }
             else
             {
-                QueueGameLoopTask(() => Sessions.Remove(session));
+                QueueGameLoopTask(() => UnregisterSession(session));
             }
         }
 
         public void QueueGameLoopTask(Action action)
         {
-            lock (TaskQueueLock)
+            Debug.Assert(action != null);
+
+            var taskQueue = TaskQueue;
+            Debug.Assert(taskQueue != null);
+
+            lock (taskQueue)
             {
-                TaskQueue.Add(action);
+                taskQueue.Add(action);
             }
         }
 
         private void PulseSessions()
         {
+            Debug.Assert(Sessions != null);
+
             foreach (var session in Sessions)
             {
                 session.Pulse();
@@ -100,12 +111,19 @@ namespace OpenClassic.Server
 
         private void ProcessTasks()
         {
-            lock(TaskQueueLock)
+            var taskQueue = TaskQueue;
+
+            Debug.Assert(taskQueue != null);
+
+            lock (taskQueue)
             {
-                foreach (var action in TaskQueue)
+                foreach (var action in taskQueue)
                 {
                     action.Invoke();
                 }
+
+                taskQueue.Clear();
+                Debug.Assert(taskQueue.Count == 0);
             }
         }
     }

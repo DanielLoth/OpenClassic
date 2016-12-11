@@ -16,6 +16,9 @@ namespace OpenClassic.Server
 
             Server = resolver.Resolve<GameServer>();
             Engine = resolver.Resolve<IGameEngine>();
+
+            // Invoke static constructors here to ensure that they run on the game thread.
+            GameConnectionHandler.Init();
         }
 
 #pragma warning disable RECS0154 // Parameter is never used
