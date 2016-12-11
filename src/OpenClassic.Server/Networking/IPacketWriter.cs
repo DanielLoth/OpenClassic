@@ -11,10 +11,5 @@
         void WriteShort(ISession session, int value);
         void WriteInt(ISession session, int value);
         void WriteLong(ISession session, long value);
-        void SendServerInfo(ISession session);
-        void SendFatigue(ISession session);
-        void SendWorldInfo(ISession session);
-        void SendStats(ISession session);
-        void SendLoginBox(ISession session);
     }
 }

@@ -87,40 +87,31 @@ namespace OpenClassic.Server.Networking.Rscd
             Console.WriteLine($"Login: {uid} - {username}:{password}");
 
             var newPlayer = world.GetAvailablePlayer();
+            session.Buffer.WriteByte(0);
+
             if (newPlayer == null)
             {
-                session.Buffer.WriteByte(5);
+                const int serverFullResponseCode = 5;
+                session.Buffer.WriteByte(serverFullResponseCode);
                 session.WriteFlushClose();
                 return;
             }
             else
             {
-                session.Buffer.WriteByte(6);
-                session.WriteFlushClose();
+                const int successResponseCode = 0;
+                session.Buffer.WriteByte(successResponseCode);
+
+                session.Player = newPlayer;
+
+                packetWriter.SendServerInfo(session);
+                packetWriter.SendFatigue(session);
+                packetWriter.SendWorldInfo(session);
+                packetWriter.SendStats(session);
+                packetWriter.SendLoginBox(session);
+
+                session.WriteAndFlushSessionBuffer();
                 return;
             }
-
-            //var newPlayer = EntityFactory.NewPlayer();
-            //newPlayer.Username = username;
-            //newPlayer.Password = password;
-            //session.Player = newPlayer;
-
-            //var world = DependencyResolver.Current.Resolve<IWorld>();
-            //world.RegisterPlayer(newPlayer);
-
-            //const int successResponseCode = 0;
-            //session.Buffer.WriteByte(successResponseCode);
-            //session.WriteAndFlushSessionBuffer();
-
-            //var packetWriter = session.ProtocolVersion.PacketWriter;
-            //packetWriter.SendServerInfo(session);
-            //packetWriter.SendFatigue(session);
-            //packetWriter.SendWorldInfo(session);
-            //packetWriter.SendStats(session);
-            //packetWriter.SendLoginBox(session);
-
-            //session.AllowedToDisconnect = false;
-            //session.WriteAndFlushSessionBuffer();
         }
 
         private readonly BigInteger _key = BigInteger.Parse(
@@ -167,11 +158,13 @@ namespace OpenClassic.Server.Networking.Rscd
 
     internal class PingMessageHandler : IRscdPacketHandlerMarker
     {
-        public int Opcode => 67;
+        public int Opcode => 5;
 
         public void Handle(ISession session, IByteBuffer packet)
         {
-
+            Debug.Assert(session != null);
+            Debug.Assert(packet != null);
+            Debug.Assert(packet.ReadableBytes == 0);
         }
     }
 }

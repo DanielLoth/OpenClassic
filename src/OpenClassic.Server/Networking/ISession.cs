@@ -1,5 +1,6 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Transport.Channels;
+using OpenClassic.Server.Domain;
 using System.Threading.Tasks;
 
 namespace OpenClassic.Server.Networking
@@ -13,6 +14,8 @@ namespace OpenClassic.Server.Networking
         bool AllowedToDisconnect { get; }
 
         IByteBuffer Buffer { get; }
+
+        IPlayer Player { get; set; }
 
         int CurrentPacketStartIndex { get; set; }
 

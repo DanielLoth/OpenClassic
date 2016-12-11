@@ -2,6 +2,7 @@
 using DotNetty.Transport.Channels;
 using DryIoc;
 using OpenClassic.Server.Configuration;
+using OpenClassic.Server.Domain;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -27,6 +28,8 @@ namespace OpenClassic.Server.Networking
         public bool AllowedToDisconnect => false;
 
         public IByteBuffer Buffer => _buffer;
+
+        public IPlayer Player { get; set; }
 
         public int CurrentPacketStartIndex { get; set; }
 

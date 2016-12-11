@@ -178,12 +178,6 @@ namespace OpenClassic.Server.Networking
             IncrementBitsWritte(session, 64);
         }
 
-        public abstract void SendServerInfo(ISession session);
-        public abstract void SendFatigue(ISession session);
-        public abstract void SendWorldInfo(ISession session);
-        public abstract void SendStats(ISession session);
-        public abstract void SendLoginBox(ISession session);
-
         #region Protected methods
 
         protected void FlushIfApproachingCapacity(ISession session)
