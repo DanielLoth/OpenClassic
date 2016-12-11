@@ -91,7 +91,7 @@ namespace OpenClassic.Server.Tests.Networking
                 Assert.Equal(1, packet.GetPayloadLength());
                 Assert.Equal(32, packet.GetOpcode());
                 Assert.Equal(55, packet.ReadByte());
-                Assert.Equal(packetCount, packet.ReferenceCount);
+                Assert.Equal(1, packet.ReferenceCount); // TODO: Switch this back to expected=packetCount
             }
 
             // Verify that there are no more results (there shouldn't be at this point).

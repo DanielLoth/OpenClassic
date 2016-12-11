@@ -41,60 +41,58 @@ namespace OpenClassic.Server.Networking
                     break;
                 }
 
-                var payloadLengthExcludingOpcode = payloadLengthIncludingOpcode - 1;
-                if (payloadLengthExcludingOpcode == 0)
+                if (payloadLengthIncludingOpcode == 1)
                 {
                     // Read a 1-byte slice, which is the opcode.
-                    var packet = input.ReadSlice(1);
+                    var opcode = input.ReadByte();
+                    var newPacket = Unpooled.Buffer(1);
+
+                    newPacket.WriteByte(opcode);
 
                     // Update the reader index to 1, which means that there are zero
                     // readable bytes in the slice.
-                    packet.SetReaderIndex(1);
-                    packet.MarkReaderIndex();
+                    newPacket.SetReaderIndex(1);
+                    newPacket.MarkReaderIndex();
 
-                    Debug.Assert(packet.ReadableBytes == 0);
+                    Debug.Assert(newPacket.ReadableBytes == 0);
 
-                    // Finally, add it to the output. Calling Retain() ensures that
-                    // the underlying IByteBuffer, if freed by DotNetty, doesn't
-                    // result in this slice being released prematurely.
-                    output.Add(packet.Retain());
+                    output.Add(newPacket);
                 }
                 else if (!isTwoByteLen)
                 {
-                    var packet = input.ReadSlice(payloadLengthIncludingOpcode);
+                    var remainingBytes = payloadLengthIncludingOpcode;
 
-                    var lastPayloadByte = packet.ReadByte();
-                    var opcode = packet.ReadByte();
+                    var lastPayloadByte = input.ReadByte();
+                    var opcode = input.ReadByte();
+                    remainingBytes -= 2;
 
-                    // Move bytes along to make room for the last byte at the
-                    // end of the packet.
-                    for (int rIdx = 2, wIdx = 1; rIdx < payloadLengthExcludingOpcode; rIdx++, wIdx++)
-                    {
-                        var val = packet.GetByte(rIdx);
-                        packet.SetByte(wIdx, val);
-                    }
+                    var payload = new byte[payloadLengthIncludingOpcode];
+                    payload[0] = opcode;
+                    input.ReadBytes(payload, 1, remainingBytes);
+                    payload[payload.Length - 1] = lastPayloadByte;
 
-                    // Opcode goes in index 0
-                    packet.SetByte(0, opcode);
+                    var newPacket = Unpooled.WrappedBuffer(payload);
+                    newPacket.SetReaderIndex(1);
+                    newPacket.MarkReaderIndex();
 
-                    // Last byte goes to the end of the packet.
-                    packet.SetByte(packet.Capacity - 1, lastPayloadByte);
-
-                    packet.SetReaderIndex(1);
-                    packet.MarkReaderIndex();
-
-                    output.Add(packet.Retain());
+                    output.Add(newPacket);
                 }
                 else
                 {
-                    var packet = input.ReadSlice(payloadLengthIncludingOpcode);
+                    var remainingBytes = payloadLengthIncludingOpcode;
 
-                    packet.SetReaderIndex(1);
-                    packet.MarkReaderIndex();
+                    var opcode = input.ReadByte();
+                    remainingBytes--;
 
-                    Debug.Assert(packet.ReadableBytes == payloadLengthExcludingOpcode);
+                    var payload = new byte[payloadLengthIncludingOpcode];
+                    payload[0] = opcode;
+                    input.ReadBytes(payload, 1, remainingBytes);
 
-                    output.Add(packet.Retain());
+                    var newPacket = Unpooled.WrappedBuffer(payload);
+                    newPacket.SetReaderIndex(1);
+                    newPacket.MarkReaderIndex();
+
+                    output.Add(newPacket);
                 }
             }
         }
