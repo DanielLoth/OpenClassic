@@ -24,10 +24,26 @@ namespace OpenClassic.Server.Domain
             players = new List<IPlayer>(playerCount);
             for (var i = 0; i < playerCount; i++)
             {
-                players[i] = resolver.Resolve<IPlayer>();
+                var newPlayer = resolver.Resolve<IPlayer>();
+                players.Add(newPlayer);
             }
         }
 
         public List<IPlayer> Players => players;
+
+        public IPlayer GetAvailablePlayer()
+        {
+            for (var i = 0; i < players.Count; i++)
+            {
+                var player = players[i];
+                if (!player.IsActive)
+                {
+                    player.IsActive = true;
+                    return player;
+                }
+            }
+
+            return null;
+        }
     }
 }
