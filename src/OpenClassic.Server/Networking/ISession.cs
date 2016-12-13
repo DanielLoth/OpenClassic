@@ -17,6 +17,8 @@ namespace OpenClassic.Server.Networking
 
         IPlayer Player { get; set; }
 
+        bool ShouldUpdate { get; }
+
         int CurrentPacketStartIndex { get; set; }
 
         int? CurrentPacketId { get; set; }

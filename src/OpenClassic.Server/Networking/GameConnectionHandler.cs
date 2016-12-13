@@ -31,6 +31,8 @@ namespace OpenClassic.Server.Networking
 
         public IPlayer Player { get; set; }
 
+        public bool ShouldUpdate => Player != null && gameChannel.IsWritable;
+
         public int CurrentPacketStartIndex { get; set; }
 
         public int? CurrentPacketId { get; set; }

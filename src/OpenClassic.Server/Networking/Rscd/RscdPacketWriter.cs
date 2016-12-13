@@ -197,7 +197,6 @@ namespace OpenClassic.Server.Networking.Rscd
 
             CreatePacket(session, 145);
 
-
             var player = session.Player;
             var loc = player.Location;
 
@@ -211,6 +210,133 @@ namespace OpenClassic.Server.Networking.Rscd
             // TODO: Loop through each new player, send update information
 
             FormatPacket(session);
+        }
+
+        public void SendNpcPositionUpdate(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            CreatePacket(session, 77);
+
+            WriteBits(session, 0, 8); // Number of known NPCs
+
+            // TODO: Loop through known NPCs here.
+
+            // TODO: Loop through each new NPC here
+
+            FormatPacket(session);
+        }
+
+        public void SendGameObjectUpdate(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            // TODO: Implement the 'send game objects' packet.
+            // Note: Only send this packet if the player's watched game objects have changed.
+
+            if (false) // If the player's visible game objects have changed...
+            {
+#pragma warning disable CS0162 // Unreachable code detected
+                CreatePacket(session, 27);
+#pragma warning restore CS0162 // Unreachable code detected
+
+                // TODO: Loop through known objects, remove any that are no longer visible.
+
+                // TODO: Loop through new objects.
+
+                FormatPacket(session);
+            }
+        }
+
+        public void SendWallObjectUpdate(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            // TODO: Implement the 'send wall objects' packet.
+            // Note: Only send this packet if the player's watched wall objects have changed.
+
+            if (false) // If the player's visible wall objects have changed...
+            {
+#pragma warning disable CS0162 // Unreachable code detected
+                CreatePacket(session, 95);
+#pragma warning restore CS0162 // Unreachable code detected
+
+                // TODO: Loop through known wall objects, remove any that are no longer visible.
+
+                // TODO: Loop through new wall objects.
+
+                FormatPacket(session);
+            }
+        }
+
+        public void SendItemUpdate(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            // TODO: Implement the 'send item update' packet.
+            // Note: Only send this packet if the player's watched items have changed.
+
+            if (false) // If the player's visible items have changed...
+            {
+#pragma warning disable CS0162 // Unreachable code detected
+                CreatePacket(session, 109);
+#pragma warning restore CS0162 // Unreachable code detected
+
+                // TODO: Loop through known items, remove any that are no longer visible.
+
+                // TODO: Loop through any new items.
+
+                FormatPacket(session);
+            }
+        }
+
+        public void SendPlayerAppearanceUpdate(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            // TODO: Implement the 'send player appearance update' packet.
+            // Note: This packet is only sent if something about the player's worldview has changed.
+            // Changes include: Bubbles, chat messages, hit updates, projectiles, and player appearances.
+
+            if (false)
+            {
+#pragma warning disable CS0162 // Unreachable code detected
+                CreatePacket(session, 53);
+#pragma warning restore CS0162 // Unreachable code detected
+
+                WriteShort(session, 0); // Update size.
+
+                // TODO: Implement the following:
+                // 1. Loop through bubbles
+                // 2. Loop through chat messages
+                // 3. Loop through players requiring hit (damage) updates
+                // 4. Loop through projectiles
+                // 5. Loop through player appearance updates
+
+                FormatPacket(session);
+            }
+        }
+
+        public void SendNpcAppearanceUpdate(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            // TODO: Implement the 'send NPC appearance update' packet.
+            // Note: This packet is only sent if NPC chat messages or damage hits need to be displayed.
+
+            if (false)
+            {
+#pragma warning disable CS0162 // Unreachable code detected
+                CreatePacket(session, 190);
+#pragma warning restore CS0162 // Unreachable code detected
+
+                WriteShort(session, 0); // Update size.
+
+                // TODO: Loop through NPC chat messages.
+                // TODO: Loop through NPC hit updates.
+
+                FormatPacket(session);
+            }
         }
 
         #endregion

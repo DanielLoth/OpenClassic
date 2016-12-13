@@ -65,6 +65,7 @@ namespace OpenClassic.Server.Configuration
 
             container.Register<ChannelInitializer<ISocketChannel>, RscdChannelInitializer>(Reuse.Singleton);
             container.Register<RscdPacketWriter>(Reuse.Singleton);
+            container.Register<ISessionUpdater, RscdSessionUpdater>(Reuse.Singleton);
 
             var packetHandlerConcreteTypes = GetChildrenOfInterface(typeof(IRscdPacketHandlerMarker));
             foreach (var handlerType in packetHandlerConcreteTypes)
