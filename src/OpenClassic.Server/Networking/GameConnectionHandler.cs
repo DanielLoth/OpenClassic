@@ -284,6 +284,8 @@ namespace OpenClassic.Server.Networking
             // This method could be called by either thread, which is why
             // the _buffer field is volatile.
 
+            // TODO: Consider using a single-threaded allocator here that belongs exclusively to the game thread.
+
             _buffer = gameChannel.Allocator.Buffer();
         }
     }
