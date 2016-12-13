@@ -18,7 +18,7 @@
 
   "dependencies": {
     "DotNetty.Handlers": "0.4.0",
-    "DryIoc": "2.9.1",
+    "DryIoc": "2.9.4",
     "Microsoft.Extensions.Configuration.Binder": "1.1.0",
     "Microsoft.Extensions.Configuration.Json": "1.1.0",
     "Microsoft.NETCore.App": {
