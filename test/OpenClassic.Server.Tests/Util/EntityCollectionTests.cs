@@ -15,18 +15,18 @@ namespace OpenClassic.Server.Tests.Util
 
             entities.Add(player);
 
-            Assert.True(entities.Added.Count == 1);
+            Assert.True(entities.AddedReadOnly.Contains(player));
         }
 
         [Fact]
         public void AddShouldInsertMultipleIntoAddedList()
         {
-            var players = new List<IPlayer> { new Player(), new Player(), new Player() };
+            var players = new HashSet<IPlayer> { new Player(), new Player(), new Player() };
             var entities = new EntityCollection<IPlayer>();
 
             entities.Add(players);
 
-            Assert.Equal(players.Count, entities.Added.Count);
+            Assert.True(players.SetEquals(entities.AddedReadOnly));
         }
 
         [Fact]
@@ -37,7 +37,7 @@ namespace OpenClassic.Server.Tests.Util
 
             entities.Remove(player);
 
-            Assert.True(entities.Removed.Count == 1);
+            Assert.True(entities.Removed.Contains(player));
         }
 
         [Fact]
@@ -131,7 +131,7 @@ namespace OpenClassic.Server.Tests.Util
             entities.Update();
 
             // Verify that player is no longer in the 'added' list.
-            Assert.False(entities.Added.Contains(player));
+            Assert.False(entities.AddedReadOnly.Contains(player));
 
             var knownListContains = entities.Contains(player);
 
@@ -148,7 +148,7 @@ namespace OpenClassic.Server.Tests.Util
             entities.Update();
 
             // Verify that player is no longer in the 'added' list.
-            Assert.False(entities.Added.Contains(player));
+            Assert.False(entities.AddedReadOnly.Contains(player));
 
             // Verify that the 'known' list now contains an entity.
             Assert.True(entities.Known.Contains(player));
@@ -181,7 +181,7 @@ namespace OpenClassic.Server.Tests.Util
             entities.Add(player);
             entities.Update();
 
-            Assert.False(entities.Added.Contains(player));
+            Assert.False(entities.AddedReadOnly.Contains(player));
         }
 
         [Fact]
@@ -208,8 +208,12 @@ namespace OpenClassic.Server.Tests.Util
             var player2 = new Player();
             var entities = new EntityCollection<IPlayer>();
 
-            entities.Added.Add(player1);
-            entities.Known.Add(player2);
+            // Add player1 and then update to move it to the 'known' list.
+            entities.Add(player1);
+            entities.Update();
+
+            // Add player2 to the 'added' list.
+            entities.Add(player2);
 
             var all = new HashSet<IPlayer>(entities.All);
 

@@ -5,18 +5,37 @@ namespace OpenClassic.Server.Util
 {
     public class EntityCollection<T>
     {
+        private static ISet<T> empty = new HashSet<T>();
+        private static ISet<T> emptyReadOnly = new ReadOnlySet<T>(empty);
+
         private readonly ISet<T> added = new HashSet<T>();
         private readonly ISet<T> known = new HashSet<T>();
         private readonly ISet<T> removed = new HashSet<T>();
 
-        public ISet<T> Added => added;
-        public ISet<T> Known => known;
-        public ISet<T> Removed => removed;
+        private readonly ISet<T> addedReadOnly;
+        private readonly ISet<T> knownReadOnly;
+        private readonly ISet<T> removedReadOnly;
 
-        public IEnumerable<T> All
+        public EntityCollection()
+        {
+            addedReadOnly = new ReadOnlySet<T>(added);
+            knownReadOnly = new ReadOnlySet<T>(known);
+            removedReadOnly = new ReadOnlySet<T>(removed);
+        }
+
+        public ISet<T> AddedReadOnly => addedReadOnly;
+        public ISet<T> Known => knownReadOnly;
+        public ISet<T> Removed => removedReadOnly;
+
+        public ISet<T> All
         {
             get
             {
+                if (added.Count == 0 && known.Count == 0)
+                {
+                    return emptyReadOnly;
+                }
+
                 var results = new HashSet<T>();
 
                 foreach (var entity in added)
