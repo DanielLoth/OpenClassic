@@ -1,6 +1,8 @@
-﻿namespace OpenClassic.Server.Domain
+﻿using System;
+
+namespace OpenClassic.Server.Domain
 {
-    public interface IPlayer : IIndexable, ILocatable
+    public interface IPlayer : IEquatable<IPlayer>, IIndexable, ILocatable
     {
         bool IsActive { get; set; }
     }

@@ -9,6 +9,7 @@ namespace OpenClassic.Server.Domain
     {
         private readonly IConfig config;
         private readonly List<IPlayer> players;
+        private readonly List<INpc> npcs;
 
         public World(IConfig config)
         {
@@ -31,6 +32,8 @@ namespace OpenClassic.Server.Domain
         }
 
         public List<IPlayer> Players => players;
+
+        public List<INpc> Npcs => npcs;
 
         public IPlayer GetAvailablePlayer()
         {

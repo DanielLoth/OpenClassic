@@ -2,32 +2,33 @@
 
 namespace OpenClassic.Server.Domain
 {
-    public class Player : IPlayer, IEquatable<Player>
+    public class Npc : INpc, IEquatable<Npc>
     {
+        public short Id { get; set; }
+
         public short Index { get; set; }
 
-        public bool IsActive { get; set; }
+        private Point _location = new Point(327, 550);
 
-        private Point _location = new Point(329, 552);
         public Point Location
         {
             get { return _location; }
             set { _location = value; }
         }
 
-        public bool Equals(IPlayer other)
+        public bool Equals(INpc other)
         {
             return other == this;
         }
 
-        public bool Equals(Player other)
+        public bool Equals(Npc other)
         {
             return other == this;
         }
 
         public override bool Equals(object obj)
         {
-            return Equals(obj as IPlayer);
+            return Equals(obj as INpc);
         }
 
         public override int GetHashCode()
@@ -39,7 +40,7 @@ namespace OpenClassic.Server.Domain
         {
             var x = _location.X;
             var y = _location.Y;
-            return $"Player Index={Index}, Location=({x},{y})";
+            return $"Npc - Id={Id}, Index={Index}, Location=({x},{y})";
         }
     }
 }

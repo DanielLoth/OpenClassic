@@ -6,8 +6,8 @@ namespace OpenClassic.Server.Domain
 {
     public struct Point : IEquatable<Point>
     {
-        public short X { get; }
-        public short Y { get; }
+        public readonly short X;
+        public readonly short Y;
 
         public Point(short x, short y)
         {
@@ -20,7 +20,10 @@ namespace OpenClassic.Server.Domain
 
         public override bool Equals(object obj)
         {
-            return obj is Point && Equals((Point)obj);
+            if (!(obj is Point)) return false;
+
+            var that = (Point)obj;
+            return X == that.X && Y == that.Y;
         }
 
         public override int GetHashCode()
