@@ -26,6 +26,23 @@ namespace OpenClassic.Server.Tests.Domain
         }
 
         [Theory]
+        [InlineData(50, 50, 0)] // Same point
+        [InlineData(51, 51, 2)] // 1 tile away diagonally
+        [InlineData(49, 49, 2)] // 1 tile away diagonally
+        [InlineData(55, 55, 50)] // 5 tiles away diagonally
+        [InlineData(45, 45, 50)] // 5 tiles away diagonally
+        [InlineData(40, 40, 200)] // 10 tiles away diagonally
+        [InlineData(60, 60, 200)] // 10 tiles away diagonally
+        public void CalculatesCorrectDistanceSquared(short otherX, short otherY, int expectedDistSquared)
+        {
+            var subject = new Point(50, 50);
+            var other = new Point(otherX, otherY);
+
+            Assert.Equal(Point.DistanceSquared(subject, other), expectedDistSquared);
+            Assert.Equal(Point.DistanceSquared(other, subject), expectedDistSquared);
+        }
+
+        [Theory]
         [InlineData(10, 10, 20, 20, -1)]
         [InlineData(20, 20, 10, 10, 1)]
         [InlineData(10, 10, 10, 10, 0)]

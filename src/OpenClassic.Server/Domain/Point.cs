@@ -42,6 +42,17 @@ namespace OpenClassic.Server.Domain
             return distFromOriginSquared;
         }
 
+        public static int DistanceSquared(Point a, Point b)
+        {
+            var xDiff = (a.X - b.X);
+            var yDiff = (a.Y - b.Y);
+
+            // We use distance squared to avoid computing floating point numbers.
+            var distSquared = (xDiff * xDiff) + (yDiff * yDiff);
+
+            return distSquared;
+        }
+
         public int CompareTo(Point other)
         {
             var thisDistFromOrigin = DistanceFromOriginSquared();
