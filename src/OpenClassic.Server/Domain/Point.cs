@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace OpenClassic.Server.Domain
 {
-    public struct Point : IEquatable<Point>
+    public struct Point : IEquatable<Point>, IComparable<Point>
     {
         public readonly short X;
         public readonly short Y;
@@ -26,19 +26,28 @@ namespace OpenClassic.Server.Domain
             return X == that.X && Y == that.Y;
         }
 
-        public override int GetHashCode()
+        public override int GetHashCode() => HashCodeHelper.GetHashCode(X, Y);
+
+        public override string ToString() => $"({X},{Y})";
+
+        public bool Equals(Point other) => X == other.X && Y == other.Y;
+
+        public int DistanceFromOriginSquared()
         {
-            return HashCodeHelper.GetHashCode(X, Y);
+            // We calculate distance from origin, instead of distance, so that
+            // we can avoid working with floating point numbers. Integer
+            // calculations are computationally less expensive.
+            var distFromOriginSquared = (X * X) + (Y * Y);
+
+            return distFromOriginSquared;
         }
 
-        public override string ToString()
+        public int CompareTo(Point other)
         {
-            return $"({X},{Y})";
-        }
+            var thisDistFromOrigin = DistanceFromOriginSquared();
+            var otherDistFromOrigin = other.DistanceFromOriginSquared();
 
-        public bool Equals(Point other)
-        {
-            return X == other.X && Y == other.Y;
+            return thisDistFromOrigin - otherDistFromOrigin;
         }
     }
 }
