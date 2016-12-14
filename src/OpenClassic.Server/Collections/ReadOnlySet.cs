@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace OpenClassic.Server.Util
+namespace OpenClassic.Server.Collections
 {
     public class ReadOnlySet<T> : ISet<T>
     {

@@ -1,9 +1,9 @@
-﻿using OpenClassic.Server.Domain;
-using OpenClassic.Server.Util;
+﻿using OpenClassic.Server.Collections;
+using OpenClassic.Server.Domain;
 using System.Collections.Generic;
 using Xunit;
 
-namespace OpenClassic.Server.Tests.Util
+namespace OpenClassic.Server.Tests.Collections
 {
     public class EntityCollectionTests
     {
