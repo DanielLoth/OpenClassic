@@ -1,6 +1,8 @@
-﻿namespace OpenClassic.Server.Domain
+﻿using System;
+
+namespace OpenClassic.Server.Domain
 {
-    public interface IIdentifiable
+    public interface IIdentifiable : IEquatable<IIdentifiable>
     {
         short Id { get; set; }
     }

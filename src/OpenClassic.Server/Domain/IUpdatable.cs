@@ -1,6 +1,8 @@
-﻿namespace OpenClassic.Server.Domain
+﻿using System;
+
+namespace OpenClassic.Server.Domain
 {
-    public interface IUpdatable
+    public interface IUpdatable : IEquatable<IUpdatable>
     {
         void PreUpdate();
         void Update();

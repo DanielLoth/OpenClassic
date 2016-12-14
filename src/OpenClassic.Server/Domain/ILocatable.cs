@@ -1,6 +1,8 @@
-﻿namespace OpenClassic.Server.Domain
+﻿using System;
+
+namespace OpenClassic.Server.Domain
 {
-    public interface ILocatable
+    public interface ILocatable : IEquatable<ILocatable>
     {
         Point Location { get; set; }
     }

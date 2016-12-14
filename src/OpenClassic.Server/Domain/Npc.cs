@@ -16,20 +16,12 @@ namespace OpenClassic.Server.Domain
             set { _location = value; }
         }
 
-        public bool Equals(INpc other)
-        {
-            return other == this;
-        }
-
-        public bool Equals(Npc other)
-        {
-            return other == this;
-        }
-
-        public override bool Equals(object obj)
-        {
-            return Equals(obj as INpc);
-        }
+        public bool Equals(INpc other) => other == this;
+        public bool Equals(Npc other) => other == this;
+        public bool Equals(IIndexable other) => other == this;
+        public bool Equals(IIdentifiable other) => other == this;
+        public bool Equals(ILocatable other) => other == this;
+        public override bool Equals(object obj) => obj == this;
 
         public override int GetHashCode()
         {

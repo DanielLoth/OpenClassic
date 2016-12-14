@@ -15,20 +15,11 @@ namespace OpenClassic.Server.Domain
             set { _location = value; }
         }
 
-        public bool Equals(IPlayer other)
-        {
-            return other == this;
-        }
-
-        public bool Equals(Player other)
-        {
-            return other == this;
-        }
-
-        public override bool Equals(object obj)
-        {
-            return Equals(obj as IPlayer);
-        }
+        public bool Equals(IPlayer other) => other == this;
+        public bool Equals(Player other) => other == this;
+        public bool Equals(IIndexable other) => other == this;
+        public bool Equals(ILocatable other) => other == this;
+        public override bool Equals(object obj) => obj == this;
 
         public override int GetHashCode()
         {
