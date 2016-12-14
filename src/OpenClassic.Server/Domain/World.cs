@@ -29,6 +29,8 @@ namespace OpenClassic.Server.Domain
                 newPlayer.Index = (short)i;
                 players.Add(newPlayer);
             }
+
+            npcs = new List<INpc>();
         }
 
         public List<IPlayer> Players => players;
