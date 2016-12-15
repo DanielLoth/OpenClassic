@@ -7,10 +7,10 @@
             if (usernameHash < 0L)
                 return "invalid_name";
 
-            string s = string.Empty;
+            var s = string.Empty;
             while (usernameHash != 0L)
             {
-                int i = (int)(usernameHash % 37L);
+                var i = (int)(usernameHash % 37L);
                 usernameHash /= 37L;
                 if (i == 0)
                     s = " " + s;
