@@ -43,6 +43,28 @@ namespace OpenClassic.Server.Tests.Domain
         }
 
         [Theory]
+        [InlineData(50, 50, 50, 50, 0, true)]
+        [InlineData(50, 50, 50, 50, 1, true)]
+        [InlineData(50, 50, 50, 49, 0, false)]
+        [InlineData(50, 50, 49, 49, 0, false)]
+        [InlineData(50, 50, 49, 49, 1, true)]
+        [InlineData(50, 50, 40, 40, 9, false)]
+        [InlineData(50, 50, 40, 40, 10, true)]
+        [InlineData(50, 50, 60, 60, 10, true)]
+        [InlineData(50, 50, 60, 60, 11, true)]
+        [InlineData(50, 50, 60, 60, 9, false)]
+        public void DeterminesIfTwoPointsAreWithinRangeOfEachOther(short x, short y,
+            short otherX, short otherY, int range, bool expectedWithinRange)
+        {
+            var thisPoint = new Point(x, y);
+            var otherPoint = new Point(otherX, otherY);
+
+            var actuallyWithinRange = Point.WithinRange(thisPoint, otherPoint, range);
+
+            Assert.Equal(expectedWithinRange, actuallyWithinRange);
+        }
+
+        [Theory]
         [InlineData(10, 10, 20, 20, -1)]
         [InlineData(20, 20, 10, 10, 1)]
         [InlineData(10, 10, 10, 10, 0)]
