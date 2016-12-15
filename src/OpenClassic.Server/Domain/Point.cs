@@ -53,6 +53,14 @@ namespace OpenClassic.Server.Domain
             return distSquared;
         }
 
+        public static bool WithinRange(Point a, Point b, int range)
+        {
+            var twoTimesRangeSquared = 2 * (range * range);
+            var distBetweenPoints = DistanceSquared(a, b);
+
+            return distBetweenPoints <= twoTimesRangeSquared;
+        }
+
         public int CompareTo(Point other)
         {
             var thisDistFromOrigin = DistanceFromOriginSquared();

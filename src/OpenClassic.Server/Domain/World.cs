@@ -1,50 +1,30 @@
-﻿using DryIoc;
-using OpenClassic.Server.Configuration;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 
 namespace OpenClassic.Server.Domain
 {
     public class World : IWorld
     {
-        private readonly IConfig config;
-        private readonly List<IPlayer> players;
-        private readonly List<INpc> npcs;
+        private readonly List<IPlayer> _players = new List<IPlayer>(500);
+        private readonly List<INpc> _npcs = new List<INpc>(2000);
 
-        public World(IConfig config)
+        public void InitialiseWorld(List<IPlayer> players, List<INpc> npcs)
         {
-            Debug.Assert(config != null);
-
-            this.config = config;
-
-            var resolver = DependencyResolver.Current;
-            Debug.Assert(resolver != null);
-
-            const int playerCount = 500;
-
-            players = new List<IPlayer>(playerCount);
-            for (var i = 0; i < playerCount; i++)
-            {
-                var newPlayer = resolver.Resolve<IPlayer>();
-                newPlayer.Index = (short)i;
-                players.Add(newPlayer);
-            }
-
-            npcs = new List<INpc>();
+            _players.AddRange(players);
+            _npcs.AddRange(npcs);
         }
 
-        public List<IPlayer> Players => players;
+        public List<IPlayer> Players => _players;
 
-        public List<INpc> Npcs => npcs;
+        public List<INpc> Npcs => _npcs;
 
         public IPlayer GetAvailablePlayer()
         {
-            for (var i = 0; i < players.Count; i++)
+            for (var i = 0; i < _players.Count; i++)
             {
-                var player = players[i];
-                if (!player.IsActive)
+                var player = _players[i];
+                if (!player.Active)
                 {
-                    player.IsActive = true;
+                    player.Active = true;
                     return player;
                 }
             }

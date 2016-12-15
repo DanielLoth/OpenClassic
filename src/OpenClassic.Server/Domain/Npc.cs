@@ -4,6 +4,8 @@ namespace OpenClassic.Server.Domain
 {
     public class Npc : INpc, IEquatable<Npc>
     {
+        public bool Active { get; set; }
+
         public short Id { get; set; }
 
         public short Index { get; set; }

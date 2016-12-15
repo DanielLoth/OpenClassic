@@ -24,6 +24,10 @@ namespace OpenClassic.Server.Configuration
             RegisterProtocolSpecificDependencies(container);
 
             Current = container;
+
+            // Now that the container has been set up in entirety, perform
+            // any initialisation of the newly registered dependencies.
+            InitialiseDependencies(container);
         }
 
         static void RegisterDependencies(IContainer container)
@@ -40,7 +44,45 @@ namespace OpenClassic.Server.Configuration
             container.Register<IWorld, World>(Reuse.Singleton);
 
             container.Register<IPlayer, Player>(Reuse.Transient);
+            container.Register<INpc, Npc>(Reuse.Transient);
         }
+
+        static void InitialiseDependencies(IContainer container)
+        {
+            Debug.Assert(container != null);
+
+            InitialiseWorld(container);
+        }
+
+        static void InitialiseWorld(IContainer container)
+        {
+            Debug.Assert(container != null);
+
+
+            var world = container.Resolve<IWorld>();
+
+            var players = new List<IPlayer>(500);
+            for (var i = 0; i < players.Capacity; i++)
+            {
+                var newPlayer = container.Resolve<IPlayer>();
+                newPlayer.Index = (short)i;
+
+                players.Add(newPlayer);
+            }
+
+            var npcs = new List<INpc>(2000);
+            for (var i = 0; i < npcs.Capacity; i++)
+            {
+                var newNpc = container.Resolve<INpc>();
+                newNpc.Index = (short)i;
+
+                npcs.Add(newNpc);
+            }
+
+            world.InitialiseWorld(players, npcs);
+        }
+
+        #region Protocol-specific dependency registration
 
         static void RegisterProtocolSpecificDependencies(IContainer container)
         {
@@ -73,6 +115,8 @@ namespace OpenClassic.Server.Configuration
                 container.Register(typeof(IPacketHandler), handlerType, Reuse.Singleton);
             }
         }
+
+        #endregion
 
         #region Helper methods
 
