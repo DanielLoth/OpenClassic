@@ -173,6 +173,14 @@ namespace OpenClassic.Server.Networking.Rscd
             FormatPacket(session);
         }
 
+        public void SendLogout(ISession session)
+        {
+            Debug.Assert(session != null);
+
+            CreatePacket(session, 222);
+            FormatPacket(session);
+        }
+
         public void SendDied(ISession session)
         {
             Debug.Assert(session != null);
@@ -298,13 +306,14 @@ namespace OpenClassic.Server.Networking.Rscd
             // Note: This packet is only sent if something about the player's worldview has changed.
             // Changes include: Bubbles, chat messages, hit updates, projectiles, and player appearances.
 
-            if (false)
+            var player = session.Player;
+            if (player.AppearanceUpdateRequired)
             {
 #pragma warning disable CS0162 // Unreachable code detected
                 CreatePacket(session, 53);
 #pragma warning restore CS0162 // Unreachable code detected
 
-                WriteShort(session, 0); // Update size.
+                WriteShort(session, 1); // Update size.
 
                 // TODO: Implement the following:
                 // 1. Loop through bubbles
@@ -312,6 +321,26 @@ namespace OpenClassic.Server.Networking.Rscd
                 // 3. Loop through players requiring hit (damage) updates
                 // 4. Loop through projectiles
                 // 5. Loop through player appearance updates
+
+                WriteShort(session, player.Index);
+                WriteByte(session, 5); // Update type of 5 is for appearance updates
+                WriteShort(session, 10); // Appearance id
+                WriteLong(session, 23277428); // Username hash 'Lothy'.
+
+                var sprites = player.GetSprites();
+                WriteByte(session, sprites.Length);
+                foreach (var sprite in sprites)
+                {
+                    WriteByte(session, sprite);
+                }
+
+                WriteByte(session, player.HairColour);
+                WriteByte(session, player.TopColour);
+                WriteByte(session, player.TrouserColour);
+                WriteByte(session, player.SkinColour);
+                WriteByte(session, 3); // Combat level
+                WriteByte(session, 1); // 1 for skulled, 0 for not skulled
+                WriteByte(session, 3); // Crown - Value of 3/2/1
 
                 FormatPacket(session);
             }

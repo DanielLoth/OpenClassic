@@ -115,7 +115,7 @@ namespace OpenClassic.Server.Networking.Rscd
                 packetWriter.SendCombatStyle(session);
                 packetWriter.SendClientConfig(session);
 
-                packetWriter.SendBank(session);
+                //packetWriter.SendBank(session);
 
                 //packetWriter.SendShowAppearanceScreen(session);
                 //packetWriter.SendDied(session);
@@ -174,7 +174,7 @@ namespace OpenClassic.Server.Networking.Rscd
             Debug.Assert(packet != null);
             Debug.Assert(packet.ReadableBytes == 0);
 
-            packetWriter.SendCantLogout(session);
+            packetWriter.SendLogout(session);
             session.WriteAndFlushSessionBuffer();
         }
     }
@@ -198,7 +198,7 @@ namespace OpenClassic.Server.Networking.Rscd
             Debug.Assert(packet != null);
             Debug.Assert(packet.ReadableBytes == 0);
 
-            packetWriter.SendCantLogout(session);
+            packetWriter.SendLogout(session);
             session.WriteAndFlushSessionBuffer();
         }
     }

@@ -2,7 +2,7 @@
 
 namespace OpenClassic.Server.Domain
 {
-    public class Player : IPlayer, IEquatable<Player>
+    public partial class Player : IPlayer, IEquatable<Player>
     {
         public short Index { get; set; }
 
