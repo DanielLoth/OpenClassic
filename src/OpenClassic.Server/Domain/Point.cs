@@ -6,6 +6,8 @@ namespace OpenClassic.Server.Domain
 {
     public struct Point : IEquatable<Point>, IComparable<Point>
     {
+        public static readonly Point OUT_OF_BOUNDS_LOCATION = new Point(0, 0);
+
         public readonly short X;
         public readonly short Y;
 
@@ -31,6 +33,7 @@ namespace OpenClassic.Server.Domain
         public override string ToString() => $"({X},{Y})";
 
         public bool Equals(Point other) => X == other.X && Y == other.Y;
+        public static bool Equals(Point a, Point b) => a.X == b.X && a.Y == b.Y;
 
         public int DistanceFromOriginSquared()
         {

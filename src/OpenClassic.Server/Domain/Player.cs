@@ -1,18 +1,43 @@
-﻿using System;
+﻿using OpenClassic.Server.Collections;
+using System;
+using System.Diagnostics;
 
 namespace OpenClassic.Server.Domain
 {
     public partial class Player : IPlayer, IEquatable<Player>
     {
+        public static readonly Point DEFAULT_LOCATION = new Point(329, 552);
+
+        // TODO: Remove the player from the spatial map on logout.
+        private readonly ISpatialDictionary<IPlayer> _playerSpatialMap;
+        private readonly ISpatialDictionary<INpc> _npcSpatialMap;
+
         public short Index { get; set; }
 
         public bool Active { get; set; }
 
-        private Point _location = new Point(329, 552);
+        private Point _location = Point.OUT_OF_BOUNDS_LOCATION;
         public Point Location
         {
             get { return _location; }
-            set { _location = value; }
+            set {
+                var oldLocation = _location;
+
+                // Set the new location.
+                _location = value;
+
+                _playerSpatialMap.UpdateLocation(this, oldLocation, value);
+            }
+        }
+
+        public Player(ISpatialDictionary<IPlayer> playerSpatialMap,
+            ISpatialDictionary<INpc> npcSpatialMap)
+        {
+            Debug.Assert(playerSpatialMap != null);
+            Debug.Assert(npcSpatialMap != null);
+
+            _playerSpatialMap = playerSpatialMap;
+            _npcSpatialMap = npcSpatialMap;
         }
 
         public bool Equals(IPlayer other) => other == this;

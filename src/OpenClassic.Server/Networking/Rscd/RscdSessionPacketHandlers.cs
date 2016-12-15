@@ -99,6 +99,8 @@ namespace OpenClassic.Server.Networking.Rscd
             }
             else
             {
+                newPlayer.Location = Player.DEFAULT_LOCATION;
+
                 session.Player = newPlayer;
 
                 session.Buffer.WriteByte(0); // Successful login.

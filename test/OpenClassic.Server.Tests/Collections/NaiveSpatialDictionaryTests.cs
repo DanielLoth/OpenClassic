@@ -1,4 +1,5 @@
-﻿using OpenClassic.Server.Collections;
+﻿using DryIoc;
+using OpenClassic.Server.Collections;
 using OpenClassic.Server.Domain;
 using Xunit;
 
@@ -6,6 +7,19 @@ namespace OpenClassic.Server.Tests.Collections
 {
     public class NaiveSpatialDictionaryTests
     {
+        public static Container Container
+        {
+            get
+            {
+                var container = new Container();
+                container.Register<IPlayer, Player>();
+                container.Register<ISpatialDictionary<IPlayer>, NaiveSpatialDictionary<IPlayer>>();
+                container.Register<ISpatialDictionary<INpc>, NaiveSpatialDictionary<INpc>>();
+
+                return container;
+            }
+        }
+
         [Theory]
         [InlineData(56, 56, 6, true)]
         [InlineData(55, 55, 5, true)]
@@ -25,7 +39,7 @@ namespace OpenClassic.Server.Tests.Collections
             var spatialMap = new NaiveSpatialDictionary<IPlayer>();
             var searchPoint = new Point(50, 50);
 
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             player.Location = new Point(x, y);
 
             spatialMap.Add(player);
@@ -40,7 +54,7 @@ namespace OpenClassic.Server.Tests.Collections
         {
             var spatialMap = new NaiveSpatialDictionary<IPlayer>();
             var searchPoint = new Point(50, 50);
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
 
             player.Location = new Point(51, 51);
 

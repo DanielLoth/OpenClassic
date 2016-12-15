@@ -15,6 +15,16 @@ namespace OpenClassic.Server.Collections
             entities.Add(entity);
         }
 
+        public void AddRange(IEnumerable<T> entities)
+        {
+            Debug.Assert(entities != null);
+
+            foreach (var entity in entities)
+            {
+                Add(entity);
+            }
+        }
+
         public IEnumerable<T> GetObjectsInProximityLazy(Point point, int distance)
         {
             var distanceSquared = 2 * (distance * distance);
@@ -46,6 +56,11 @@ namespace OpenClassic.Server.Collections
             Debug.Assert(!ReferenceEquals(entity, null));
 
             entities.Remove(entity);
+        }
+
+        public void UpdateLocation(T entity, Point oldLocation, Point newLocation)
+        {
+            // Do nothing - this map is naive and just loops through all entities when searched.
         }
     }
 }

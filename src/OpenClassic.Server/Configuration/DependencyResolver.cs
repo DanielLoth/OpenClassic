@@ -1,6 +1,7 @@
 ﻿using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
 using DryIoc;
+using OpenClassic.Server.Collections;
 using OpenClassic.Server.Domain;
 using OpenClassic.Server.Networking;
 using OpenClassic.Server.Networking.Rscd;
@@ -42,6 +43,9 @@ namespace OpenClassic.Server.Configuration
             container.Register<GameServer>(Reuse.Singleton);
             container.Register<IGameEngine, GameEngine>(Reuse.Singleton);
             container.Register<IWorld, World>(Reuse.Singleton);
+
+            container.Register<ISpatialDictionary<IPlayer>, NaiveSpatialDictionary<IPlayer>>(Reuse.Singleton);
+            container.Register<ISpatialDictionary<INpc>, NaiveSpatialDictionary<INpc>>(Reuse.Singleton);
 
             container.Register<IPlayer, Player>(Reuse.Transient);
             container.Register<INpc, Npc>(Reuse.Transient);

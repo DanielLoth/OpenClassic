@@ -7,6 +7,8 @@ namespace OpenClassic.Server.Collections
     {
         void Add(T entity);
 
+        void AddRange(IEnumerable<T> entities);
+
         List<T> GetObjectsInProximity(Point point, int distance);
 
         IEnumerable<T> GetObjectsInProximityLazy(Point point, int distance);
@@ -18,5 +20,7 @@ namespace OpenClassic.Server.Collections
         void Rehash();
 
         void Remove(T entity);
+
+        void UpdateLocation(T entity, Point oldLocation, Point newLocation);
     }
 }

@@ -1,4 +1,5 @@
-﻿using OpenClassic.Server.Collections;
+﻿using DryIoc;
+using OpenClassic.Server.Collections;
 using OpenClassic.Server.Domain;
 using System.Collections.Generic;
 using Xunit;
@@ -7,10 +8,23 @@ namespace OpenClassic.Server.Tests.Collections
 {
     public class EntityCollectionTests
     {
+        public static Container Container
+        {
+            get
+            {
+                var container = new Container();
+                container.Register<IPlayer, Player>();
+                container.Register<ISpatialDictionary<IPlayer>, NaiveSpatialDictionary<IPlayer>>();
+                container.Register<ISpatialDictionary<INpc>, NaiveSpatialDictionary<INpc>>();
+
+                return container;
+            }
+        }
+
         [Fact]
         public void AddShouldInsertIntoAddedList()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             entities.Add(player);
@@ -21,7 +35,8 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void AddShouldInsertMultipleIntoAddedList()
         {
-            var players = new HashSet<IPlayer> { new Player(), new Player(), new Player() };
+            var container = Container;
+            var players = new HashSet<IPlayer> { container.Resolve<IPlayer>(), container.Resolve<IPlayer>() };
             var entities = new EntityCollection<IPlayer>();
 
             entities.Add(players);
@@ -32,7 +47,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void RemoveShouldInsertIntoRemovedList()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             entities.Remove(player);
@@ -43,7 +58,8 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void ChangedShouldReturnTrueWhenAddedListContainsEntities()
         {
-            var players = new List<IPlayer> { new Player(), new Player(), new Player() };
+            var container = Container;
+            var players = new HashSet<IPlayer> { container.Resolve<IPlayer>(), container.Resolve<IPlayer>() };
             var entities = new EntityCollection<IPlayer>();
 
             entities.Add(players);
@@ -54,7 +70,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void ChangedShouldReturnTrueWhenRemovedListContainsEntities()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             entities.Remove(player);
@@ -65,8 +81,8 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void ChangeShouldReturnTrueWhenAddedAndRemovedListsContainEntities()
         {
-            var player1 = new Player();
-            var player2 = new Player();
+            var player1 = Container.Resolve<IPlayer>();
+            var player2 = Container.Resolve<IPlayer>();
 
             var entities = new EntityCollection<IPlayer>();
 
@@ -87,7 +103,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void RemovingReturnsTrueWhenRemovedListContainsEntity()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             entities.Remove(player);
@@ -100,7 +116,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void RemovingReturnsFalseWhenRemovedListDoesNotContainEntity()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             var removing = entities.Removing(player);
@@ -111,7 +127,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void ContainsReturnsTrueWhenAddedListContainsEntity()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             entities.Add(player);
@@ -124,7 +140,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void ContainsReturnsTrueWhenKnownListContainsEntity()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             entities.Add(player);
@@ -141,7 +157,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void UpdateMovesEntitiesFromAddedToKnownList()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             entities.Add(player);
@@ -157,7 +173,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void UpdateRemovesEntitiesInRemovedListFromKnownList()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             // Add a player, update to put it in the 'known' list.
@@ -174,7 +190,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void UpdateClearsAddedList()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             // Add a player, update to put it in the 'known' list.
@@ -187,7 +203,7 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void UpdateClearsRemovedList()
         {
-            var player = new Player();
+            var player = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             // Add a player, update to put it in the 'known' list.
@@ -204,8 +220,8 @@ namespace OpenClassic.Server.Tests.Collections
         [Fact]
         public void AllPropertyReturnsEntitiesFromBothAddedAndKnownLists()
         {
-            var player1 = new Player();
-            var player2 = new Player();
+            var player1 = Container.Resolve<IPlayer>();
+            var player2 = Container.Resolve<IPlayer>();
             var entities = new EntityCollection<IPlayer>();
 
             // Add player1 and then update to move it to the 'known' list.
