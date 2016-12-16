@@ -30,7 +30,6 @@
     "Microsoft.Extensions.Configuration.Binder": "1.1.0",
     "Microsoft.Extensions.Configuration.Json": "1.1.0",
     "Microsoft.NETCore.App": {
-      "type": "platform",
       "version": "1.1.0"
     },
     "Newtonsoft.Json": "9.0.1"
@@ -46,5 +45,9 @@
     "configProperties": {
       "System.GC.Server": true
     }
+  },
+
+  "runtimes": {
+    "win10-x64": {}
   }
 }
