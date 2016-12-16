@@ -16854,13 +16854,13 @@
           "id": "619",
           "amount": "2",
           "weight": "10"
+        },
+        {
+          "id": "626",
+          "amount": "1",
+          "weight": "4"
         }
       ]
-    },
-    "ItemDropDef": {
-      "id": "626",
-      "amount": "1",
-      "weight": "4"
     }
   },
   {
