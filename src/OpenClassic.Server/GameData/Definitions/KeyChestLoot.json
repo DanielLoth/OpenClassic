@@ -1,0 +1,102 @@
+{
+  "linked-list-array": {
+    "linked-list": [
+      {
+        "InvItem": {
+          "id": "408",
+          "amount": "3"
+        }
+      },
+      {
+        "InvItem": {
+          "id": "369",
+          "amount": "5"
+        }
+      },
+      {
+        "InvItem": {
+          "id": "518",
+          "amount": "20"
+        }
+      },
+      {
+        "InvItem": {
+          "id": "517",
+          "amount": "30"
+        }
+      },
+      {
+        "InvItem": {
+          "id": "526",
+          "amount": "1"
+        }
+      },
+      {
+        "InvItem": {
+          "id": "527",
+          "amount": "1"
+        }
+      },
+      {
+        "InvItem": [
+          {
+            "id": "10",
+            "amount": "750"
+          },
+          {
+            "id": "527",
+            "amount": "1"
+          }
+        ]
+      },
+      {
+        "InvItem": {
+          "id": "10",
+          "amount": "2000"
+        }
+      },
+      {
+        "InvItem": {
+          "id": "179",
+          "amount": "1"
+        }
+      },
+      {
+        "InvItem": [
+          {
+            "id": "160",
+            "amount": "1"
+          },
+          {
+            "id": "164",
+            "amount": "1"
+          },
+          {
+            "id": "159",
+            "amount": "1"
+          },
+          {
+            "id": "163",
+            "amount": "1"
+          },
+          {
+            "id": "158",
+            "amount": "1"
+          },
+          {
+            "id": "162",
+            "amount": "1"
+          },
+          {
+            "id": "157",
+            "amount": "1"
+          },
+          {
+            "id": "161",
+            "amount": "1"
+          }
+        ]
+      }
+    ]
+  }
+}

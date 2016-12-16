@@ -1,0 +1,186 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "100"/* Copper */,
+        "ObjectMiningDef": {
+          "requiredLvl": "1",
+          "oreId": "150",
+          "exp": "18",
+          "respawnTime": "3"
+        }
+      },
+      {
+        "int": "101"/* Copper */,
+        "ObjectMiningDef": {
+          "requiredLvl": "1",
+          "oreId": "150",
+          "exp": "18",
+          "respawnTime": "3"
+        }
+      },
+      {
+        "int": "102"/* Iron */,
+        "ObjectMiningDef": {
+          "requiredLvl": "15",
+          "oreId": "151",
+          "exp": "35",
+          "respawnTime": "5"
+        }
+      },
+      {
+        "int": "103"/* Iron */,
+        "ObjectMiningDef": {
+          "requiredLvl": "15",
+          "oreId": "151",
+          "exp": "35",
+          "respawnTime": "5"
+        }
+      },
+      {
+        "int": "104"/* Tin */,
+        "ObjectMiningDef": {
+          "requiredLvl": "1",
+          "oreId": "202",
+          "exp": "18",
+          "respawnTime": "3"
+        }
+      },
+      {
+        "int": "105"/* Tin */,
+        "ObjectMiningDef": {
+          "requiredLvl": "1",
+          "oreId": "202",
+          "exp": "18",
+          "respawnTime": "3"
+        }
+      },
+      {
+        "int": "106"/* Mith */,
+        "ObjectMiningDef": {
+          "requiredLvl": "55",
+          "oreId": "153",
+          "exp": "80",
+          "respawnTime": "60"
+        }
+      },
+      {
+        "int": "107"/* Mith */,
+        "ObjectMiningDef": {
+          "requiredLvl": "55",
+          "oreId": "153",
+          "exp": "80",
+          "respawnTime": "60"
+        }
+      },
+      {
+        "int": "108"/* Addy */,
+        "ObjectMiningDef": {
+          "requiredLvl": "70",
+          "oreId": "154",
+          "exp": "95",
+          "respawnTime": "120"
+        }
+      },
+      {
+        "int": "109"/* Addy */,
+        "ObjectMiningDef": {
+          "requiredLvl": "70",
+          "oreId": "154",
+          "exp": "95",
+          "respawnTime": "120"
+        }
+      },
+      {
+        "int": "110"/* Coal */,
+        "ObjectMiningDef": {
+          "requiredLvl": "30",
+          "oreId": "155",
+          "exp": "50",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "111"/* Coal */,
+        "ObjectMiningDef": {
+          "requiredLvl": "30",
+          "oreId": "155",
+          "exp": "50",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "112"/* Gold */,
+        "ObjectMiningDef": {
+          "requiredLvl": "40",
+          "oreId": "152",
+          "exp": "65",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "113"/* Gold */,
+        "ObjectMiningDef": {
+          "requiredLvl": "40",
+          "oreId": "152",
+          "exp": "65",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "114"/* Clay */,
+        "ObjectMiningDef": {
+          "requiredLvl": "1",
+          "oreId": "149",
+          "exp": "5",
+          "respawnTime": "2"
+        }
+      },
+      {
+        "int": "115"/* Clay */,
+        "ObjectMiningDef": {
+          "requiredLvl": "1",
+          "oreId": "149",
+          "exp": "5",
+          "respawnTime": "2"
+        }
+      },
+      {
+        "int": "195"/* Silver */,
+        "ObjectMiningDef": {
+          "requiredLvl": "20",
+          "oreId": "383",
+          "exp": "40",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "196"/* Silver */,
+        "ObjectMiningDef": {
+          "requiredLvl": "20",
+          "oreId": "383",
+          "exp": "40",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "210"/* Rune */,
+        "ObjectMiningDef": {
+          "requiredLvl": "85",
+          "oreId": "409",
+          "exp": "125",
+          "respawnTime": "600"
+        }
+      },
+      {
+        "int": "211"/* Rune */,
+        "ObjectMiningDef": {
+          "requiredLvl": "85",
+          "oreId": "409",
+          "exp": "125",
+          "respawnTime": "600"
+        }
+      }
+    ]
+  }
+}

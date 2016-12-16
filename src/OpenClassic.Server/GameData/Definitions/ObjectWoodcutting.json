@@ -1,0 +1,86 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "0",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "1",
+          "logId": "14",
+          "exp": "25",
+          "fell": "100",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "1",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "1",
+          "logId": "14",
+          "exp": "25",
+          "fell": "100",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "70",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "1",
+          "logId": "14",
+          "exp": "25",
+          "fell": "100",
+          "respawnTime": "30"
+        }
+      },
+      {
+        "int": "306",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "15",
+          "logId": "632",
+          "exp": "38",
+          "fell": "10",
+          "respawnTime": "60"
+        }
+      },
+      {
+        "int": "307",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "30",
+          "logId": "633",
+          "exp": "63",
+          "fell": "10",
+          "respawnTime": "60"
+        }
+      },
+      {
+        "int": "308",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "45",
+          "logId": "634",
+          "exp": "100",
+          "fell": "15",
+          "respawnTime": "120"
+        }
+      },
+      {
+        "int": "309",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "60",
+          "logId": "635",
+          "exp": "175",
+          "fell": "20",
+          "respawnTime": "120"
+        }
+      },
+      {
+        "int": "310",
+        "ObjectWoodcuttingDef": {
+          "requiredLvl": "75",
+          "logId": "636",
+          "exp": "250",
+          "fell": "20",
+          "respawnTime": "180"
+        }
+      }
+    ]
+  }
+}

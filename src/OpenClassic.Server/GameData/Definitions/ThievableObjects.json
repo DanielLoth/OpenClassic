@@ -1,0 +1,136 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "1034",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "326",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "327",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "324",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "325",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "322",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "323",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "999",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "1183",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      },
+      {
+        "int": "973",
+        "org.rscdaemon.server.entityhandling.defs.ThievableObject": {
+          "loot": {
+            "int": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "requiredThievingLevel": "99"
+        }
+      }
+    ]
+  }
+}

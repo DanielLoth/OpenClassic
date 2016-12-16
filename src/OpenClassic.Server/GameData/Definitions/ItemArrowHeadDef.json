@@ -1,0 +1,54 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "669",
+        "ItemArrowHeadDef": {
+          "arrowID": "11",
+          "requiredLvl": "1",
+          "exp": "1"
+        }
+      },
+      {
+        "int": "670",
+        "ItemArrowHeadDef": {
+          "arrowID": "638",
+          "requiredLvl": "15",
+          "exp": "2"
+        }
+      },
+      {
+        "int": "671",
+        "ItemArrowHeadDef": {
+          "arrowID": "640",
+          "requiredLvl": "30",
+          "exp": "4.5"
+        }
+      },
+      {
+        "int": "672",
+        "ItemArrowHeadDef": {
+          "arrowID": "642",
+          "requiredLvl": "45",
+          "exp": "7"
+        }
+      },
+      {
+        "int": "673",
+        "ItemArrowHeadDef": {
+          "arrowID": "644",
+          "requiredLvl": "60",
+          "exp": "9.5"
+        }
+      },
+      {
+        "int": "674",
+        "ItemArrowHeadDef": {
+          "arrowID": "646",
+          "requiredLvl": "75",
+          "exp": "12"
+        }
+      }
+    ]
+  }
+}

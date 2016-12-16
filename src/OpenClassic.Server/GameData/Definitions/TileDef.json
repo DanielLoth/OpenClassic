@@ -1,0 +1,131 @@
+{
+  "TileDef-array": {
+    "TileDef": [
+      {
+        "colour": "-16913",
+        "unknown": "1",
+        "objectType": "0"
+      },
+      {
+        "colour": "1",
+        "unknown": "3",
+        "objectType": "1"
+      },
+      {
+        "colour": "3",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "3",
+        "unknown": "4",
+        "objectType": "0"
+      },
+      {
+        "colour": "-16913",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "-27685",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "25",
+        "unknown": "3",
+        "objectType": "1"
+      },
+      {
+        "colour": "12345678",
+        "unknown": "5",
+        "objectType": "1"
+      },
+      {
+        "colour": "-26426",
+        "unknown": "1",
+        "objectType": "1"
+      },
+      {
+        "colour": "-1",
+        "unknown": "5",
+        "objectType": "1"
+      },
+      {
+        "colour": "31",
+        "unknown": "3",
+        "objectType": "1"
+      },
+      {
+        "colour": "3",
+        "unknown": "4",
+        "objectType": "0"
+      },
+      {
+        "colour": "-4534",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "32",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "-9225",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "-3172",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "15",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "-2",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "-1",
+        "unknown": "3",
+        "objectType": "1"
+      },
+      {
+        "colour": "-2",
+        "unknown": "4",
+        "objectType": "0"
+      },
+      {
+        "colour": "-2",
+        "unknown": "4",
+        "objectType": "1"
+      },
+      {
+        "colour": "-2",
+        "unknown": "0",
+        "objectType": "0"
+      },
+      {
+        "colour": "-17793",
+        "unknown": "2",
+        "objectType": "0"
+      },
+      {
+        "colour": "-14594",
+        "unknown": "1",
+        "objectType": "1"
+      },
+      {
+        "colour": "1",
+        "unknown": "3",
+        "objectType": "0"
+      }
+    ]
+  }
+}

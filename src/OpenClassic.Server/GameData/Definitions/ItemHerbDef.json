@@ -1,0 +1,86 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "444",
+        "ItemHerbDef": {
+          "exp": "13",
+          "potionId": "454",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "445",
+        "ItemHerbDef": {
+          "exp": "19",
+          "potionId": "455",
+          "requiredLvl": "5"
+        }
+      },
+      {
+        "int": "446",
+        "ItemHerbDef": {
+          "exp": "25",
+          "potionId": "456",
+          "requiredLvl": "12"
+        }
+      },
+      {
+        "int": "447",
+        "ItemHerbDef": {
+          "exp": "31",
+          "potionId": "457",
+          "requiredLvl": "22"
+        }
+      },
+      {
+        "int": "448",
+        "ItemHerbDef": {
+          "exp": "38",
+          "potionId": "458",
+          "requiredLvl": "30"
+        }
+      },
+      {
+        "int": "449",
+        "ItemHerbDef": {
+          "exp": "50",
+          "potionId": "459",
+          "requiredLvl": "45"
+        }
+      },
+      {
+        "int": "450",
+        "ItemHerbDef": {
+          "exp": "57",
+          "potionId": "460",
+          "requiredLvl": "50"
+        }
+      },
+      {
+        "int": "451",
+        "ItemHerbDef": {
+          "exp": "63",
+          "potionId": "461",
+          "requiredLvl": "55"
+        }
+      },
+      {
+        "int": "452",
+        "ItemHerbDef": {
+          "exp": "70",
+          "potionId": "462",
+          "requiredLvl": "66"
+        }
+      },
+      {
+        "int": "453",
+        "ItemHerbDef": {
+          "exp": "81",
+          "potionId": "463",
+          "requiredLvl": "72"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "277",
+        "ItemBowStringDef": {
+          "bowID": "189",
+          "requiredLvl": "5",
+          "exp": "5"
+        }
+      },
+      {
+        "int": "276",
+        "ItemBowStringDef": {
+          "bowID": "188",
+          "requiredLvl": "10",
+          "exp": "10"
+        }
+      },
+      {
+        "int": "659",
+        "ItemBowStringDef": {
+          "bowID": "649",
+          "requiredLvl": "20",
+          "exp": "17"
+        }
+      },
+      {
+        "int": "658",
+        "ItemBowStringDef": {
+          "bowID": "648",
+          "requiredLvl": "25",
+          "exp": "25"
+        }
+      },
+      {
+        "int": "661",
+        "ItemBowStringDef": {
+          "bowID": "651",
+          "requiredLvl": "35",
+          "exp": "33"
+        }
+      },
+      {
+        "int": "660",
+        "ItemBowStringDef": {
+          "bowID": "650",
+          "requiredLvl": "40",
+          "exp": "42"
+        }
+      },
+      {
+        "int": "663",
+        "ItemBowStringDef": {
+          "bowID": "653",
+          "requiredLvl": "50",
+          "exp": "50"
+        }
+      },
+      {
+        "int": "662",
+        "ItemBowStringDef": {
+          "bowID": "652",
+          "requiredLvl": "55",
+          "exp": "58"
+        }
+      },
+      {
+        "int": "665",
+        "ItemBowStringDef": {
+          "bowID": "655",
+          "requiredLvl": "65",
+          "exp": "67"
+        }
+      },
+      {
+        "int": "664",
+        "ItemBowStringDef": {
+          "bowID": "654",
+          "requiredLvl": "70",
+          "exp": "75"
+        }
+      },
+      {
+        "int": "667",
+        "ItemBowStringDef": {
+          "bowID": "657",
+          "requiredLvl": "80",
+          "exp": "83"
+        }
+      },
+      {
+        "int": "666",
+        "ItemBowStringDef": {
+          "bowID": "656",
+          "requiredLvl": "85",
+          "exp": "92"
+        }
+      }
+    ]
+  }
+}

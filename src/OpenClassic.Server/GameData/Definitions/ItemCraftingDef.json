@@ -1,0 +1,97 @@
+{
+  "ItemCraftingDef-array": {
+    "#comment": [],
+    "ItemCraftingDef": [
+      {/* Ring */
+        "requiredLvl": "5",
+        "itemID": "283",
+        "exp": "15"
+      },
+      {/* Necklace */
+        "requiredLvl": "6",
+        "itemID": "288",
+        "exp": "20"
+      },
+      {/* Amulet */
+        "requiredLvl": "8",
+        "itemID": "296",
+        "exp": "30"
+      },
+      {/* Ring */
+        "requiredLvl": "8",
+        "itemID": "284",
+        "exp": "40"
+      },
+      {/* Necklace */
+        "requiredLvl": "10",
+        "itemID": "289",
+        "exp": "55"
+      },
+      {/* Amulet */
+        "requiredLvl": "13",
+        "itemID": "297",
+        "exp": "65"
+      },
+      {/* Ring */
+        "requiredLvl": "18",
+        "itemID": "285",
+        "exp": "55"
+      },
+      {/* Necklace */
+        "requiredLvl": "24",
+        "itemID": "290",
+        "exp": "60"
+      },
+      {/* Amulet */
+        "requiredLvl": "30",
+        "itemID": "298",
+        "exp": "70"
+      },
+      {/* Ring */
+        "requiredLvl": "30",
+        "itemID": "286",
+        "exp": "70"
+      },
+      {/* Necklace */
+        "requiredLvl": "40",
+        "itemID": "291",
+        "exp": "75"
+      },
+      {/* Amulet */
+        "requiredLvl": "50",
+        "itemID": "299",
+        "exp": "85"
+      },
+      {/* Ring */
+        "requiredLvl": "42",
+        "itemID": "287",
+        "exp": "85"
+      },
+      {/* Necklace */
+        "requiredLvl": "56",
+        "itemID": "292",
+        "exp": "90"
+      },
+      {/* Amulet */
+        "requiredLvl": "70",
+        "itemID": "300",
+        "exp": "100"
+      },
+      {/* Ring */
+        "requiredLvl": "55",
+        "itemID": "543",
+        "exp": "100"
+      },
+      {/* Necklace */
+        "requiredLvl": "72",
+        "itemID": "544",
+        "exp": "105"
+      },
+      {/* Amulet */
+        "requiredLvl": "80",
+        "itemID": "524",
+        "exp": "150"
+      }
+    ]
+  }
+}

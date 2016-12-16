@@ -1,0 +1,413 @@
+{
+  "map": {
+    "entry": [
+      {
+        "Point": {
+          "x": "126",
+          "y": "686"
+        },
+        "TelePoint": {
+          "command": "Open",
+          "x": "126",
+          "y": "3518"
+        }
+      },
+      {
+        "Point": {
+          "x": "621",
+          "y": "596"
+        },
+        "TelePoint": {
+          "command": "pull",
+          "x": "180",
+          "y": "128"
+        }
+      },
+      {
+        "Point": {
+          "x": "180",
+          "y": "129"
+        },
+        "TelePoint": {
+          "command": "pull",
+          "x": "621",
+          "y": "596"
+        }
+      },
+      {
+        "Point": {
+          "x": "223",
+          "y": "110"
+        },
+        "TelePoint": {
+          "command": "Climb-Down",
+          "x": "446",
+          "y": "3368"
+        }
+      },
+      {
+        "Point": {
+          "x": "446",
+          "y": "3367"
+        },
+        "TelePoint": {
+          "command": "Climb-Up",
+          "x": "223",
+          "y": "109"
+        }
+      },
+      {
+        "Point": {
+          "x": "703",
+          "y": "455"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "416",
+          "y": "165"
+        }
+      },
+      {
+        "Point": {
+          "x": "416",
+          "y": "166"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "703",
+          "y": "455"
+        }
+      },
+      {
+        "Point": {
+          "x": "414",
+          "y": "1107"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "700",
+          "y": "1395"
+        }
+      },
+      {
+        "Point": {
+          "x": "701",
+          "y": "1395"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "414",
+          "y": "1107"
+        }
+      },
+      {
+        "Point": {
+          "x": "419",
+          "y": "1107"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "708",
+          "y": "1395"
+        }
+      },
+      {
+        "Point": {
+          "x": "707",
+          "y": "1395"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "418",
+          "y": "1107"
+        }
+      },
+      {
+        "Point": {
+          "x": "602",
+          "y": "2642"
+        },
+        "TelePoint": {
+          "command": "Enter",
+          "x": "212",
+          "y": "695"
+        }
+      },
+      {
+        "Point": {
+          "x": "603",
+          "y": "2642"
+        },
+        "TelePoint": {
+          "command": "Enter",
+          "x": "212",
+          "y": "695"
+        }
+      },
+      {
+        "Point": {
+          "x": "599",
+          "y": "2645"
+        },
+        "TelePoint": {
+          "command": "Enter",
+          "x": "511",
+          "y": "1452"
+        }
+      },
+      {
+        "Point": {
+          "x": "599",
+          "y": "2646"
+        },
+        "TelePoint": {
+          "command": "Enter",
+          "x": "511",
+          "y": "1452"
+        }
+      },
+      {
+        "Point": {
+          "x": "602",
+          "y": "2650"
+        },
+        "TelePoint": {
+          "command": "Enter",
+          "x": "362",
+          "y": "1515"
+        }
+      },
+      {
+        "Point": {
+          "x": "603",
+          "y": "2650"
+        },
+        "TelePoint": {
+          "command": "Enter",
+          "x": "362",
+          "y": "1515"
+        }
+      },
+      {
+        "Point": {
+          "x": "26",
+          "y": "515"
+        },
+        "TelePoint": {
+          "command": "Operate",
+          "x": "19",
+          "y": "3385"
+        }
+      },
+      {
+        "Point": {
+          "x": "19",
+          "y": "3386"
+        },
+        "TelePoint": {
+          "command": "Climb-Up",
+          "x": "25",
+          "y": "515"
+        }
+      },
+      {
+        "Point": {
+          "x": "576",
+          "y": "523"
+        },
+        "TelePoint": {
+          "command": "enter",
+          "x": "578",
+          "y": "3356"
+        }
+      },
+      {
+        "Point": {
+          "x": "577",
+          "y": "3355"
+        },
+        "TelePoint": {
+          "command": "climb",
+          "x": "578",
+          "y": "521"
+        }
+      },
+      {
+        "Point": {
+          "x": "576",
+          "y": "3577"
+        },
+        "TelePoint": {
+          "command": "Go down",
+          "x": "576",
+          "y": "3528"
+        }
+      },
+      {
+        "Point": {
+          "x": "576",
+          "y": "3529"
+        },
+        "TelePoint": {
+          "command": "Go up",
+          "x": "576",
+          "y": "3580"
+        }
+      },
+      {
+        "Point": {
+          "x": "406",
+          "y": "3392"
+        },
+        "TelePoint": {
+          "command": "Open",
+          "x": "109",
+          "y": "245"
+        }
+      },
+      {
+        "Point": {
+          "x": "616",
+          "y": "492"
+        },
+        "TelePoint": {
+          "command": "climb-up",
+          "x": "616",
+          "y": "1435"
+        }
+      },
+      {
+        "Point": {
+          "x": "616",
+          "y": "1436"
+        },
+        "TelePoint": {
+          "command": "climb-down",
+          "x": "616",
+          "y": "493"
+        }
+      },
+      {
+        "Point": {
+          "x": "702",
+          "y": "2338"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "415",
+          "y": "2051"
+        }
+      },
+      {
+        "Point": {
+          "x": "705",
+          "y": "2338"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "417",
+          "y": "2051"
+        }
+      },
+      {
+        "Point": {
+          "x": "703",
+          "y": "2340"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "416",
+          "y": "2052"
+        }
+      },
+      {
+        "Point": {
+          "x": "703",
+          "y": "2337"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "416",
+          "y": "2050"
+        }
+      },
+      {
+        "Point": {
+          "x": "416",
+          "y": "2050"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "703",
+          "y": "2336"
+        }
+      },
+      {
+        "Point": {
+          "x": "416",
+          "y": "2053"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "703",
+          "y": "2340"
+        }
+      },
+      {
+        "Point": {
+          "x": "415",
+          "y": "2051"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "701",
+          "y": "2338"
+        }
+      },
+      {
+        "Point": {
+          "x": "418",
+          "y": "2051"
+        },
+        "TelePoint": {
+          "command": "walk through",
+          "x": "705",
+          "y": "2338"
+        }
+      },
+      {
+        "Point": {
+          "x": "416",
+          "y": "2051"
+        },
+        "TelePoint": {
+          "command": "climb-up",
+          "x": "417",
+          "y": "2994"
+        }
+      },
+      {
+        "Point": {
+          "x": "417",
+          "y": "2993"
+        },
+        "TelePoint": {
+          "command": "Climb-down",
+          "x": "415",
+          "y": "2051"
+        }
+      },
+      {
+        "Point": {
+          "x": "703",
+          "y": "3283"
+        },
+        "TelePoint": {
+          "command": "climb-up",
+          "x": "416",
+          "y": "162"
+        }
+      }
+    ]
+  }
+}

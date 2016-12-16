@@ -1,0 +1,3114 @@
+{
+  "linked-list": {
+    "Shop": [
+      {
+        "name": "Varrock General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "124",
+        "maxX": "129",
+        "minY": "513",
+        "maxY": "518",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Rimmington General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "329",
+        "maxX": "332",
+        "minY": "658",
+        "maxY": "664",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Legends-Guild General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "510",
+        "maxX": "515",
+        "minY": "1479",
+        "maxY": "1483",
+        "respawnRate": "15000",
+        "greeting": "Can i help you at all?",
+        "options": {
+          "string": [
+            "Yes please. What are you selling?",
+            "No thanks."
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "370",
+              "amount": "2"
+            },
+            {
+              "id": "257",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "2"
+            },
+            {
+              "id": "474",
+              "amount": "4"
+            },
+            {
+              "id": "640",
+              "amount": "100"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Edgeville General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "222",
+        "maxX": "227",
+        "minY": "439",
+        "maxY": "443",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lost City General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "163",
+        "maxX": "169",
+        "minY": "3521",
+        "maxY": "3525",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Karamja General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "358",
+        "maxX": "364",
+        "minY": "712",
+        "maxY": "716",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Falador General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "317",
+        "maxX": "322",
+        "minY": "530",
+        "maxY": "536",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Al-Kharid General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "54",
+        "maxX": "58",
+        "minY": "679",
+        "maxY": "684",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lumbridge General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "133",
+        "maxX": "136",
+        "minY": "641",
+        "maxY": "642",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Dwarven Mines General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "289",
+        "maxX": "295",
+        "minY": "3337",
+        "maxY": "3342",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "140",
+              "amount": "2"
+            },
+            {
+              "id": "144",
+              "amount": "2"
+            },
+            {
+              "id": "21",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "168",
+              "amount": "5"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ardougne General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "577",
+        "maxX": "583",
+        "minY": "598",
+        "maxY": "602",
+        "respawnRate": "15000",
+        "greeting": "Can I help you at all?",
+        "options": {
+          "string": [
+            "Yes Please. What are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "464",
+              "amount": "10"
+            },
+            {
+              "id": "156",
+              "amount": "2"
+            },
+            {
+              "id": "12",
+              "amount": "2"
+            },
+            {
+              "id": "132",
+              "amount": "2"
+            },
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "207",
+              "amount": "2"
+            },
+            {
+              "id": "11",
+              "amount": "30"
+            },
+            {
+              "id": "237",
+              "amount": "1"
+            },
+            {
+              "id": "1263",
+              "amount": "10"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Jungle General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "453",
+        "maxX": "462",
+        "minY": "750",
+        "maxY": "760",
+        "respawnRate": "60000",
+        "greeting": "Welcome to the jungle store, can I help you at all?",
+        "options": {
+          "string": [
+            "Yes please, what are you selling?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "465",
+              "amount": "10"
+            },
+            {
+              "id": "468",
+              "amount": "3"
+            },
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "87",
+              "amount": "3"
+            },
+            {
+              "id": "156",
+              "amount": "2"
+            },
+            {
+              "id": "12",
+              "amount": "5"
+            },
+            {
+              "id": "15",
+              "amount": "12"
+            },
+            {
+              "id": "16",
+              "amount": "10"
+            },
+            {
+              "id": "17",
+              "amount": "10"
+            },
+            {
+              "id": "132",
+              "amount": "2"
+            },
+            {
+              "id": "138",
+              "amount": "10"
+            },
+            {
+              "id": "169",
+              "amount": "10"
+            },
+            {
+              "id": "211",
+              "amount": "10"
+            },
+            {
+              "id": "167",
+              "amount": "10"
+            },
+            {
+              "id": "168",
+              "amount": "10"
+            },
+            {
+              "id": "464",
+              "amount": "50"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Shilo General Store",
+        "general": "true",
+        "sellModifier": "50",
+        "buyModifier": "100",
+        "minX": "415",
+        "maxX": "420",
+        "minY": "846",
+        "maxY": "849",
+        "respawnRate": "60000",
+        "greeting": "Welcome to obli's general store bwana! Would you like to see my items?",
+        "options": {
+          "string": [
+            "Yes please!",
+            "No, but thanks for the offer"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "166",
+              "amount": "2"
+            },
+            {
+              "id": "465",
+              "amount": "10"
+            },
+            {
+              "id": "468",
+              "amount": "3"
+            },
+            {
+              "id": "135",
+              "amount": "3"
+            },
+            {
+              "id": "87",
+              "amount": "3"
+            },
+            {
+              "id": "156",
+              "amount": "2"
+            },
+            {
+              "id": "12",
+              "amount": "5"
+            },
+            {
+              "id": "15",
+              "amount": "12"
+            },
+            {
+              "id": "16",
+              "amount": "10"
+            },
+            {
+              "id": "17",
+              "amount": "10"
+            },
+            {
+              "id": "132",
+              "amount": "2"
+            },
+            {
+              "id": "138",
+              "amount": "10"
+            },
+            {
+              "id": "169",
+              "amount": "10"
+            },
+            {
+              "id": "211",
+              "amount": "10"
+            },
+            {
+              "id": "167",
+              "amount": "10"
+            },
+            {
+              "id": "168",
+              "amount": "10"
+            },
+            {
+              "id": "464",
+              "amount": "50"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lowe's Archery store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "113",
+        "maxX": "116",
+        "minY": "511",
+        "maxY": "516",
+        "respawnRate": "5000",
+        "greeting": "Welcome to lowe's archery store, do you want to see my wares?",
+        "options": {
+          "string": [
+            "Yes Please.",
+            "No, I prefer to bash things close up"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "11",
+              "amount": "200"
+            },
+            {
+              "id": "190",
+              "amount": "150"
+            },
+            {
+              "id": "189",
+              "amount": "4"
+            },
+            {
+              "id": "188",
+              "amount": "2"
+            },
+            {
+              "id": "60",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Wayne's Chains",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "300",
+        "maxX": "306",
+        "minY": "577",
+        "maxY": "580",
+        "respawnRate": "30000",
+        "greeting": "Welcome, do you want to buy some chain mail?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "113",
+              "amount": "6"
+            },
+            {
+              "id": "7",
+              "amount": "5"
+            },
+            {
+              "id": "114",
+              "amount": "4"
+            },
+            {
+              "id": "431",
+              "amount": "3"
+            },
+            {
+              "id": "115",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Falador Jewel Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "331",
+        "maxX": "334",
+        "minY": "565",
+        "maxY": "569",
+        "respawnRate": "300000",
+        "greeting": "Hello! Do you wish to buy some jewel's?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "160",
+              "amount": "1"
+            },
+            {
+              "id": "159",
+              "amount": "0"
+            },
+            {
+              "id": "158",
+              "amount": "0"
+            },
+            {
+              "id": "157",
+              "amount": "0"
+            },
+            {
+              "id": "164",
+              "amount": "1"
+            },
+            {
+              "id": "163",
+              "amount": "0"
+            },
+            {
+              "id": "162",
+              "amount": "0"
+            },
+            {
+              "id": "161",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Falador Mace Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "327",
+        "maxX": "328",
+        "minY": "537",
+        "maxY": "540",
+        "respawnRate": "30000",
+        "greeting": "Hello, do you want to buy or sell any maces?",
+        "options": {
+          "string": [
+            "I'll have a look",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "94",
+              "amount": "6"
+            },
+            {
+              "id": "0",
+              "amount": "5"
+            },
+            {
+              "id": "95",
+              "amount": "4"
+            },
+            {
+              "id": "430",
+              "amount": "3"
+            },
+            {
+              "id": "96",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Port Sarim Rune Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "271",
+        "maxX": "274",
+        "minY": "630",
+        "maxY": "634",
+        "respawnRate": "5000",
+        "greeting": "Welcome to the magic emporium",
+        "options": {
+          "string": [
+            "Can I see your wares?",
+            "Sorry I'm not into magic"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "31",
+              "amount": "500"
+            },
+            {
+              "id": "32",
+              "amount": "500"
+            },
+            {
+              "id": "33",
+              "amount": "500"
+            },
+            {
+              "id": "34",
+              "amount": "500"
+            },
+            {
+              "id": "35",
+              "amount": "500"
+            },
+            {
+              "id": "36",
+              "amount": "500"
+            },
+            {
+              "id": "270",
+              "amount": "100"
+            },
+            {
+              "id": "185",
+              "amount": "5"
+            },
+            {
+              "id": "199",
+              "amount": "5"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Port Sarim Axe Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "262",
+        "maxX": "267",
+        "minY": "626",
+        "maxY": "632",
+        "respawnRate": "30000",
+        "greeting": "Ello mate! Want buy some of these great axes?",
+        "options": {
+          "string": [
+            "Sure mate!",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "205",
+              "amount": "6"
+            },
+            {
+              "id": "89",
+              "amount": "5"
+            },
+            {
+              "id": "90",
+              "amount": "4"
+            },
+            {
+              "id": "429",
+              "amount": "3"
+            },
+            {
+              "id": "91",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Al-Kharid Crafting Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "49",
+        "maxX": "52",
+        "minY": "673",
+        "maxY": "677",
+        "respawnRate": "10000",
+        "greeting": "Would you like to buy some crafting equipment?",
+        "options": {
+          "string": [
+            "Let's see what you've got then",
+            "No I've got all the crafting equipment I need"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "293",
+              "amount": "4"
+            },
+            {
+              "id": "295",
+              "amount": "2"
+            },
+            {
+              "id": "294",
+              "amount": "2"
+            },
+            {
+              "id": "39",
+              "amount": "3"
+            },
+            {
+              "id": "43",
+              "amount": "100"
+            },
+            {
+              "id": "386",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Rimmington Crafting Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "328",
+        "maxX": "332",
+        "minY": "666",
+        "maxY": "670",
+        "respawnRate": "10000",
+        "greeting": "Would you like to buy some crafting equipment?",
+        "options": {
+          "string": [
+            "Let's see what you've got then",
+            "No I've got all the crafting equipment I need"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "167",
+              "amount": "2"
+            },
+            {
+              "id": "293",
+              "amount": "4"
+            },
+            {
+              "id": "295",
+              "amount": "2"
+            },
+            {
+              "id": "294",
+              "amount": "2"
+            },
+            {
+              "id": "39",
+              "amount": "3"
+            },
+            {
+              "id": "43",
+              "amount": "100"
+            },
+            {
+              "id": "386",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Catherby Fishing Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "416",
+        "maxX": "421",
+        "minY": "484",
+        "maxY": "488",
+        "respawnRate": "10000",
+        "greeting": "Welcome you can buy fishing equipment at my store",
+        "options": {
+          "string": [
+            "Let's see what you've got then",
+            "Sorry, I'm not interested"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "376",
+              "amount": "3"
+            },
+            {
+              "id": "377",
+              "amount": "3"
+            },
+            {
+              "id": "379",
+              "amount": "2"
+            },
+            {
+              "id": "375",
+              "amount": "2"
+            },
+            {
+              "id": "380",
+              "amount": "400"
+            },
+            {
+              "id": "548",
+              "amount": "5"
+            },
+            {
+              "id": "349",
+              "amount": "0"
+            },
+            {
+              "id": "351",
+              "amount": "0"
+            },
+            {
+              "id": "354",
+              "amount": "0"
+            },
+            {
+              "id": "356",
+              "amount": "0"
+            },
+            {
+              "id": "358",
+              "amount": "0"
+            },
+            {
+              "id": "361",
+              "amount": "0"
+            },
+            {
+              "id": "363",
+              "amount": "0"
+            },
+            {
+              "id": "366",
+              "amount": "0"
+            },
+            {
+              "id": "369",
+              "amount": "0"
+            },
+            {
+              "id": "372",
+              "amount": "0"
+            },
+            {
+              "id": "545",
+              "amount": "0"
+            },
+            {
+              "id": "550",
+              "amount": "0"
+            },
+            {
+              "id": "552",
+              "amount": "0"
+            },
+            {
+              "id": "554",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fishing-Guild Fishing Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "599",
+        "maxX": "600",
+        "minY": "516",
+        "maxY": "518",
+        "respawnRate": "5000",
+        "greeting": "Welcome you can buy fishing equipment at my store",
+        "options": {
+          "string": [
+            "Let's see what you've got then",
+            "Sorry, I'm not interested"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "376",
+              "amount": "3"
+            },
+            {
+              "id": "377",
+              "amount": "3"
+            },
+            {
+              "id": "379",
+              "amount": "2"
+            },
+            {
+              "id": "375",
+              "amount": "2"
+            },
+            {
+              "id": "380",
+              "amount": "400"
+            },
+            {
+              "id": "548",
+              "amount": "5"
+            },
+            {
+              "id": "349",
+              "amount": "0"
+            },
+            {
+              "id": "351",
+              "amount": "0"
+            },
+            {
+              "id": "354",
+              "amount": "0"
+            },
+            {
+              "id": "356",
+              "amount": "0"
+            },
+            {
+              "id": "358",
+              "amount": "0"
+            },
+            {
+              "id": "361",
+              "amount": "0"
+            },
+            {
+              "id": "363",
+              "amount": "0"
+            },
+            {
+              "id": "366",
+              "amount": "0"
+            },
+            {
+              "id": "369",
+              "amount": "0"
+            },
+            {
+              "id": "372",
+              "amount": "0"
+            },
+            {
+              "id": "545",
+              "amount": "0"
+            },
+            {
+              "id": "550",
+              "amount": "0"
+            },
+            {
+              "id": "552",
+              "amount": "0"
+            },
+            {
+              "id": "554",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Shilo Fishing Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "411",
+        "maxX": "415",
+        "minY": "833",
+        "maxY": "835",
+        "respawnRate": "5000",
+        "greeting": "Welcome bwana, would you like some fishing supplies?",
+        "options": {
+          "string": [
+            "Yes please!",
+            "Sorry, I'm not interested"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "378",
+              "amount": "3"
+            },
+            {
+              "id": "377",
+              "amount": "3"
+            },
+            {
+              "id": "380",
+              "amount": "1000"
+            },
+            {
+              "id": "381",
+              "amount": "1000"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Varrock Rune Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "101",
+        "maxX": "103",
+        "minY": "522",
+        "maxY": "525",
+        "respawnRate": "5000",
+        "greeting": "Do you want to buy some runes?",
+        "options": {
+          "string": [
+            "Yes please",
+            "Oh it's a rune shop. No thank you, then"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "31",
+              "amount": "500"
+            },
+            {
+              "id": "32",
+              "amount": "500"
+            },
+            {
+              "id": "33",
+              "amount": "500"
+            },
+            {
+              "id": "34",
+              "amount": "500"
+            },
+            {
+              "id": "35",
+              "amount": "500"
+            },
+            {
+              "id": "36",
+              "amount": "500"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Port Sarim Food Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "273",
+        "maxX": "276",
+        "minY": "655",
+        "maxY": "659",
+        "respawnRate": "30000",
+        "greeting": "Hello",
+        "options": {
+          "string": [
+            "Can I buy something please?",
+            "Hi there"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "136",
+              "amount": "3"
+            },
+            {
+              "id": "133",
+              "amount": "1"
+            },
+            {
+              "id": "18",
+              "amount": "3"
+            },
+            {
+              "id": "249",
+              "amount": "3"
+            },
+            {
+              "id": "236",
+              "amount": "1"
+            },
+            {
+              "id": "138",
+              "amount": "1"
+            },
+            {
+              "id": "337",
+              "amount": "1"
+            },
+            {
+              "id": "319",
+              "amount": "3"
+            },
+            {
+              "id": "320",
+              "amount": "3"
+            },
+            {
+              "id": "348",
+              "amount": "1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Port Sarim Fishing Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "276",
+        "maxX": "280",
+        "minY": "646",
+        "maxY": "650",
+        "respawnRate": "10000",
+        "greeting": "Welcome you can buy fishing equipment at my store",
+        "options": {
+          "string": [
+            "Let's see what you've got then",
+            "Sorry, I'm not interested"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "376",
+              "amount": "5"
+            },
+            {
+              "id": "377",
+              "amount": "5"
+            },
+            {
+              "id": "378",
+              "amount": "5"
+            },
+            {
+              "id": "379",
+              "amount": "2"
+            },
+            {
+              "id": "375",
+              "amount": "2"
+            },
+            {
+              "id": "380",
+              "amount": "1000"
+            },
+            {
+              "id": "381",
+              "amount": "1000"
+            },
+            {
+              "id": "349",
+              "amount": "0"
+            },
+            {
+              "id": "351",
+              "amount": "0"
+            },
+            {
+              "id": "354",
+              "amount": "0"
+            },
+            {
+              "id": "356",
+              "amount": "0"
+            },
+            {
+              "id": "358",
+              "amount": "0"
+            },
+            {
+              "id": "361",
+              "amount": "0"
+            },
+            {
+              "id": "363",
+              "amount": "0"
+            },
+            {
+              "id": "366",
+              "amount": "0"
+            },
+            {
+              "id": "369",
+              "amount": "0"
+            },
+            {
+              "id": "372",
+              "amount": "0"
+            },
+            {
+              "id": "545",
+              "amount": "0"
+            },
+            {
+              "id": "550",
+              "amount": "0"
+            },
+            {
+              "id": "552",
+              "amount": "0"
+            },
+            {
+              "id": "554",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "King Lanthlas Archery Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "651",
+        "maxX": "653",
+        "minY": "534",
+        "maxY": "539",
+        "respawnRate": "5000",
+        "greeting": "So are you looking to buy some weapons?",
+        "options": {
+          "string": [
+            "What do you have?",
+            "No thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "11",
+              "amount": "400"
+            },
+            {
+              "id": "638",
+              "amount": "100"
+            },
+            {
+              "id": "190",
+              "amount": "400"
+            },
+            {
+              "id": "189",
+              "amount": "4"
+            },
+            {
+              "id": "188",
+              "amount": "2"
+            },
+            {
+              "id": "60",
+              "amount": "2"
+            },
+            {
+              "id": "669",
+              "amount": "200"
+            },
+            {
+              "id": "87",
+              "amount": "6"
+            },
+            {
+              "id": "12",
+              "amount": "5"
+            },
+            {
+              "id": "88",
+              "amount": "4"
+            },
+            {
+              "id": "203",
+              "amount": "2"
+            },
+            {
+              "id": "205",
+              "amount": "6"
+            },
+            {
+              "id": "89",
+              "amount": "5"
+            },
+            {
+              "id": "90",
+              "amount": "4"
+            },
+            {
+              "id": "429",
+              "amount": "3"
+            },
+            {
+              "id": "91",
+              "amount": "2"
+            },
+            {
+              "id": "76",
+              "amount": "6"
+            },
+            {
+              "id": "77",
+              "amount": "5"
+            },
+            {
+              "id": "78",
+              "amount": "4"
+            },
+            {
+              "id": "426",
+              "amount": "3"
+            },
+            {
+              "id": "79",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Zaffs Staff Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "138",
+        "maxX": "142",
+        "minY": "503",
+        "maxY": "506",
+        "respawnRate": "30000",
+        "greeting": "Would you like to buy or sell some staffs?",
+        "options": {
+          "string": [
+            "yes please",
+            "No, thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "614",
+              "amount": "5"
+            },
+            {
+              "id": "100",
+              "amount": "5"
+            },
+            {
+              "id": "198",
+              "amount": "5"
+            },
+            {
+              "id": "101",
+              "amount": "2"
+            },
+            {
+              "id": "102",
+              "amount": "2"
+            },
+            {
+              "id": "103",
+              "amount": "2"
+            },
+            {
+              "id": "197",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Varrock Clothes Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "135",
+        "maxX": "139",
+        "minY": "515",
+        "maxY": "517",
+        "respawnRate": "30000",
+        "greeting": "Do you want to buy any fine clothes?",
+        "options": {
+          "string": [
+            "What have you got?",
+            "No, thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "182",
+              "amount": "3"
+            },
+            {
+              "id": "15",
+              "amount": "12"
+            },
+            {
+              "id": "16",
+              "amount": "10"
+            },
+            {
+              "id": "17",
+              "amount": "10"
+            },
+            {
+              "id": "191",
+              "amount": "1"
+            },
+            {
+              "id": "194",
+              "amount": "5"
+            },
+            {
+              "id": "195",
+              "amount": "3"
+            },
+            {
+              "id": "187",
+              "amount": "2"
+            },
+            {
+              "id": "183",
+              "amount": "4"
+            },
+            {
+              "id": "200",
+              "amount": "5"
+            },
+            {
+              "id": "807",
+              "amount": "3"
+            },
+            {
+              "id": "808",
+              "amount": "3"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Varrock Sword Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "133",
+        "maxX": "138",
+        "minY": "522",
+        "maxY": "527",
+        "respawnRate": "30000",
+        "greeting": "Hello bold adventurer, can I interest you in some swords?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No, I'm OK for swords right now"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "62",
+              "amount": "6"
+            },
+            {
+              "id": "28",
+              "amount": "5"
+            },
+            {
+              "id": "63",
+              "amount": "4"
+            },
+            {
+              "id": "423",
+              "amount": "3"
+            },
+            {
+              "id": "64",
+              "amount": "2"
+            },
+            {
+              "id": "66",
+              "amount": "6"
+            },
+            {
+              "id": "1",
+              "amount": "5"
+            },
+            {
+              "id": "67",
+              "amount": "4"
+            },
+            {
+              "id": "424",
+              "amount": "3"
+            },
+            {
+              "id": "68",
+              "amount": "2"
+            },
+            {
+              "id": "70",
+              "amount": "6"
+            },
+            {
+              "id": "71",
+              "amount": "5"
+            },
+            {
+              "id": "72",
+              "amount": "4"
+            },
+            {
+              "id": "425",
+              "amount": "3"
+            },
+            {
+              "id": "73",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Varrock Armour Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "113",
+        "maxX": "119",
+        "minY": "498",
+        "maxY": "505",
+        "respawnRate": "30000",
+        "greeting": "Hello, do you need any help?",
+        "options": {
+          "string": [
+            "Do you want to trade?",
+            "No thanks. I'm just looking around"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "113",
+              "amount": "6"
+            },
+            {
+              "id": "7",
+              "amount": "5"
+            },
+            {
+              "id": "114",
+              "amount": "4"
+            },
+            {
+              "id": "431",
+              "amount": "3"
+            },
+            {
+              "id": "115",
+              "amount": "2"
+            },
+            {
+              "id": "117",
+              "amount": "6"
+            },
+            {
+              "id": "8",
+              "amount": "5"
+            },
+            {
+              "id": "118",
+              "amount": "4"
+            },
+            {
+              "id": "196",
+              "amount": "3"
+            },
+            {
+              "id": "119",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Hickton's Archery store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "425",
+        "maxX": "429",
+        "minY": "487",
+        "maxY": "491",
+        "respawnRate": "5000",
+        "greeting": "Welcome to hickton's archery store, do you want to see my wares?",
+        "options": {
+          "string": [
+            "Yes Please.",
+            "No, I prefer to bash things close up"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "190",
+              "amount": "400"
+            },
+            {
+              "id": "11",
+              "amount": "400"
+            },
+            {
+              "id": "638",
+              "amount": "200"
+            },
+            {
+              "id": "669",
+              "amount": "200"
+            },
+            {
+              "id": "670",
+              "amount": "100"
+            },
+            {
+              "id": "189",
+              "amount": "4"
+            },
+            {
+              "id": "188",
+              "amount": "2"
+            },
+            {
+              "id": "60",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Taverly 2-handed store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "377",
+        "maxX": "381",
+        "minY": "500",
+        "maxY": "503",
+        "respawnRate": "60000",
+        "greeting": "Welcome to my two handed sword shop",
+        "options": {
+          "string": [
+            "Let's trade",
+            "Thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "76",
+              "amount": "6"
+            },
+            {
+              "id": "77",
+              "amount": "5"
+            },
+            {
+              "id": "78",
+              "amount": "4"
+            },
+            {
+              "id": "426",
+              "amount": "3"
+            },
+            {
+              "id": "79",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Al-Kharid Plate-Mail Leg Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "54",
+        "maxX": "57",
+        "minY": "685",
+        "maxY": "688",
+        "respawnRate": "60000",
+        "greeting": "Hey, wanna buy some armour?",
+        "options": {
+          "string": [
+            "What have you got?",
+            "No, thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "206",
+              "amount": "6"
+            },
+            {
+              "id": "9",
+              "amount": "5"
+            },
+            {
+              "id": "121",
+              "amount": "4"
+            },
+            {
+              "id": "248",
+              "amount": "3"
+            },
+            {
+              "id": "122",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Al-Kharid Plated Skirt Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "53",
+        "maxX": "56",
+        "minY": "693",
+        "maxY": "696",
+        "respawnRate": "60000",
+        "greeting": "Do you want to buy any armoured skirts?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you that's not my scene"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "214",
+              "amount": "6"
+            },
+            {
+              "id": "215",
+              "amount": "5"
+            },
+            {
+              "id": "225",
+              "amount": "4"
+            },
+            {
+              "id": "434",
+              "amount": "3"
+            },
+            {
+              "id": "226",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Karamja Rum Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "344",
+        "maxX": "349",
+        "minY": "712",
+        "maxY": "715",
+        "respawnRate": "60000",
+        "greeting": "Hey are you wanting to try some of my fine wines and spirits?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "193",
+              "amount": "3"
+            },
+            {
+              "id": "318",
+              "amount": "3"
+            },
+            {
+              "id": "142",
+              "amount": "1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Taverly vial store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "366",
+        "maxX": "370",
+        "minY": "504",
+        "maxY": "508",
+        "respawnRate": "5000",
+        "greeting": "Hello how can I help you?",
+        "options": {
+          "string": [
+            "What are you selling?",
+            "I'm okay, thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "464",
+              "amount": "400"
+            },
+            {
+              "id": "465",
+              "amount": "400"
+            },
+            {
+              "id": "468",
+              "amount": "3"
+            },
+            {
+              "id": "270",
+              "amount": "500"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Entrana Herblaw store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "434",
+        "maxX": "437",
+        "minY": "561",
+        "maxY": "567",
+        "respawnRate": "5000",
+        "greeting": "Hello how can I help you?",
+        "options": {
+          "string": [
+            "What are you selling?",
+            "I'm okay, thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "464",
+              "amount": "400"
+            },
+            {
+              "id": "465",
+              "amount": "400"
+            },
+            {
+              "id": "468",
+              "amount": "3"
+            },
+            {
+              "id": "270",
+              "amount": "500"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Varrock Shield Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "307",
+        "maxX": "312",
+        "minY": "529",
+        "maxY": "535",
+        "respawnRate": "30000",
+        "greeting": "Do you want to trade?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "4",
+              "amount": "10"
+            },
+            {
+              "id": "124",
+              "amount": "6"
+            },
+            {
+              "id": "3",
+              "amount": "5"
+            },
+            {
+              "id": "125",
+              "amount": "4"
+            },
+            {
+              "id": "432",
+              "amount": "3"
+            },
+            {
+              "id": "126",
+              "amount": "2"
+            },
+            {
+              "id": "128",
+              "amount": "6"
+            },
+            {
+              "id": "2",
+              "amount": "5"
+            },
+            {
+              "id": "129",
+              "amount": "4"
+            },
+            {
+              "id": "433",
+              "amount": "3"
+            },
+            {
+              "id": "130",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Pickaxe shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "289",
+        "maxX": "296",
+        "minY": "3327",
+        "maxY": "3334",
+        "respawnRate": "30000",
+        "greeting": "Do you want to buy my premium quality pickaxes?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "156",
+              "amount": "6"
+            },
+            {
+              "id": "1258",
+              "amount": "5"
+            },
+            {
+              "id": "1259",
+              "amount": "4"
+            },
+            {
+              "id": "1260",
+              "amount": "2"
+            },
+            {
+              "id": "1261",
+              "amount": "1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Barbarian Village Helmet Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "233",
+        "maxX": "239",
+        "minY": "507",
+        "maxY": "512",
+        "respawnRate": "60000",
+        "greeting": "Are you interested in buying or selling a helmet?",
+        "options": {
+          "string": [
+            "I could be, yes",
+            "No, I'll pass on that thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "104",
+              "amount": "6"
+            },
+            {
+              "id": "5",
+              "amount": "5"
+            },
+            {
+              "id": "105",
+              "amount": "4"
+            },
+            {
+              "id": "470",
+              "amount": "3"
+            },
+            {
+              "id": "106",
+              "amount": "2"
+            },
+            {
+              "id": "108",
+              "amount": "6"
+            },
+            {
+              "id": "6",
+              "amount": "5"
+            },
+            {
+              "id": "109",
+              "amount": "4"
+            },
+            {
+              "id": "230",
+              "amount": "3"
+            },
+            {
+              "id": "110",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Port Sarim Jewellers",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "277",
+        "maxX": "280",
+        "minY": "630",
+        "maxY": "634",
+        "respawnRate": "60000",
+        "greeting": "Would you like to buy or sell some gold jewellery?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No, I'm not that rich"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "283",
+              "amount": "1"
+            },
+            {
+              "id": "284",
+              "amount": "0"
+            },
+            {
+              "id": "285",
+              "amount": "0"
+            },
+            {
+              "id": "286",
+              "amount": "0"
+            },
+            {
+              "id": "287",
+              "amount": "0"
+            },
+            {
+              "id": "288",
+              "amount": "1"
+            },
+            {
+              "id": "289",
+              "amount": "0"
+            },
+            {
+              "id": "290",
+              "amount": "0"
+            },
+            {
+              "id": "291",
+              "amount": "0"
+            },
+            {
+              "id": "292",
+              "amount": "0"
+            },
+            {
+              "id": "301",
+              "amount": "1"
+            },
+            {
+              "id": "302",
+              "amount": "0"
+            },
+            {
+              "id": "303",
+              "amount": "0"
+            },
+            {
+              "id": "304",
+              "amount": "0"
+            },
+            {
+              "id": "305",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Bob's Axes",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "122",
+        "maxX": "124",
+        "minY": "666",
+        "maxY": "670",
+        "respawnRate": "60000",
+        "greeting": "Hello how can I help you?",
+        "options": {
+          "string": [
+            "Have you anything to sell?",
+            "Sorry nevermind"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "156",
+              "amount": "5"
+            },
+            {
+              "id": "87",
+              "amount": "6"
+            },
+            {
+              "id": "12",
+              "amount": "5"
+            },
+            {
+              "id": "88",
+              "amount": "4"
+            },
+            {
+              "id": "203",
+              "amount": "2"
+            },
+            {
+              "id": "205",
+              "amount": "6"
+            },
+            {
+              "id": "89",
+              "amount": "5"
+            },
+            {
+              "id": "90",
+              "amount": "4"
+            },
+            {
+              "id": "429",
+              "amount": "3"
+            },
+            {
+              "id": "91",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Gem Trader",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "79",
+        "maxX": "83",
+        "minY": "660",
+        "maxY": "663",
+        "respawnRate": "300000",
+        "greeting": "Would you be interested in buying some gems?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "160",
+              "amount": "1"
+            },
+            {
+              "id": "159",
+              "amount": "0"
+            },
+            {
+              "id": "158",
+              "amount": "0"
+            },
+            {
+              "id": "157",
+              "amount": "0"
+            },
+            {
+              "id": "164",
+              "amount": "1"
+            },
+            {
+              "id": "163",
+              "amount": "0"
+            },
+            {
+              "id": "162",
+              "amount": "0"
+            },
+            {
+              "id": "161",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Al-Kharid Scimitar Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "74",
+        "maxX": "78",
+        "minY": "674",
+        "maxY": "678",
+        "respawnRate": "60000",
+        "greeting": "A thousand greetings sir",
+        "options": {
+          "string": [
+            "Do you want to trade?",
+            "Nice cloak"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "82",
+              "amount": "6"
+            },
+            {
+              "id": "83",
+              "amount": "5"
+            },
+            {
+              "id": "84",
+              "amount": "4"
+            },
+            {
+              "id": "427",
+              "amount": "3"
+            },
+            {
+              "id": "85",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ardougne Plate-Mail Top Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "554",
+        "maxX": "557",
+        "minY": "600",
+        "maxY": "605",
+        "respawnRate": "60000",
+        "greeting": "Hello I sell plate mail tops",
+        "options": {
+          "string": [
+            "I may be interested",
+            "Sorry I'm not interested"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "308",
+              "amount": "6"
+            },
+            {
+              "id": "312",
+              "amount": "5"
+            },
+            {
+              "id": "309",
+              "amount": "4"
+            },
+            {
+              "id": "313",
+              "amount": "3"
+            },
+            {
+              "id": "310",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ardougne Gem Stall",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "549",
+        "maxX": "553",
+        "minY": "597",
+        "maxY": "602",
+        "respawnRate": "300000",
+        "greeting": "Here, look at my lovely gems",
+        "options": {
+          "string": [
+            "Ok show them to me",
+            "I'm not interested thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "164",
+              "amount": "1"
+            },
+            {
+              "id": "163",
+              "amount": "0"
+            },
+            {
+              "id": "162",
+              "amount": "0"
+            },
+            {
+              "id": "161",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ardougne Silver Stall",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "553",
+        "maxX": "558",
+        "minY": "592",
+        "maxY": "595",
+        "respawnRate": "120000",
+        "greeting": "Silver! Silver!",
+        "options": {
+          "string": [
+            "Show me",
+            "Thats nice"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "44",
+              "amount": "2"
+            },
+            {
+              "id": "383",
+              "amount": "1"
+            },
+            {
+              "id": "384",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ardougne Baker Stall",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "543",
+        "maxX": "546",
+        "minY": "597",
+        "maxY": "602",
+        "respawnRate": "60000",
+        "greeting": "Good day monsieur, Would you like ze nice freshly baked bread?",
+        "options": {
+          "string": [
+            "Lets see what you have",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "138",
+              "amount": "10"
+            },
+            {
+              "id": "330",
+              "amount": "10"
+            },
+            {
+              "id": "336",
+              "amount": "8"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ardougne Spice Stall",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "542",
+        "maxX": "547",
+        "minY": "588",
+        "maxY": "593",
+        "respawnRate": "60000",
+        "greeting": "Get your exotic spices here, rare very valuable spices here",
+        "options": {
+          "string": [
+            "Lets have a look at them then",
+            "No thank you I'm not interested"
+          ]
+        },
+        "items": {
+          "InvItem": {
+            "id": "707",
+            "amount": "2"
+          }
+        }
+      },
+      {
+        "name": "Magic Guild Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "599",
+        "maxX": "601",
+        "minY": "1703",
+        "maxY": "1705",
+        "respawnRate": "10000",
+        "greeting": "Welcome to the magic guild store, would you like to buy some supplies?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "31",
+              "amount": "1000"
+            },
+            {
+              "id": "32",
+              "amount": "1000"
+            },
+            {
+              "id": "33",
+              "amount": "1000"
+            },
+            {
+              "id": "34",
+              "amount": "1000"
+            },
+            {
+              "id": "35",
+              "amount": "1000"
+            },
+            {
+              "id": "36",
+              "amount": "1000"
+            },
+            {
+              "id": "825",
+              "amount": "50"
+            },
+            {
+              "id": "614",
+              "amount": "5"
+            },
+            {
+              "id": "101",
+              "amount": "2"
+            },
+            {
+              "id": "102",
+              "amount": "2"
+            },
+            {
+              "id": "103",
+              "amount": "2"
+            },
+            {
+              "id": "197",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Catherby Candle Seller",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "448",
+        "maxX": "450",
+        "minY": "492",
+        "maxY": "493",
+        "respawnRate": "60000",
+        "greeting": "Hi would you be interested in some of my fine candles?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": {
+            "id": "599",
+            "amount": "10"
+          }
+        }
+      },
+      {
+        "name": "Mage Area Rune Store",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "438",
+        "maxX": "442",
+        "minY": "3376",
+        "maxY": "3377",
+        "respawnRate": "5000",
+        "greeting": "Do you want to buy some runes?",
+        "options": {
+          "string": [
+            "Yes please",
+            "No thank you"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "31",
+              "amount": "500"
+            },
+            {
+              "id": "32",
+              "amount": "500"
+            },
+            {
+              "id": "33",
+              "amount": "500"
+            },
+            {
+              "id": "34",
+              "amount": "500"
+            },
+            {
+              "id": "35",
+              "amount": "500"
+            },
+            {
+              "id": "36",
+              "amount": "500"
+            },
+            {
+              "id": "1216",
+              "amount": "1"
+            },
+            {
+              "id": "1217",
+              "amount": "1"
+            },
+            {
+              "id": "1218",
+              "amount": "1"
+            },
+            {
+              "id": "1213",
+              "amount": "2"
+            },
+            {
+              "id": "1214",
+              "amount": "2"
+            },
+            {
+              "id": "1215",
+              "amount": "2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Dwarven Mine Ore Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "267",
+        "maxX": "271",
+        "minY": "3327",
+        "maxY": "3331",
+        "respawnRate": "60000",
+        "greeting": "Ello",
+        "options": {
+          "string": [
+            "Do you want to trade?",
+            "Hello shorty"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "168",
+              "amount": "4"
+            },
+            {
+              "id": "156",
+              "amount": "4"
+            },
+            {
+              "id": "150",
+              "amount": "0"
+            },
+            {
+              "id": "202",
+              "amount": "0"
+            },
+            {
+              "id": "151",
+              "amount": "0"
+            },
+            {
+              "id": "155",
+              "amount": "0"
+            },
+            {
+              "id": "169",
+              "amount": "0"
+            },
+            {
+              "id": "170",
+              "amount": "0"
+            },
+            {
+              "id": "172",
+              "amount": "0"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Legends-Guild Shop",
+        "general": "false",
+        "sellModifier": "60",
+        "buyModifier": "100",
+        "minX": "508",
+        "maxX": "513",
+        "minY": "2424",
+        "maxY": "2427",
+        "respawnRate": "30000",
+        "greeting": "Hello there and welcome to the shop of unusual items.",
+        "options": {
+          "string": [
+            "What are you selling?",
+            "Thanks"
+          ]
+        },
+        "items": {
+          "InvItem": [
+            {
+              "id": "796",
+              "amount": "20"
+            },
+            {
+              "id": "596",
+              "amount": "5"
+            },
+            {
+              "id": "421",
+              "amount": "3"
+            },
+            {
+              "id": "1276",
+              "amount": "1"
+            },
+            {
+              "id": "1288",
+              "amount": "3"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

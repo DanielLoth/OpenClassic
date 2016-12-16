@@ -1,0 +1,256 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "192"/* lure/bait */,
+        "ObjectFishingDef-array": {
+          "ObjectFishingDef": [
+            {/* trout/salmon */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "358",
+                    "requiredLevel": "20",
+                    "exp": "50"
+                  },
+                  {
+                    "fishId": "356",
+                    "requiredLevel": "30",
+                    "exp": "70"
+                  }
+                ]
+              },
+              "netId": "378",
+              "baitId": "381"
+            },
+            {/* sardine/herring */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "354",
+                    "requiredLevel": "5",
+                    "exp": "20"
+                  },
+                  {
+                    "fishId": "361",
+                    "requiredLevel": "10",
+                    "exp": "30"
+                  }
+                ]
+              },
+              "netId": "377",
+              "baitId": "380"
+            }
+          ]
+        }
+      },
+      {
+        "int": "193"/* net/bait */,
+        "ObjectFishingDef-array": {
+          "ObjectFishingDef": [
+            {/* anchovies/shrimp */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "349",
+                    "requiredLevel": "1",
+                    "exp": "10"
+                  },
+                  {
+                    "fishId": "351",
+                    "requiredLevel": "15",
+                    "exp": "40"
+                  }
+                ]
+              },
+              "netId": "376",
+              "baitId": "-1"
+            },
+            {/* sardine/herring */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "354",
+                    "requiredLevel": "5",
+                    "exp": "20"
+                  },
+                  {
+                    "fishId": "361",
+                    "requiredLevel": "10",
+                    "exp": "30"
+                  }
+                ]
+              },
+              "netId": "377",
+              "baitId": "380"
+            }
+          ]
+        }
+      },
+      {
+        "int": "194"/* harpoon/cage */,
+        "ObjectFishingDef-array": {
+          "ObjectFishingDef": [
+            {/* swordfish/tuna */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "369",
+                    "requiredLevel": "50",
+                    "exp": "100"
+                  },
+                  {
+                    "fishId": "366",
+                    "requiredLevel": "35",
+                    "exp": "80"
+                  }
+                ]
+              },
+              "netId": "379",
+              "baitId": "-1"
+            },
+            {/* lobster */
+              "defs": {
+                "ObjectFishDef": {
+                  "fishId": "372",
+                  "requiredLevel": "40",
+                  "exp": "90"
+                }
+              },
+              "netId": "375",
+              "baitId": "-1"
+            }
+          ]
+        }
+      },
+      {
+        "int": "261"/* net/harpoon */,
+        "ObjectFishingDef-array": {
+          "ObjectFishingDef": [
+            {/* big net */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "552",
+                    "requiredLevel": "16",
+                    "exp": "20"
+                  },
+                  {
+                    "fishId": "550",
+                    "requiredLevel": "23",
+                    "exp": "45"
+                  },
+                  {
+                    "fishId": "554",
+                    "requiredLevel": "46",
+                    "exp": "100"
+                  },
+                  {
+                    "fishId": "17",
+                    "requiredLevel": "16",
+                    "exp": "1"
+                  },
+                  {
+                    "fishId": "16",
+                    "requiredLevel": "16",
+                    "exp": "1"
+                  },
+                  {
+                    "fishId": "622",
+                    "requiredLevel": "16",
+                    "exp": "1"
+                  }
+                ]
+              },
+              "netId": "548",
+              "baitId": "-1"
+            },
+            {/* shark */
+              "defs": {
+                "ObjectFishDef": {
+                  "fishId": "545",
+                  "requiredLevel": "76",
+                  "exp": "110"
+                }
+              },
+              "netId": "379",
+              "baitId": "-1"
+            }
+          ]
+        }
+      },
+      {
+        "int": "376"/* cage/harpoon */,
+        "ObjectFishingDef-array": {
+          "ObjectFishingDef": [
+            {/* lobster */
+              "defs": {
+                "ObjectFishDef": {
+                  "fishId": "372",
+                  "requiredLevel": "40",
+                  "exp": "90"
+                }
+              },
+              "netId": "375",
+              "baitId": "-1"
+            },
+            {/* swordfish/tuna */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "369",
+                    "requiredLevel": "50",
+                    "exp": "100"
+                  },
+                  {
+                    "fishId": "366",
+                    "requiredLevel": "35",
+                    "exp": "80"
+                  }
+                ]
+              },
+              "netId": "379",
+              "baitId": "-1"
+            }
+          ]
+        }
+      },
+      {
+        "int": "557"/* harpoon/cage */,
+        "ObjectFishingDef-array": {
+          "ObjectFishingDef": [
+            {/* swordfish/tuna */
+              "defs": {
+                "ObjectFishDef": [
+                  {
+                    "fishId": "369",
+                    "requiredLevel": "50",
+                    "exp": "100"
+                  },
+                  {
+                    "fishId": "366",
+                    "requiredLevel": "35",
+                    "exp": "80"
+                  }
+                ]
+              },
+              "netId": "379",
+              "baitId": "-1"
+            },
+            {/* lobster */
+              "defs": {
+                "ObjectFishDef": {
+                  "fishId": "372",
+                  "requiredLevel": "40",
+                  "exp": "90"
+                }
+              },
+              "netId": "375",
+              "baitId": "-1"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

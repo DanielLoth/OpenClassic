@@ -1,0 +1,54 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "14",
+        "FiremakingDef": {
+          "level": "1",
+          "exp": "25",
+          "length": "90"
+        }
+      },
+      {
+        "int": "632",
+        "FiremakingDef": {
+          "level": "15",
+          "exp": "35",
+          "length": "110"
+        }
+      },
+      {
+        "int": "633",
+        "FiremakingDef": {
+          "level": "30",
+          "exp": "45",
+          "length": "130"
+        }
+      },
+      {
+        "int": "634",
+        "FiremakingDef": {
+          "level": "45",
+          "exp": "55",
+          "length": "150"
+        }
+      },
+      {
+        "int": "635",
+        "FiremakingDef": {
+          "level": "60",
+          "exp": "65",
+          "length": "170"
+        }
+      },
+      {
+        "int": "636",
+        "FiremakingDef": {
+          "level": "75",
+          "exp": "75",
+          "length": "190"
+        }
+      }
+    ]
+  }
+}

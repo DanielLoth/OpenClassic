@@ -1,0 +1,6525 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "0",
+        "ItemWieldableDef": {
+          "sprite": "118",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "8",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "2",
+        "ItemWieldableDef": {
+          "sprite": "99",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "9",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "3",
+        "ItemWieldableDef": {
+          "sprite": "99",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "8",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "4",
+        "ItemWieldableDef": {
+          "sprite": "106",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "3",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "5",
+        "ItemWieldableDef": {
+          "sprite": "71",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "4",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "6",
+        "ItemWieldableDef": {
+          "sprite": "14",
+          "type": "33",
+          "wieldPos": "0",
+          "armourPoints": "6",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "7",
+        "ItemWieldableDef": {
+          "sprite": "22",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "12",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "8",
+        "ItemWieldableDef": {
+          "sprite": "29",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "20",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "9",
+        "ItemWieldableDef": {
+          "sprite": "38",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "10",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "12",
+        "ItemWieldableDef": {
+          "sprite": "233",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "8",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "15",
+        "ItemWieldableDef": {
+          "sprite": "46",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "4",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "16",
+        "ItemWieldableDef": {
+          "sprite": "47",
+          "type": "256",
+          "wieldPos": "10",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "17",
+        "ItemWieldableDef": {
+          "sprite": "12",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "24",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "28",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "45",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "52",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "59",
+        "ItemWieldableDef": {
+          "sprite": "107",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "10",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "60",
+        "ItemWieldableDef": {
+          "sprite": "107",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "10",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "62",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "5",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "63",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "9",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "64",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "12",
+          "weaponPowerPoints": "12",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "65",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "16",
+          "weaponPowerPoints": "16",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "66",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "7",
+          "weaponPowerPoints": "7",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "67",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "14",
+          "weaponPowerPoints": "14",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "68",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "19",
+          "weaponPowerPoints": "19",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "69",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "25",
+          "weaponPowerPoints": "25",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "70",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "8",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "71",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "72",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "17",
+          "weaponPowerPoints": "17",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "73",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "23",
+          "weaponPowerPoints": "23",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "74",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "32",
+          "weaponPowerPoints": "32",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "75",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "50",
+          "weaponPowerPoints": "50",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "76",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "11",
+          "weaponPowerPoints": "11",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "77",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "15",
+          "weaponPowerPoints": "15",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "78",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "23",
+          "weaponPowerPoints": "23",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "79",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "32",
+          "weaponPowerPoints": "32",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "80",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "45",
+          "weaponPowerPoints": "45",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "81",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "71",
+          "weaponPowerPoints": "71",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "82",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "7",
+          "weaponPowerPoints": "7",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "83",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "84",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "15",
+          "weaponPowerPoints": "15",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "85",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "21",
+          "weaponPowerPoints": "21",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "86",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "29",
+          "weaponPowerPoints": "29",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "87",
+        "ItemWieldableDef": {
+          "sprite": "232",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "5",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "88",
+        "ItemWieldableDef": {
+          "sprite": "234",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "9",
+          "weaponPowerPoints": "12",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "89",
+        "ItemWieldableDef": {
+          "sprite": "110",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "9",
+          "weaponPowerPoints": "13",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "90",
+        "ItemWieldableDef": {
+          "sprite": "111",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "16",
+          "weaponPowerPoints": "21",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "91",
+        "ItemWieldableDef": {
+          "sprite": "112",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "22",
+          "weaponPowerPoints": "30",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "92",
+        "ItemWieldableDef": {
+          "sprite": "113",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "31",
+          "weaponPowerPoints": "42",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "93",
+        "ItemWieldableDef": {
+          "sprite": "114",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "48",
+          "weaponPowerPoints": "65",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "94",
+        "ItemWieldableDef": {
+          "sprite": "116",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "95",
+        "ItemWieldableDef": {
+          "sprite": "118",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "13",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "96",
+        "ItemWieldableDef": {
+          "sprite": "119",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "17",
+          "weaponPowerPoints": "12",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "97",
+        "ItemWieldableDef": {
+          "sprite": "120",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "25",
+          "weaponPowerPoints": "19",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "98",
+        "ItemWieldableDef": {
+          "sprite": "121",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "39",
+          "weaponPowerPoints": "29",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "100",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "101",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "102",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "103",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "104",
+        "ItemWieldableDef": {
+          "sprite": "70",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "3",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "105",
+        "ItemWieldableDef": {
+          "sprite": "72",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "7",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "106",
+        "ItemWieldableDef": {
+          "sprite": "73",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "10",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "107",
+        "ItemWieldableDef": {
+          "sprite": "74",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "14",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "108",
+        "ItemWieldableDef": {
+          "sprite": "13",
+          "type": "33",
+          "wieldPos": "0",
+          "armourPoints": "4",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "109",
+        "ItemWieldableDef": {
+          "sprite": "15",
+          "type": "33",
+          "wieldPos": "0",
+          "armourPoints": "9",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "110",
+        "ItemWieldableDef": {
+          "sprite": "16",
+          "type": "33",
+          "wieldPos": "0",
+          "armourPoints": "13",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "111",
+        "ItemWieldableDef": {
+          "sprite": "17",
+          "type": "33",
+          "wieldPos": "0",
+          "armourPoints": "19",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "112",
+        "ItemWieldableDef": {
+          "sprite": "18",
+          "type": "33",
+          "wieldPos": "0",
+          "armourPoints": "30",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "113",
+        "ItemWieldableDef": {
+          "sprite": "21",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "9",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "114",
+        "ItemWieldableDef": {
+          "sprite": "23",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "19",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "115",
+        "ItemWieldableDef": {
+          "sprite": "24",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "27",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "116",
+        "ItemWieldableDef": {
+          "sprite": "25",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "38",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "117",
+        "ItemWieldableDef": {
+          "sprite": "28",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "14",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "118",
+        "ItemWieldableDef": {
+          "sprite": "30",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "31",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "119",
+        "ItemWieldableDef": {
+          "sprite": "31",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "44",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "120",
+        "ItemWieldableDef": {
+          "sprite": "32",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "63",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "121",
+        "ItemWieldableDef": {
+          "sprite": "39",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "17",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "122",
+        "ItemWieldableDef": {
+          "sprite": "40",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "22",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "123",
+        "ItemWieldableDef": {
+          "sprite": "41",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "31",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "124",
+        "ItemWieldableDef": {
+          "sprite": "98",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "5",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "125",
+        "ItemWieldableDef": {
+          "sprite": "100",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "12",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "126",
+        "ItemWieldableDef": {
+          "sprite": "101",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "17",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "127",
+        "ItemWieldableDef": {
+          "sprite": "102",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "24",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "128",
+        "ItemWieldableDef": {
+          "sprite": "98",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "6",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "129",
+        "ItemWieldableDef": {
+          "sprite": "100",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "14",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "130",
+        "ItemWieldableDef": {
+          "sprite": "101",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "20",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "131",
+        "ItemWieldableDef": {
+          "sprite": "102",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "29",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "182",
+        "ItemWieldableDef": {
+          "sprite": "10",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "183",
+        "ItemWieldableDef": {
+          "sprite": "63",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "184",
+        "ItemWieldableDef": {
+          "sprite": "77",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "6",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "185",
+        "ItemWieldableDef": {
+          "sprite": "78",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "4",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "186",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "187",
+        "ItemWieldableDef": {
+          "sprite": "82",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "188",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "8",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "189",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "5",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "191",
+        "ItemWieldableDef": {
+          "sprite": "11",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "192",
+        "ItemWieldableDef": {
+          "sprite": "9",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "194",
+        "ItemWieldableDef": {
+          "sprite": "90",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "195",
+        "ItemWieldableDef": {
+          "sprite": "89",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "196",
+        "ItemWieldableDef": {
+          "sprite": "33",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "40",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "197",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "198",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "21",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "199",
+        "ItemWieldableDef": {
+          "sprite": "79",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "4",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "203",
+        "ItemWieldableDef": {
+          "sprite": "235",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "13",
+          "weaponPowerPoints": "17",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "204",
+        "ItemWieldableDef": {
+          "sprite": "236",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "18",
+          "weaponPowerPoints": "24",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "205",
+        "ItemWieldableDef": {
+          "sprite": "109",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "206",
+        "ItemWieldableDef": {
+          "sprite": "37",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "7",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "209",
+        "ItemWieldableDef": {
+          "sprite": "64",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "214",
+        "ItemWieldableDef": {
+          "sprite": "92",
+          "type": "640",
+          "wieldPos": "7",
+          "armourPoints": "7",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "215",
+        "ItemWieldableDef": {
+          "sprite": "93",
+          "type": "640",
+          "wieldPos": "7",
+          "armourPoints": "10",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "216",
+        "ItemWieldableDef": {
+          "sprite": "83",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "6",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "217",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "5",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "225",
+        "ItemWieldableDef": {
+          "sprite": "94",
+          "type": "640",
+          "wieldPos": "7",
+          "armourPoints": "17",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "226",
+        "ItemWieldableDef": {
+          "sprite": "95",
+          "type": "640",
+          "wieldPos": "7",
+          "armourPoints": "22",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "227",
+        "ItemWieldableDef": {
+          "sprite": "96",
+          "type": "640",
+          "wieldPos": "7",
+          "armourPoints": "31",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "229",
+        "ItemWieldableDef": {
+          "sprite": "65",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "230",
+        "ItemWieldableDef": {
+          "sprite": "19",
+          "type": "33",
+          "wieldPos": "0",
+          "armourPoints": "12",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "235",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "4",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "248",
+        "ItemWieldableDef": {
+          "sprite": "43",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "20",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "265",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "288",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "289",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "290",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "291",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "292",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "301",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "302",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "303",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "304",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "305",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "307",
+        "ItemWieldableDef": {
+          "sprite": "117",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "308",
+        "ItemWieldableDef": {
+          "sprite": "55",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "14",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "true"
+        }
+      },
+      {
+        "int": "309",
+        "ItemWieldableDef": {
+          "sprite": "57",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "31",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "true"
+        }
+      },
+      {
+        "int": "310",
+        "ItemWieldableDef": {
+          "sprite": "58",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "44",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "true"
+        }
+      },
+      {
+        "int": "311",
+        "ItemWieldableDef": {
+          "sprite": "59",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "63",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "true"
+        }
+      },
+      {
+        "int": "312",
+        "ItemWieldableDef": {
+          "sprite": "56",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "20",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "true"
+        }
+      },
+      {
+        "int": "313",
+        "ItemWieldableDef": {
+          "sprite": "61",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "40",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "true"
+        }
+      },
+      {
+        "int": "314",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "7",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "315",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "7",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "316",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "317",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "6",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "6",
+          "magicPoints": "6",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "385",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "8",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "388",
+        "ItemWieldableDef": {
+          "sprite": "84",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "6",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "389",
+        "ItemWieldableDef": {
+          "sprite": "88",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "5",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "396",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "26",
+          "weaponPowerPoints": "26",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "397",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "41",
+          "weaponPowerPoints": "41",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "398",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "45",
+          "weaponPowerPoints": "45",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "399",
+        "ItemWieldableDef": {
+          "sprite": "75",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "22",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "400",
+        "ItemWieldableDef": {
+          "sprite": "26",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "65",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "401",
+        "ItemWieldableDef": {
+          "sprite": "34",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "80",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "1",
+                  "40"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "33"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "402",
+        "ItemWieldableDef": {
+          "sprite": "42",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "49",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "403",
+        "ItemWieldableDef": {
+          "sprite": "103",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "38",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "404",
+        "ItemWieldableDef": {
+          "sprite": "103",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "46",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "405",
+        "ItemWieldableDef": {
+          "sprite": "237",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "27",
+          "weaponPowerPoints": "37",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "406",
+        "ItemWieldableDef": {
+          "sprite": "97",
+          "type": "640",
+          "wieldPos": "7",
+          "armourPoints": "49",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "407",
+        "ItemWieldableDef": {
+          "sprite": "60",
+          "type": "322",
+          "wieldPos": "1",
+          "armourPoints": "80",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "true"
+        }
+      },
+      {
+        "int": "420",
+        "ItemWieldableDef": {
+          "sprite": "105",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "3",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "423",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "11",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "424",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "16",
+          "weaponPowerPoints": "13",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "425",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "20",
+          "weaponPowerPoints": "16",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "426",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "29",
+          "weaponPowerPoints": "23",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "427",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "19",
+          "weaponPowerPoints": "15",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "428",
+        "ItemWieldableDef": {
+          "sprite": "238",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "11",
+          "weaponPowerPoints": "15",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "429",
+        "ItemWieldableDef": {
+          "sprite": "115",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "19",
+          "weaponPowerPoints": "26",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "430",
+        "ItemWieldableDef": {
+          "sprite": "122",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "15",
+          "weaponPowerPoints": "11",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "431",
+        "ItemWieldableDef": {
+          "sprite": "27",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "24",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "432",
+        "ItemWieldableDef": {
+          "sprite": "104",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "15",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "433",
+        "ItemWieldableDef": {
+          "sprite": "104",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "17",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "434",
+        "ItemWieldableDef": {
+          "sprite": "159",
+          "type": "640",
+          "wieldPos": "7",
+          "armourPoints": "20",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "470",
+        "ItemWieldableDef": {
+          "sprite": "76",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "9",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "509",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "511",
+        "ItemWieldableDef": {
+          "sprite": "66",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "512",
+        "ItemWieldableDef": {
+          "sprite": "67",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "513",
+        "ItemWieldableDef": {
+          "sprite": "68",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "514",
+        "ItemWieldableDef": {
+          "sprite": "69",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "522",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "4",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "7",
+          "magicPoints": "4",
+          "prayerPoints": "4",
+          "rangePoints": "4",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "544",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "556",
+        "ItemWieldableDef": {
+          "sprite": "156",
+          "type": "256",
+          "wieldPos": "10",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "559",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "560",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "5",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "561",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "9",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "562",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "12",
+          "weaponPowerPoints": "12",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "563",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "26",
+          "weaponPowerPoints": "26",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "564",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "16",
+          "weaponPowerPoints": "16",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "565",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "11",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "576",
+        "ItemWieldableDef": {
+          "sprite": "150",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "577",
+        "ItemWieldableDef": {
+          "sprite": "151",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "578",
+        "ItemWieldableDef": {
+          "sprite": "152",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "579",
+        "ItemWieldableDef": {
+          "sprite": "153",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "580",
+        "ItemWieldableDef": {
+          "sprite": "154",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "581",
+        "ItemWieldableDef": {
+          "sprite": "155",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "593",
+        "ItemWieldableDef": {
+          "sprite": "163",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "71",
+          "weaponPowerPoints": "71",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "60"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "594",
+        "ItemWieldableDef": {
+          "sprite": "162",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "69",
+          "weaponPowerPoints": "75",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "60"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "30"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "597",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "4",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "7",
+          "magicPoints": "4",
+          "prayerPoints": "4",
+          "rangePoints": "4",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "606",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "607",
+        "ItemWieldableDef": {
+          "sprite": "86",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "6",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "608",
+        "ItemWieldableDef": {
+          "sprite": "87",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "5",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "609",
+        "ItemWieldableDef": {
+          "sprite": "164",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "-10",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "610",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "614",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "35",
+          "weaponPowerPoints": "35",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "615",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "35",
+          "weaponPowerPoints": "35",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "616",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "35",
+          "weaponPowerPoints": "35",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "617",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "35",
+          "weaponPowerPoints": "35",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "618",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "35",
+          "weaponPowerPoints": "35",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "648",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "13",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "649",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "10",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "650",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "18",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "651",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "15",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "15"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "652",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "23",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "653",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "20",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "25"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "654",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "28",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "655",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "25",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "35"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "656",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "33",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "50"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "657",
+        "ItemWieldableDef": {
+          "sprite": "108",
+          "type": "24",
+          "wieldPos": "3",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "30",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "4",
+                "45"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "682",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "50",
+          "weaponPowerPoints": "50",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "683",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "50",
+          "weaponPowerPoints": "50",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "684",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "50",
+          "weaponPowerPoints": "50",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "685",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "50",
+          "weaponPowerPoints": "50",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": [
+              {
+                "int": [
+                  "0",
+                  "20"
+                ]
+              },
+              {
+                "int": [
+                  "6",
+                  "20"
+                ]
+              }
+            ]
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "693",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "698",
+        "ItemWieldableDef": {
+          "sprite": "156",
+          "type": "256",
+          "wieldPos": "10",
+          "armourPoints": "8",
+          "weaponAimPoints": "2",
+          "weaponPowerPoints": "2",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "699",
+        "ItemWieldableDef": {
+          "sprite": "156",
+          "type": "256",
+          "wieldPos": "10",
+          "armourPoints": "8",
+          "weaponAimPoints": "2",
+          "weaponPowerPoints": "2",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "700",
+        "ItemWieldableDef": {
+          "sprite": "156",
+          "type": "256",
+          "wieldPos": "10",
+          "armourPoints": "8",
+          "weaponAimPoints": "2",
+          "weaponPowerPoints": "2",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "701",
+        "ItemWieldableDef": {
+          "sprite": "156",
+          "type": "256",
+          "wieldPos": "10",
+          "armourPoints": "8",
+          "weaponAimPoints": "2",
+          "weaponPowerPoints": "2",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "702",
+        "ItemWieldableDef": {
+          "sprite": "85",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "6",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "703",
+        "ItemWieldableDef": {
+          "sprite": "91",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "5",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "721",
+        "ItemWieldableDef": {
+          "sprite": "172",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "722",
+        "ItemWieldableDef": {
+          "sprite": "227",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "725",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "726",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "733",
+        "ItemWieldableDef": {
+          "sprite": "174",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "4",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "734",
+        "ItemWieldableDef": {
+          "sprite": "175",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "12",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "744",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "10",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "754",
+        "ItemWieldableDef": {
+          "sprite": "110",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "9",
+          "weaponPowerPoints": "13",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "760",
+        "ItemWieldableDef": {
+          "sprite": "46",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "761",
+        "ItemWieldableDef": {
+          "sprite": "177",
+          "type": "644",
+          "wieldPos": "2",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "766",
+        "ItemWieldableDef": {
+          "sprite": "178",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "782",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "795",
+        "ItemWieldableDef": {
+          "sprite": "179",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "34",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "60"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "802",
+        "ItemWieldableDef": {
+          "sprite": "86",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "807",
+        "ItemWieldableDef": {
+          "sprite": "228",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "6",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "808",
+        "ItemWieldableDef": {
+          "sprite": "159",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "5",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "826",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "827",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "828",
+        "ItemWieldableDef": {
+          "sprite": "182",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "831",
+        "ItemWieldableDef": {
+          "sprite": "185",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "832",
+        "ItemWieldableDef": {
+          "sprite": "186",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "836",
+        "ItemWieldableDef": {
+          "sprite": "187",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "837",
+        "ItemWieldableDef": {
+          "sprite": "188",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "838",
+        "ItemWieldableDef": {
+          "sprite": "189",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "839",
+        "ItemWieldableDef": {
+          "sprite": "190",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "840",
+        "ItemWieldableDef": {
+          "sprite": "191",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "841",
+        "ItemWieldableDef": {
+          "sprite": "192",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "842",
+        "ItemWieldableDef": {
+          "sprite": "193",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "843",
+        "ItemWieldableDef": {
+          "sprite": "194",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "844",
+        "ItemWieldableDef": {
+          "sprite": "195",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "845",
+        "ItemWieldableDef": {
+          "sprite": "196",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "846",
+        "ItemWieldableDef": {
+          "sprite": "197",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "847",
+        "ItemWieldableDef": {
+          "sprite": "198",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "848",
+        "ItemWieldableDef": {
+          "sprite": "199",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "849",
+        "ItemWieldableDef": {
+          "sprite": "200",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "850",
+        "ItemWieldableDef": {
+          "sprite": "201",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "852",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "966",
+        "ItemWieldableDef": {
+          "sprite": "204",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "967",
+        "ItemWieldableDef": {
+          "sprite": "205",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "968",
+        "ItemWieldableDef": {
+          "sprite": "206",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "969",
+        "ItemWieldableDef": {
+          "sprite": "207",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "970",
+        "ItemWieldableDef": {
+          "sprite": "208",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "971",
+        "ItemWieldableDef": {
+          "sprite": "209",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "990",
+        "ItemWieldableDef": {
+          "sprite": "212",
+          "type": "512",
+          "wieldPos": "9",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1000",
+        "ItemWieldableDef": {
+          "sprite": "210",
+          "type": "8216",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "50",
+          "weaponPowerPoints": "50",
+          "magicPoints": "20",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1006",
+        "ItemWieldableDef": {
+          "sprite": "156",
+          "type": "256",
+          "wieldPos": "10",
+          "armourPoints": "8",
+          "weaponAimPoints": "2",
+          "weaponPowerPoints": "2",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1009",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1010",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1011",
+        "ItemWieldableDef": {
+          "sprite": "81",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1013",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1015",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1019",
+        "ItemWieldableDef": {
+          "sprite": "87",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1020",
+        "ItemWieldableDef": {
+          "sprite": "86",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1022",
+        "ItemWieldableDef": {
+          "sprite": "215",
+          "type": "128",
+          "wieldPos": "7",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1023",
+        "ItemWieldableDef": {
+          "sprite": "214",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1024",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1028",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1029",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "8",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1068",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1069",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1070",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1075",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1076",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "5",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1077",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "9",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1078",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "12",
+          "weaponPowerPoints": "12",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1079",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "16",
+          "weaponPowerPoints": "16",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1080",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "26",
+          "weaponPowerPoints": "26",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1081",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "11",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "10"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1088",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1089",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1090",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1091",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1092",
+        "ItemWieldableDef": {
+          "sprite": "220",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1122",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1123",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1124",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1125",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1126",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1127",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "35",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1128",
+        "ItemWieldableDef": {
+          "sprite": "48",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "5",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1129",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1130",
+        "ItemWieldableDef": {
+          "sprite": "50",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "9",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1131",
+        "ItemWieldableDef": {
+          "sprite": "51",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "12",
+          "weaponPowerPoints": "12",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1132",
+        "ItemWieldableDef": {
+          "sprite": "54",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "11",
+          "weaponPowerPoints": "9",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1133",
+        "ItemWieldableDef": {
+          "sprite": "52",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "16",
+          "weaponPowerPoints": "16",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1134",
+        "ItemWieldableDef": {
+          "sprite": "53",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "26",
+          "weaponPowerPoints": "26",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "40",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1135",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1136",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1137",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "5"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1138",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "20"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1139",
+        "ItemWieldableDef": {
+          "sprite": "181",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "30"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1140",
+        "ItemWieldableDef": {
+          "sprite": "220",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "0",
+                "40"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1156",
+        "ItemWieldableDef": {
+          "sprite": "218",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1172",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "7",
+          "weaponPowerPoints": "7",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1194",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1205",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1213",
+        "ItemWieldableDef": {
+          "sprite": "63",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "10",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1214",
+        "ItemWieldableDef": {
+          "sprite": "65",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "10",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1215",
+        "ItemWieldableDef": {
+          "sprite": "66",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "2",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "10",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1216",
+        "ItemWieldableDef": {
+          "sprite": "210",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "2",
+          "magicPoints": "6",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1217",
+        "ItemWieldableDef": {
+          "sprite": "123",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "2",
+          "magicPoints": "6",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1218",
+        "ItemWieldableDef": {
+          "sprite": "219",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "2",
+          "magicPoints": "6",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1224",
+        "ItemWieldableDef": {
+          "sprite": "80",
+          "type": "1024",
+          "wieldPos": "8",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1230",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "6",
+          "weaponPowerPoints": "6",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1234",
+        "ItemWieldableDef": {
+          "sprite": "77",
+          "type": "64",
+          "wieldPos": "6",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1236",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "5",
+          "weaponPowerPoints": "5",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1237",
+        "ItemWieldableDef": {
+          "sprite": "164",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1239",
+        "ItemWieldableDef": {
+          "sprite": "0",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1255",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1256",
+        "ItemWieldableDef": {
+          "sprite": "49",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "10",
+          "weaponPowerPoints": "10",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1264",
+        "ItemWieldableDef": {
+          "sprite": "78",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "4",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1278",
+        "ItemWieldableDef": {
+          "sprite": "225",
+          "type": "8",
+          "wieldPos": "3",
+          "armourPoints": "50",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": {
+            "entry": {
+              "int": [
+                "1",
+                "60"
+              ]
+            }
+          },
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1288",
+        "ItemWieldableDef": {
+          "sprite": "226",
+          "type": "2048",
+          "wieldPos": "11",
+          "armourPoints": "7",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1289",
+        "ItemWieldableDef": {
+          "sprite": "229",
+          "type": "16",
+          "wieldPos": "4",
+          "armourPoints": "0",
+          "weaponAimPoints": "8",
+          "weaponPowerPoints": "4",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": null,
+          "femaleOnly": "false"
+        }
+      },
+      {
+        "int": "1309",
+        "ItemWieldableDef": {
+          "sprite": "230",
+          "type": "32",
+          "wieldPos": "5",
+          "armourPoints": "0",
+          "weaponAimPoints": "0",
+          "weaponPowerPoints": "0",
+          "magicPoints": "0",
+          "prayerPoints": "0",
+          "rangePoints": "0",
+          "requiredStats": "",
+          "femaleOnly": "false"
+        }
+      }
+    ]
+  }
+}

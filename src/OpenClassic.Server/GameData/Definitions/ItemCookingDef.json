@@ -1,0 +1,231 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "133",
+        "ItemCookingDef": {
+          "exp": "30",
+          "cookedId": "132",
+          "burnedId": "134",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "502",
+        "ItemCookingDef": {
+          "exp": "30",
+          "cookedId": "132",
+          "burnedId": "134",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "503",
+        "ItemCookingDef": {
+          "exp": "30",
+          "cookedId": "132",
+          "burnedId": "134",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "504",
+        "ItemCookingDef": {
+          "exp": "30",
+          "cookedId": "132",
+          "burnedId": "134",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "349",
+        "ItemCookingDef": {
+          "exp": "30",
+          "cookedId": "350",
+          "burnedId": "353",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "137",
+        "ItemCookingDef": {
+          "exp": "40",
+          "cookedId": "138",
+          "burnedId": "139",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "354",
+        "ItemCookingDef": {
+          "exp": "40",
+          "cookedId": "355",
+          "burnedId": "360",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "361",
+        "ItemCookingDef": {
+          "exp": "50",
+          "cookedId": "362",
+          "burnedId": "365",
+          "requiredLvl": "5"
+        }
+      },
+      {
+        "int": "256",
+        "ItemCookingDef": {
+          "exp": "60",
+          "cookedId": "258",
+          "burnedId": "260",
+          "requiredLvl": "10"
+        }
+      },
+      {
+        "int": "351",
+        "ItemCookingDef": {
+          "exp": "30",
+          "cookedId": "352",
+          "burnedId": "353",
+          "requiredLvl": "15"
+        }
+      },
+      {
+        "int": "552",
+        "ItemCookingDef": {
+          "exp": "60",
+          "cookedId": "553",
+          "burnedId": "365",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "358",
+        "ItemCookingDef": {
+          "exp": "70",
+          "cookedId": "359",
+          "burnedId": "360",
+          "requiredLvl": "15"
+        }
+      },
+      {
+        "int": "550",
+        "ItemCookingDef": {
+          "exp": "75",
+          "cookedId": "551",
+          "burnedId": "365",
+          "requiredLvl": "1"
+        }
+      },
+      {
+        "int": "255",
+        "ItemCookingDef": {
+          "exp": "80",
+          "cookedId": "259",
+          "burnedId": "260",
+          "requiredLvl": "20"
+        }
+      },
+      {
+        "int": "363",
+        "ItemCookingDef": {
+          "exp": "80",
+          "cookedId": "364",
+          "burnedId": "365",
+          "requiredLvl": "20"
+        }
+      },
+      {
+        "int": "345",
+        "ItemCookingDef": {
+          "exp": "90",
+          "cookedId": "346",
+          "burnedId": "347",
+          "requiredLvl": "25"
+        }
+      },
+      {
+        "int": "356",
+        "ItemCookingDef": {
+          "exp": "90",
+          "cookedId": "357",
+          "burnedId": "360",
+          "requiredLvl": "25"
+        }
+      },
+      {
+        "int": "254",
+        "ItemCookingDef": {
+          "exp": "100",
+          "cookedId": "257",
+          "burnedId": "260",
+          "requiredLvl": "30"
+        }
+      },
+      {
+        "int": "366",
+        "ItemCookingDef": {
+          "exp": "100",
+          "cookedId": "367",
+          "burnedId": "368",
+          "requiredLvl": "30"
+        }
+      },
+      {
+        "int": "324",
+        "ItemCookingDef": {
+          "exp": "110",
+          "cookedId": "325",
+          "burnedId": "322",
+          "requiredLvl": "35"
+        }
+      },
+      {
+        "int": "339",
+        "ItemCookingDef": {
+          "exp": "120",
+          "cookedId": "330",
+          "burnedId": "331",
+          "requiredLvl": "40"
+        }
+      },
+      {
+        "int": "372",
+        "ItemCookingDef": {
+          "exp": "120",
+          "cookedId": "373",
+          "burnedId": "374",
+          "requiredLvl": "40"
+        }
+      },
+      {
+        "int": "369",
+        "ItemCookingDef": {
+          "exp": "140",
+          "cookedId": "370",
+          "burnedId": "371",
+          "requiredLvl": "45"
+        }
+      },
+      {
+        "int": "554",
+        "ItemCookingDef": {
+          "exp": "130",
+          "cookedId": "555",
+          "burnedId": "368",
+          "requiredLvl": "42"
+        }
+      },
+      {
+        "int": "545",
+        "ItemCookingDef": {
+          "exp": "210",
+          "cookedId": "546",
+          "burnedId": "547",
+          "requiredLvl": "80"
+        }
+      }
+    ]
+  }
+}

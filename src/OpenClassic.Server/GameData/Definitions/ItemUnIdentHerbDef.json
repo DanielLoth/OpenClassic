@@ -1,0 +1,86 @@
+{
+  "map": {
+    "entry": [
+      {
+        "int": "165",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "1",
+          "newId": "444",
+          "exp": "2"
+        }
+      },
+      {
+        "int": "435",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "5",
+          "newId": "445",
+          "exp": "4"
+        }
+      },
+      {
+        "int": "436",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "10",
+          "newId": "446",
+          "exp": "5"
+        }
+      },
+      {
+        "int": "437",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "20",
+          "newId": "447",
+          "exp": "6"
+        }
+      },
+      {
+        "int": "438",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "25",
+          "newId": "448",
+          "exp": "8"
+        }
+      },
+      {
+        "int": "439",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "40",
+          "newId": "449",
+          "exp": "9"
+        }
+      },
+      {
+        "int": "440",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "48",
+          "newId": "450",
+          "exp": "10"
+        }
+      },
+      {
+        "int": "441",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "54",
+          "newId": "451",
+          "exp": "12"
+        }
+      },
+      {
+        "int": "442",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "65",
+          "newId": "452",
+          "exp": "13"
+        }
+      },
+      {
+        "int": "443",
+        "ItemUnIdentHerbDef": {
+          "requiredLvl": "70",
+          "newId": "453",
+          "exp": "14"
+        }
+      }
+    ]
+  }
+}
