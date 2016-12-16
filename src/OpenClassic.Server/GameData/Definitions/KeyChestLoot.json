@@ -1,102 +1,98 @@
-{
-  "linked-list-array": {
-    "linked-list": [
+[
+  {
+    "InvItem": {
+      "ItemId": "408",
+      "Amount": "3"
+    }
+  },
+  {
+    "InvItem": {
+      "ItemId": "369",
+      "Amount": "5"
+    }
+  },
+  {
+    "InvItem": {
+      "ItemId": "518",
+      "Amount": "20"
+    }
+  },
+  {
+    "InvItem": {
+      "ItemId": "517",
+      "Amount": "30"
+    }
+  },
+  {
+    "InvItem": {
+      "ItemId": "526",
+      "Amount": "1"
+    }
+  },
+  {
+    "InvItem": {
+      "ItemId": "527",
+      "Amount": "1"
+    }
+  },
+  {
+    "InvItem": [
       {
-        "InvItem": {
-          "id": "408",
-          "amount": "3"
-        }
+        "ItemId": "10",
+        "Amount": "750"
       },
       {
-        "InvItem": {
-          "id": "369",
-          "amount": "5"
-        }
+        "ItemId": "527",
+        "Amount": "1"
+      }
+    ]
+  },
+  {
+    "InvItem": {
+      "ItemId": "10",
+      "Amount": "2000"
+    }
+  },
+  {
+    "InvItem": {
+      "ItemId": "179",
+      "Amount": "1"
+    }
+  },
+  {
+    "InvItem": [
+      {
+        "ItemId": "160",
+        "Amount": "1"
       },
       {
-        "InvItem": {
-          "id": "518",
-          "amount": "20"
-        }
+        "ItemId": "164",
+        "Amount": "1"
       },
       {
-        "InvItem": {
-          "id": "517",
-          "amount": "30"
-        }
+        "ItemId": "159",
+        "Amount": "1"
       },
       {
-        "InvItem": {
-          "id": "526",
-          "amount": "1"
-        }
+        "ItemId": "163",
+        "Amount": "1"
       },
       {
-        "InvItem": {
-          "id": "527",
-          "amount": "1"
-        }
+        "ItemId": "158",
+        "Amount": "1"
       },
       {
-        "InvItem": [
-          {
-            "id": "10",
-            "amount": "750"
-          },
-          {
-            "id": "527",
-            "amount": "1"
-          }
-        ]
+        "ItemId": "162",
+        "Amount": "1"
       },
       {
-        "InvItem": {
-          "id": "10",
-          "amount": "2000"
-        }
+        "ItemId": "157",
+        "Amount": "1"
       },
       {
-        "InvItem": {
-          "id": "179",
-          "amount": "1"
-        }
-      },
-      {
-        "InvItem": [
-          {
-            "id": "160",
-            "amount": "1"
-          },
-          {
-            "id": "164",
-            "amount": "1"
-          },
-          {
-            "id": "159",
-            "amount": "1"
-          },
-          {
-            "id": "163",
-            "amount": "1"
-          },
-          {
-            "id": "158",
-            "amount": "1"
-          },
-          {
-            "id": "162",
-            "amount": "1"
-          },
-          {
-            "id": "157",
-            "amount": "1"
-          },
-          {
-            "id": "161",
-            "amount": "1"
-          }
-        ]
+        "ItemId": "161",
+        "Amount": "1"
       }
     ]
   }
-}
+]
