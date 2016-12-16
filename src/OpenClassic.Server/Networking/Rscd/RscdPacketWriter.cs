@@ -110,7 +110,7 @@ namespace OpenClassic.Server.Networking.Rscd
             CreatePacket(session, 152);
 
             WriteByte(session, 1); // Auto camera angle
-            WriteByte(session, 1); // Mouse button setting
+            WriteByte(session, 0); // Mouse button setting
             WriteByte(session, 1); // Sound effects
             WriteByte(session, 1); // Show roofs
             WriteByte(session, 1); // Enable automatic screenshots
