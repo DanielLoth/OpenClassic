@@ -4,7 +4,7 @@ namespace OpenClassic.Server.Domain
 {
     public interface INpc : IEquatable<INpc>, IIndexable, IIdentifiable, ILocatable
     {
-        bool Active { get; set; }
+        new bool Active { get; set; }
 
         short StartX { get; set; }
         short StartY { get; set; }

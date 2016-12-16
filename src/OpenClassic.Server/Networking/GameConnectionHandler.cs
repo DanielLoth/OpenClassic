@@ -247,7 +247,6 @@ namespace OpenClassic.Server.Networking
 
             var bufferAfterFlush = _buffer;
             Debug.Assert(bufferAfterFlush != null);
-            Debug.Assert(bufferBeforeFlush != bufferAfterFlush);
             Debug.Assert(bufferAfterFlush.ReferenceCount == 1);
 
             return writeAndFlushResult;
@@ -286,7 +285,7 @@ namespace OpenClassic.Server.Networking
 
             // TODO: Consider using a single-threaded allocator here that belongs exclusively to the game thread.
 
-            _buffer = gameChannel.Allocator.Buffer();
+            _buffer = gameChannel.Allocator.Buffer(8192);
         }
     }
 }

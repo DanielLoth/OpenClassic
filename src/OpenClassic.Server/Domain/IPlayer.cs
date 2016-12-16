@@ -1,10 +1,11 @@
-﻿using System;
+﻿using OpenClassic.Server.Collections;
+using System;
 
 namespace OpenClassic.Server.Domain
 {
     public interface IPlayer : IEquatable<IPlayer>, IIndexable, ILocatable
     {
-        bool Active { get; set; }
+        new bool Active { get; set; }
 
         #region Appearance fields
 
@@ -21,6 +22,19 @@ namespace OpenClassic.Server.Domain
         int GetSprite(int pos);
 
         int[] GetSprites();
+
+        #endregion
+
+        #region World view fields
+
+        EntityCollection<IPlayer> WatchedPlayers { get; }
+        EntityCollection<INpc> WatchedNpcs { get; }
+
+        void RevalidateWatchedNpcs();
+        void RevalidateWatchedPlayers();
+
+        void UpdateWatchedNpcs();
+        void UpdateWatchedPlayers();
 
         #endregion
     }

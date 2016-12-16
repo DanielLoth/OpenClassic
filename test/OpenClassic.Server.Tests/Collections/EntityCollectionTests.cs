@@ -52,7 +52,7 @@ namespace OpenClassic.Server.Tests.Collections
 
             entities.Remove(player);
 
-            Assert.True(entities.Removed.Contains(player));
+            Assert.True(entities.RemovedReadOnly.Contains(player));
         }
 
         [Fact]
@@ -167,7 +167,7 @@ namespace OpenClassic.Server.Tests.Collections
             Assert.False(entities.AddedReadOnly.Contains(player));
 
             // Verify that the 'known' list now contains an entity.
-            Assert.True(entities.Known.Contains(player));
+            Assert.True(entities.KnownReadOnly.Contains(player));
         }
 
         [Fact]
@@ -184,7 +184,7 @@ namespace OpenClassic.Server.Tests.Collections
             entities.Remove(player);
             entities.Update();
 
-            Assert.False(entities.Known.Contains(player));
+            Assert.False(entities.KnownReadOnly.Contains(player));
         }
 
         [Fact]
@@ -214,7 +214,7 @@ namespace OpenClassic.Server.Tests.Collections
             entities.Remove(player);
             entities.Update();
 
-            Assert.False(entities.Removed.Contains(player));
+            Assert.False(entities.RemovedReadOnly.Contains(player));
         }
 
         [Fact]

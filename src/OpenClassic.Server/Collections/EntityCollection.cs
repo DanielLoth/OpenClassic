@@ -24,8 +24,8 @@ namespace OpenClassic.Server.Collections
         }
 
         public ISet<T> AddedReadOnly => addedReadOnly;
-        public ISet<T> Known => knownReadOnly;
-        public ISet<T> Removed => removedReadOnly;
+        public ISet<T> KnownReadOnly => knownReadOnly;
+        public ISet<T> RemovedReadOnly => removedReadOnly;
 
         public ISet<T> All
         {

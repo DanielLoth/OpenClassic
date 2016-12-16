@@ -25,6 +25,8 @@ namespace OpenClassic.Server.Networking.Rscd
 
             packetWriter.SendPlayerAppearanceUpdate(session);
             packetWriter.SendNpcAppearanceUpdate(session);
+
+            session.WriteAndFlushSessionBuffer();
         }
     }
 }

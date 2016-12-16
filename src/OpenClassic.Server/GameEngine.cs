@@ -1,4 +1,5 @@
-﻿using OpenClassic.Server.Networking;
+﻿using OpenClassic.Server.Domain;
+using OpenClassic.Server.Networking;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -18,6 +19,8 @@ namespace OpenClassic.Server
 
         private readonly ISessionUpdater SessionUpdater;
 
+        private readonly IWorld World;
+
         public bool IsOnGameThread => Thread.CurrentThread == GameThread;
 
         static GameEngine()
@@ -25,11 +28,13 @@ namespace OpenClassic.Server
             GameThread = Thread.CurrentThread;
         }
 
-        public GameEngine(ISessionUpdater updater)
+        public GameEngine(ISessionUpdater updater, IWorld world)
         {
             Debug.Assert(updater != null);
+            Debug.Assert(world != null);
 
             SessionUpdater = updater;
+            World = world;
         }
 
         public void GameLoop()
@@ -153,6 +158,18 @@ namespace OpenClassic.Server
             // 3. Update message queues (i.e., chat messages)
             // 4. Update trade/duel offers.
 
+            foreach (var player in World.Players)
+            {
+                if (player.Active)
+                {
+                    player.RevalidateWatchedNpcs();
+                    player.RevalidateWatchedPlayers();
+
+                    player.UpdateWatchedNpcs();
+                    player.UpdateWatchedPlayers();
+                }
+            }
+
             foreach (var session in Sessions)
             {
                 if (session.ShouldUpdate)
@@ -163,6 +180,14 @@ namespace OpenClassic.Server
 
             // TODO: Update collections (e.g.: watched entities, etc).
             // In the world class? Or here? Unsure.
+            foreach (var player in World.Players)
+            {
+                if (player.Active)
+                {
+                    player.WatchedPlayers.Update();
+                    player.WatchedNpcs.Update();
+                }
+            }
         }
     }
 }

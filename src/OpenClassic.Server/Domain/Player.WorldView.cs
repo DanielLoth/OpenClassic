@@ -23,9 +23,9 @@ namespace OpenClassic.Server.Domain
 
         public void RevalidateWatchedNpcs()
         {
-            foreach (var npc in watchedNpcs.Known)
+            foreach (var npc in watchedNpcs.KnownReadOnly)
             {
-                if (!WithinRange(npc) || !npc.Active)
+                if (!npc.Active || !WithinRange(npc))
                 {
                     watchedNpcs.Remove(npc);
                 }
@@ -34,7 +34,13 @@ namespace OpenClassic.Server.Domain
 
         public void UpdateWatchedNpcs()
         {
-
+            foreach (var npc in _npcSpatialMap.GetObjectsInProximityLazy(_location, 16))
+            {
+                if (!watchedNpcs.Contains(npc) || (watchedNpcs.Removing(npc) && WithinRange(npc)))
+                {
+                    watchedNpcs.Add(npc);
+                }
+            }
         }
 
         private bool WithinRange(ILocatable other)

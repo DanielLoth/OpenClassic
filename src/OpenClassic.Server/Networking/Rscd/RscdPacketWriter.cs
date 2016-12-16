@@ -224,16 +224,96 @@ namespace OpenClassic.Server.Networking.Rscd
         {
             Debug.Assert(session != null);
 
-            CreatePacket(session, 77);
+            var player = session.Player;
+            var watchedNpcs = player.WatchedNpcs;
 
-            WriteBits(session, 0, 8); // Number of known NPCs
+            var newNpcs = watchedNpcs.AddedReadOnly;
+            var knownNpcs = watchedNpcs.KnownReadOnly;
+
+            CreatePacket(session, 77);
+            WriteBits(session, knownNpcs.Count, 8); // Number of known NPCs
 
             // TODO: Loop through known NPCs here.
+            foreach (var npc in knownNpcs)
+            {
+                WriteBits(session, npc.Index, 16);
+                if (watchedNpcs.Removing(npc))
+                {
+                    WriteBits(session, 1, 1);
+                    WriteBits(session, 1, 1);
+                    WriteBits(session, 12, 4);
+                }
+                //else if (n.hasMoved())
+                //{
+                //    packet.addBits(1, 1);
+                //    packet.addBits(0, 1);
+                //    packet.addBits(n.getSprite(), 3);
+                //}
+                //else if (n.spriteChanged())
+                //{
+                //    packet.addBits(1, 1);
+                //    packet.addBits(1, 1);
+                //    packet.addBits(n.getSprite(), 4);
+                //}
+                else
+                {
+                    WriteBits(session, 0, 1);
+                }
+            }
 
             // TODO: Loop through each new NPC here
+            foreach (var npc in newNpcs)
+            {
+                var xOffset = GetOffset(npc.Location.X, player.Location.X);
+                var yOffset = GetOffset(npc.Location.Y, player.Location.Y);
+
+                WriteBits(session, npc.Index, 16);
+                WriteBits(session, xOffset, 5);
+                WriteBits(session, yOffset, 5);
+                WriteBits(session, 1, 4); // Sprite, default value = 1
+                WriteBits(session, npc.Id, 10);
+
+                //byte[] offsets = DataConversions.getMobPositionOffsets(n.getLocation(), playerToUpdate.getLocation());
+                //packet.addBits(n.getIndex(), 16);
+                //packet.addBits(offsets[0], 5);
+                //packet.addBits(offsets[1], 5);
+                //packet.addBits(n.getSprite(), 4);
+                //packet.addBits(n.getID(), 10);
+            }
 
             FormatPacket(session);
         }
+
+        private byte GetOffset(short ord1, short ord2)
+        {
+            var offset = (byte)(ord1 - ord2);
+            if (ord2 > ord1)
+            {
+                return (byte)(ord1 - ord2 + 32);
+            }
+            else
+            {
+                return (byte)(ord1 - ord2);
+            }
+        }
+
+        //public static byte[] getMobPositionOffsets(Point p1, Point p2)
+        //{
+        //    byte[] rv = new byte[2];
+        //    rv[0] = getMobCoordOffset(p1.getX(), p2.getX());
+        //    rv[1] = getMobCoordOffset(p1.getY(), p2.getY());
+        //    return rv;
+        //}
+
+        //private static byte getMobCoordOffset(int coord1, int coord2)
+        //{
+        //    byte offset = (byte)(coord1 - coord2);
+        //    if (offset < 0)
+        //    {
+        //        offset += 32;
+        //    }
+        //    return offset;
+        //}
 
         public void SendGameObjectUpdate(ISession session)
         {

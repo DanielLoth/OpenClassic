@@ -32,7 +32,6 @@ namespace OpenClassic.Server.Collections
             foreach (var otherEntity in entities)
             {
                 var thatLoc = otherEntity.Location;
-
                 var distBetweenPoints = Point.DistanceSquared(point, thatLoc);
 
                 if (distBetweenPoints <= distanceSquared)
