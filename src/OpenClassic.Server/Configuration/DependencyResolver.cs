@@ -56,13 +56,26 @@ namespace OpenClassic.Server.Configuration
         {
             Debug.Assert(container != null);
 
+            InitialiseGameConnectionHandler(container);
             InitialiseWorld(container);
+        }
+
+        static void InitialiseGameConnectionHandler(IContainer container)
+        {
+            Debug.Assert(container != null);
+
+            var engine = container.Resolve<IGameEngine>();
+            var packetHandlers = container.Resolve<IPacketHandler[]>();
+
+            Debug.Assert(engine != null);
+            Debug.Assert(packetHandlers != null);
+
+            GameConnectionHandler.Init(engine, packetHandlers);
         }
 
         static void InitialiseWorld(IContainer container)
         {
             Debug.Assert(container != null);
-
 
             var world = container.Resolve<IWorld>();
 

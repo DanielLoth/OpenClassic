@@ -1,7 +1,5 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Transport.Channels;
-using DryIoc;
-using OpenClassic.Server.Configuration;
 using OpenClassic.Server.Domain;
 using System;
 using System.Collections.Generic;
@@ -12,8 +10,8 @@ namespace OpenClassic.Server.Networking
 {
     public class GameConnectionHandler : ChannelHandlerAdapter, ISession
     {
-        private static readonly IGameEngine gameEngine;
-        private static readonly IPacketHandler[] PacketHandlerMap;
+        private static IGameEngine gameEngine;
+        private static IPacketHandler[] PacketHandlerMap;
 
         private readonly IChannel gameChannel;
 
@@ -51,24 +49,16 @@ namespace OpenClassic.Server.Networking
 
         #endregion
 
-        public static void Init()
+        public static void Init(IGameEngine engine, IPacketHandler[] packetHandlers)
         {
-            // Do nothing - this is just to invoke the static 
-            // GameConnectionHandler() constructor.
-        }
-
-        static GameConnectionHandler()
-        {
-            var resolver = DependencyResolver.Current;
-
-            gameEngine = resolver.Resolve<IGameEngine>();
+            Debug.Assert(engine != null);
+            Debug.Assert(packetHandlers != null);
 
             // This needs to be executed on the game thread. Otherwise the
             // game thread won't necessarily see the loaded IPacketHandler map
             // when it invokes the Pulse() method each game tick.
-            Debug.Assert(gameEngine.IsOnGameThread);
+            Debug.Assert(engine.IsOnGameThread);
 
-            var packetHandlers = resolver.Resolve<IPacketHandler[]>();
             var handlerMap = new IPacketHandler[255];
 
             foreach (var handler in packetHandlers)
@@ -84,6 +74,7 @@ namespace OpenClassic.Server.Networking
                 }
             }
 
+            gameEngine = engine;
             PacketHandlerMap = handlerMap;
         }
 
