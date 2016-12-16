@@ -1,46 +1,32 @@
-{
-  "map": {
-    "entry": [
-      {
-        "int": "160",
-        "ItemGemDef": {
-          "gemID": "164",
-          "requiredLvl": "20",
-          "exp": "50"
-        }
-      },
-      {
-        "int": "159",
-        "ItemGemDef": {
-          "gemID": "163",
-          "requiredLvl": "27",
-          "exp": "67"
-        }
-      },
-      {
-        "int": "158",
-        "ItemGemDef": {
-          "gemID": "162",
-          "requiredLvl": "34",
-          "exp": "85"
-        }
-      },
-      {
-        "int": "157",
-        "ItemGemDef": {
-          "gemID": "161",
-          "requiredLvl": "43",
-          "exp": "108"
-        }
-      },
-      {
-        "int": "542",
-        "ItemGemDef": {
-          "gemID": "523",
-          "requiredLvl": "55",
-          "exp": "130"
-        }
-      }
-    ]
+[
+  {
+    "UncutGemId": "160",
+    "GemId": "164",
+    "RequiredLevel": "20",
+    "Experience": "50"
+  },
+  {
+    "UncutGemId": "159",
+    "GemId": "163",
+    "RequiredLevel": "27",
+    "Experience": "67"
+  },
+  {
+    "UncutGemId": "158",
+    "GemId": "162",
+    "RequiredLevel": "34",
+    "Experience": "85"
+  },
+  {
+    "UncutGemId": "157",
+    "GemId": "161",
+    "RequiredLevel": "43",
+    "Experience": "108"
+  },
+  {
+    "UncutGemId": "542",
+    "GemId": "523",
+    "RequiredLevel": "55",
+    "Experience": "130"
   }
-}
+]

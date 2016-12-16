@@ -1,84 +1,68 @@
-{
-  "map": {
-    "entry": [
-      {
-        "int": "14",
-        "ItemLogCutDef": {
-          "shaftAmount": "10",
-          "shaftLvl": "1",
-          "shortbowID": "277",
-          "shortbowLvl": "5",
-          "shortbowExp": "5",
-          "longbowID": "276",
-          "longbowLvl": "10",
-          "longbowExp": "10"
-        }
-      },
-      {
-        "int": "632",
-        "ItemLogCutDef": {
-          "shaftAmount": "15",
-          "shaftLvl": "15",
-          "shortbowID": "659",
-          "shortbowLvl": "20",
-          "shortbowExp": "17",
-          "longbowID": "658",
-          "longbowLvl": "25",
-          "longbowExp": "25"
-        }
-      },
-      {
-        "int": "633",
-        "ItemLogCutDef": {
-          "shaftAmount": "20",
-          "shaftLvl": "30",
-          "shortbowID": "661",
-          "shortbowLvl": "35",
-          "shortbowExp": "33",
-          "longbowID": "660",
-          "longbowLvl": "40",
-          "longbowExp": "42"
-        }
-      },
-      {
-        "int": "634",
-        "ItemLogCutDef": {
-          "shaftAmount": "30",
-          "shaftLvl": "45",
-          "shortbowID": "663",
-          "shortbowLvl": "50",
-          "shortbowExp": "50",
-          "longbowID": "662",
-          "longbowLvl": "55",
-          "longbowExp": "58"
-        }
-      },
-      {
-        "int": "635",
-        "ItemLogCutDef": {
-          "shaftAmount": "40",
-          "shaftLvl": "60",
-          "shortbowID": "665",
-          "shortbowLvl": "65",
-          "shortbowExp": "67",
-          "longbowID": "664",
-          "longbowLvl": "70",
-          "longbowExp": "75"
-        }
-      },
-      {
-        "int": "636",
-        "ItemLogCutDef": {
-          "shaftAmount": "50",
-          "shaftLvl": "75",
-          "shortbowID": "667",
-          "shortbowLvl": "80",
-          "shortbowExp": "83",
-          "longbowID": "666",
-          "longbowLvl": "85",
-          "longbowExp": "92"
-        }
-      }
-    ]
+[
+  {
+    "LogsId": "14",
+    "ShaftAmount": "10",
+    "ShaftLevel": "1",
+    "ShortbowId": "277",
+    "ShortbowLevel": "5",
+    "ShortbowExperience": "5",
+    "LongbowId": "276",
+    "LongbowLevel": "10",
+    "LongbowExperience": "10"
+  },
+  {
+    "LogsId": "632",
+    "ShaftAmount": "15",
+    "ShaftLevel": "15",
+    "ShortbowId": "659",
+    "ShortbowLevel": "20",
+    "ShortbowExperience": "17",
+    "LongbowId": "658",
+    "LongbowLevel": "25",
+    "LongbowExperience": "25"
+  },
+  {
+    "LogsId": "633",
+    "ShaftAmount": "20",
+    "ShaftLevel": "30",
+    "ShortbowId": "661",
+    "ShortbowLevel": "35",
+    "ShortbowExperience": "33",
+    "LongbowId": "660",
+    "LongbowLevel": "40",
+    "LongbowExperience": "42"
+  },
+  {
+    "LogsId": "634",
+    "ShaftAmount": "30",
+    "ShaftLevel": "45",
+    "ShortbowId": "663",
+    "ShortbowLevel": "50",
+    "ShortbowExperience": "50",
+    "LongbowId": "662",
+    "LongbowLevel": "55",
+    "LongbowExperience": "58"
+  },
+  {
+    "LogsId": "635",
+    "ShaftAmount": "40",
+    "ShaftLevel": "60",
+    "ShortbowId": "665",
+    "ShortbowLevel": "65",
+    "ShortbowExperience": "67",
+    "LongbowId": "664",
+    "LongbowLevel": "70",
+    "LongbowExperience": "75"
+  },
+  {
+    "LogsId": "636",
+    "ShaftAmount": "50",
+    "ShaftLevel": "75",
+    "ShortbowId": "667",
+    "ShortbowLevel": "80",
+    "ShortbowExperience": "83",
+    "LongbowId": "666",
+    "LongbowLevel": "85",
+    "LongbowExperience": "92"
   }
-}
+]

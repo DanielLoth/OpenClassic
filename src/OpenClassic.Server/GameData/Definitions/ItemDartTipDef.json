@@ -1,54 +1,38 @@
-{
-  "map": {
-    "entry": [
-      {
-        "int": "1062",
-        "ItemDartTipDef": {
-          "dartID": "1013",
-          "requiredLvl": "1",
-          "exp": "1"
-        }
-      },
-      {
-        "int": "1063",
-        "ItemDartTipDef": {
-          "dartID": "1015",
-          "requiredLvl": "15",
-          "exp": "2"
-        }
-      },
-      {
-        "int": "1064",
-        "ItemDartTipDef": {
-          "dartID": "1024",
-          "requiredLvl": "30",
-          "exp": "4.5"
-        }
-      },
-      {
-        "int": "1065",
-        "ItemDartTipDef": {
-          "dartID": "1068",
-          "requiredLvl": "45",
-          "exp": "7"
-        }
-      },
-      {
-        "int": "1066",
-        "ItemDartTipDef": {
-          "dartID": "1069",
-          "requiredLvl": "60",
-          "exp": "9.5"
-        }
-      },
-      {
-        "int": "1067",
-        "ItemDartTipDef": {
-          "dartID": "1070",
-          "requiredLvl": "75",
-          "exp": "12"
-        }
-      }
-    ]
+[
+  {
+    "DartTipId": "1062",
+    "DartId": "1013",
+    "RequiredLevel": "1",
+    "Experience": "1"
+  },
+  {
+    "DartTipId": "1063",
+    "DartId": "1015",
+    "RequiredLevel": "15",
+    "Experience": "2"
+  },
+  {
+    "DartTipId": "1064",
+    "DartId": "1024",
+    "RequiredLevel": "30",
+    "Experience": "4.5"
+  },
+  {
+    "DartTipId": "1065",
+    "DartId": "1068",
+    "RequiredLevel": "45",
+    "Experience": "7"
+  },
+  {
+    "DartTipId": "1066",
+    "DartId": "1069",
+    "RequiredLevel": "60",
+    "Experience": "9.5"
+  },
+  {
+    "DartTipId": "1067",
+    "DartId": "1070",
+    "RequiredLevel": "75",
+    "Experience": "12"
   }
-}
+]

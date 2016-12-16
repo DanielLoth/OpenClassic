@@ -1,92 +1,92 @@
 [
   { /* Ring */
     "RequiredLevel": "5",
-    "ItemId": "283",
+    "CraftedItemId": "283",
     "Experience": "15"
   },
   { /* Necklace */
     "RequiredLevel": "6",
-    "ItemId": "288",
+    "CraftedItemId": "288",
     "Experience": "20"
   },
   { /* Amulet */
     "RequiredLevel": "8",
-    "ItemId": "296",
+    "CraftedItemId": "296",
     "Experience": "30"
   },
   { /* Ring */
     "RequiredLevel": "8",
-    "ItemId": "284",
+    "CraftedItemId": "284",
     "Experience": "40"
   },
   { /* Necklace */
     "RequiredLevel": "10",
-    "ItemId": "289",
+    "CraftedItemId": "289",
     "Experience": "55"
   },
   { /* Amulet */
     "RequiredLevel": "13",
-    "ItemId": "297",
+    "CraftedItemId": "297",
     "Experience": "65"
   },
   { /* Ring */
     "RequiredLevel": "18",
-    "ItemId": "285",
+    "CraftedItemId": "285",
     "Experience": "55"
   },
   { /* Necklace */
     "RequiredLevel": "24",
-    "ItemId": "290",
+    "CraftedItemId": "290",
     "Experience": "60"
   },
   { /* Amulet */
     "RequiredLevel": "30",
-    "ItemId": "298",
+    "CraftedItemId": "298",
     "Experience": "70"
   },
   { /* Ring */
     "RequiredLevel": "30",
-    "ItemId": "286",
+    "CraftedItemId": "286",
     "Experience": "70"
   },
   { /* Necklace */
     "RequiredLevel": "40",
-    "ItemId": "291",
+    "CraftedItemId": "291",
     "Experience": "75"
   },
   { /* Amulet */
     "RequiredLevel": "50",
-    "ItemId": "299",
+    "CraftedItemId": "299",
     "Experience": "85"
   },
   { /* Ring */
     "RequiredLevel": "42",
-    "ItemId": "287",
+    "CraftedItemId": "287",
     "Experience": "85"
   },
   { /* Necklace */
     "RequiredLevel": "56",
-    "ItemId": "292",
+    "CraftedItemId": "292",
     "Experience": "90"
   },
   { /* Amulet */
     "RequiredLevel": "70",
-    "ItemId": "300",
+    "CraftedItemId": "300",
     "Experience": "100"
   },
   { /* Ring */
     "RequiredLevel": "55",
-    "ItemId": "543",
+    "CraftedItemId": "543",
     "Experience": "100"
   },
   { /* Necklace */
     "RequiredLevel": "72",
-    "ItemId": "544",
+    "CraftedItemId": "544",
     "Experience": "105"
   },
   { /* Amulet */
     "RequiredLevel": "80",
-    "ItemId": "524",
+    "CraftedItemId": "524",
     "Experience": "150"
   }
 ]

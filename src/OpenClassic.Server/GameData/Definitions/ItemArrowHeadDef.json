@@ -1,54 +1,38 @@
-{
-  "map": {
-    "entry": [
-      {
-        "int": "669",
-        "ItemArrowHeadDef": {
-          "arrowID": "11",
-          "requiredLvl": "1",
-          "exp": "1"
-        }
-      },
-      {
-        "int": "670",
-        "ItemArrowHeadDef": {
-          "arrowID": "638",
-          "requiredLvl": "15",
-          "exp": "2"
-        }
-      },
-      {
-        "int": "671",
-        "ItemArrowHeadDef": {
-          "arrowID": "640",
-          "requiredLvl": "30",
-          "exp": "4.5"
-        }
-      },
-      {
-        "int": "672",
-        "ItemArrowHeadDef": {
-          "arrowID": "642",
-          "requiredLvl": "45",
-          "exp": "7"
-        }
-      },
-      {
-        "int": "673",
-        "ItemArrowHeadDef": {
-          "arrowID": "644",
-          "requiredLvl": "60",
-          "exp": "9.5"
-        }
-      },
-      {
-        "int": "674",
-        "ItemArrowHeadDef": {
-          "arrowID": "646",
-          "requiredLvl": "75",
-          "exp": "12"
-        }
-      }
-    ]
+[
+  {
+    "ArrowHeadId": "669",
+    "ArrowId": "11",
+    "RequiredLevel": "1",
+    "Experience": "1"
+  },
+  {
+    "ArrowHeadId": "670",
+    "ArrowId": "638",
+    "RequiredLevel": "15",
+    "Experience": "2"
+  },
+  {
+    "ArrowHeadId": "671",
+    "ArrowId": "640",
+    "RequiredLevel": "30",
+    "Experience": "4.5"
+  },
+  {
+    "ArrowHeadId": "672",
+    "ArrowId": "642",
+    "RequiredLevel": "45",
+    "Experience": "7"
+  },
+  {
+    "ArrowHeadId": "673",
+    "ArrowId": "644",
+    "RequiredLevel": "60",
+    "Experience": "9.5"
+  },
+  {
+    "ArrowHeadId": "674",
+    "ArrowId": "646",
+    "RequiredLevel": "75",
+    "Experience": "12"
   }
-}
+]

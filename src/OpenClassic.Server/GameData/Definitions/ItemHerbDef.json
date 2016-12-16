@@ -1,86 +1,62 @@
-{
-  "map": {
-    "entry": [
-      {
-        "int": "444",
-        "ItemHerbDef": {
-          "exp": "13",
-          "potionId": "454",
-          "requiredLvl": "1"
-        }
-      },
-      {
-        "int": "445",
-        "ItemHerbDef": {
-          "exp": "19",
-          "potionId": "455",
-          "requiredLvl": "5"
-        }
-      },
-      {
-        "int": "446",
-        "ItemHerbDef": {
-          "exp": "25",
-          "potionId": "456",
-          "requiredLvl": "12"
-        }
-      },
-      {
-        "int": "447",
-        "ItemHerbDef": {
-          "exp": "31",
-          "potionId": "457",
-          "requiredLvl": "22"
-        }
-      },
-      {
-        "int": "448",
-        "ItemHerbDef": {
-          "exp": "38",
-          "potionId": "458",
-          "requiredLvl": "30"
-        }
-      },
-      {
-        "int": "449",
-        "ItemHerbDef": {
-          "exp": "50",
-          "potionId": "459",
-          "requiredLvl": "45"
-        }
-      },
-      {
-        "int": "450",
-        "ItemHerbDef": {
-          "exp": "57",
-          "potionId": "460",
-          "requiredLvl": "50"
-        }
-      },
-      {
-        "int": "451",
-        "ItemHerbDef": {
-          "exp": "63",
-          "potionId": "461",
-          "requiredLvl": "55"
-        }
-      },
-      {
-        "int": "452",
-        "ItemHerbDef": {
-          "exp": "70",
-          "potionId": "462",
-          "requiredLvl": "66"
-        }
-      },
-      {
-        "int": "453",
-        "ItemHerbDef": {
-          "exp": "81",
-          "potionId": "463",
-          "requiredLvl": "72"
-        }
-      }
-    ]
+[
+  {
+    "HerbId": "444",
+    "Experience": "13",
+    "UnfinishedPotionId": "454",
+    "RequiredLevel": "1"
+  },
+  {
+    "HerbId": "445",
+    "Experience": "19",
+    "UnfinishedPotionId": "455",
+    "RequiredLevel": "5"
+  },
+  {
+    "HerbId": "446",
+    "Experience": "25",
+    "UnfinishedPotionId": "456",
+    "RequiredLevel": "12"
+  },
+  {
+    "HerbId": "447",
+    "Experience": "31",
+    "UnfinishedPotionId": "457",
+    "RequiredLevel": "22"
+  },
+  {
+    "HerbId": "448",
+    "Experience": "38",
+    "UnfinishedPotionId": "458",
+    "RequiredLevel": "30"
+  },
+  {
+    "HerbId": "449",
+    "Experience": "50",
+    "UnfinishedPotionId": "459",
+    "RequiredLevel": "45"
+  },
+  {
+    "HerbId": "450",
+    "Experience": "57",
+    "UnfinishedPotionId": "460",
+    "RequiredLevel": "50"
+  },
+  {
+    "HerbId": "451",
+    "Experience": "63",
+    "UnfinishedPotionId": "461",
+    "RequiredLevel": "55"
+  },
+  {
+    "HerbId": "452",
+    "Experience": "70",
+    "UnfinishedPotionId": "462",
+    "RequiredLevel": "66"
+  },
+  {
+    "HerbId": "453",
+    "Experience": "81",
+    "UnfinishedPotionId": "463",
+    "RequiredLevel": "72"
   }
-}
+]

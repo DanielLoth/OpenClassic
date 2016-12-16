@@ -1,117 +1,62 @@
-{
-  "map": {
-    "entry": [
-      {
-        "int": "9999",
-        "ItemSmeltingDef": {
-          "exp": "12",
-          "barId": "170",
-          "requiredLvl": "15",
-          "reqOres": null
-        }
-      },
-      {
-        "int": "150",
-        "ItemSmeltingDef": {
-          "exp": "6",
-          "barId": "169",
-          "requiredLvl": "1",
-          "reqOres": {
-            "ReqOreDef": {
-              "oreId": "202",
-              "amount": "1"
-            }
-          }
-        }
-      },
-      {
-        "int": "202",
-        "ItemSmeltingDef": {
-          "exp": "6",
-          "barId": "169",
-          "requiredLvl": "1",
-          "reqOres": {
-            "ReqOreDef": {
-              "oreId": "150",
-              "amount": "1"
-            }
-          }
-        }
-      },
-      {
-        "int": "383",
-        "ItemSmeltingDef": {
-          "exp": "13",
-          "barId": "384",
-          "requiredLvl": "20",
-          "reqOres": null
-        }
-      },
-      {
-        "int": "151",
-        "ItemSmeltingDef": {
-          "exp": "17",
-          "barId": "171",
-          "requiredLvl": "30",
-          "reqOres": {
-            "ReqOreDef": {
-              "oreId": "155",
-              "amount": "2"
-            }
-          }
-        }
-      },
-      {
-        "int": "152",
-        "ItemSmeltingDef": {
-          "exp": "22",
-          "barId": "172",
-          "requiredLvl": "40",
-          "reqOres": null
-        }
-      },
-      {
-        "int": "153",
-        "ItemSmeltingDef": {
-          "exp": "30",
-          "barId": "173",
-          "requiredLvl": "50",
-          "reqOres": {
-            "ReqOreDef": {
-              "oreId": "155",
-              "amount": "4"
-            }
-          }
-        }
-      },
-      {
-        "int": "154",
-        "ItemSmeltingDef": {
-          "exp": "37",
-          "barId": "174",
-          "requiredLvl": "70",
-          "reqOres": {
-            "ReqOreDef": {
-              "oreId": "155",
-              "amount": "6"
-            }
-          }
-        }
-      },
-      {
-        "int": "409",
-        "ItemSmeltingDef": {
-          "exp": "50",
-          "barId": "408",
-          "requiredLvl": "85",
-          "reqOres": {
-            "ReqOreDef": {
-              "oreId": "155",
-              "amount": "8"
-            }
-          }
-        }
-      }
-    ]
+[
+  {
+    "SmeltedOreId": "150",
+    "Experience": "6",
+    "BarId": "169",
+    "RequiredLevel": "1",
+    "RequiredOreId": "202",
+    "RequiredOreAmount": "1"
+  },
+  {
+    "SmeltedOreId": "202",
+    "Experience": "6",
+    "BarId": "169",
+    "RequiredLevel": "1",
+    "RequiredOreId": "150",
+    "RequiredOreAmount": "1"
+  },
+  {
+    "SmeltedOreId": "383",
+    "Experience": "13",
+    "BarId": "384",
+    "RequiredLevel": "20"
+  },
+  {
+    "SmeltedOreId": "151",
+    "Experience": "17",
+    "BarId": "171",
+    "RequiredLevel": "30",
+    "RequiredOreId": "155",
+    "RequiredOreAmount": "2"
+  },
+  {
+    "SmeltedOreId": "152",
+    "Experience": "22",
+    "BarId": "172",
+    "RequiredLevel": "40"
+  },
+  {
+    "SmeltedOreId": "153",
+    "Experience": "30",
+    "BarId": "173",
+    "RequiredLevel": "50",
+    "RequiredOreId": "155",
+    "RequiredOreAmount": "4"
+  },
+  {
+    "SmeltedOreId": "154",
+    "Experience": "37",
+    "BarId": "174",
+    "RequiredLevel": "70",
+    "RequiredOreId": "155",
+    "RequiredOreAmount": "6"
+  },
+  {
+    "SmeltedOreId": "409",
+    "Experience": "50",
+    "BarId": "408",
+    "RequiredLevel": "85",
+    "RequiredOreId": "155",
+    "RequiredOreAmount": "8"
   }
-}
+]
