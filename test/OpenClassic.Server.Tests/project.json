@@ -4,14 +4,22 @@
   "buildOptions": {
     "copyToOutput": {
       "include": [
-        "Settings.json"
+        "Settings.json",
+        "../../src/OpenClassic.Server/GameData/*",
+        "../../src/OpenClassic.Server/GameData/Definitions/*",
+        "../../src/OpenClassic.Server/GameData/Locations/*",
+        "../../src/OpenClassic.Server/GameData/Landscape/*"
       ]
     }
   },
 
   "publishOptions": {
     "include": [
-      "Settings.json"
+      "Settings.json",
+      "../../src/OpenClassic.Server/GameData/*",
+      "../../src/OpenClassic.Server/GameData/Definitions/*",
+      "../../src/OpenClassic.Server/GameData/Locations/*",
+      "../../src/OpenClassic.Server/GameData/Landscape/*"
     ]
   },
 
