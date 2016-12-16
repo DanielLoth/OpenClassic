@@ -1,54 +1,38 @@
-{
-  "map": {
-    "entry": [
-      {
-        "int": "14",
-        "FiremakingDef": {
-          "level": "1",
-          "exp": "25",
-          "length": "90"
-        }
-      },
-      {
-        "int": "632",
-        "FiremakingDef": {
-          "level": "15",
-          "exp": "35",
-          "length": "110"
-        }
-      },
-      {
-        "int": "633",
-        "FiremakingDef": {
-          "level": "30",
-          "exp": "45",
-          "length": "130"
-        }
-      },
-      {
-        "int": "634",
-        "FiremakingDef": {
-          "level": "45",
-          "exp": "55",
-          "length": "150"
-        }
-      },
-      {
-        "int": "635",
-        "FiremakingDef": {
-          "level": "60",
-          "exp": "65",
-          "length": "170"
-        }
-      },
-      {
-        "int": "636",
-        "FiremakingDef": {
-          "level": "75",
-          "exp": "75",
-          "length": "190"
-        }
-      }
-    ]
+[
+  {
+    "LogsItemId": "14",
+    "Level": "1",
+    "Experience": "25",
+    "BurnTime": "90"
+  },
+  {
+    "LogsItemId": "632",
+    "Level": "15",
+    "Experience": "35",
+    "BurnTime": "110"
+  },
+  {
+    "LogsItemId": "633",
+    "Level": "30",
+    "Experience": "45",
+    "BurnTime": "130"
+  },
+  {
+    "LogsItemId": "634",
+    "Level": "45",
+    "Experience": "55",
+    "BurnTime": "150"
+  },
+  {
+    "LogsItemId": "635",
+    "Level": "60",
+    "Experience": "65",
+    "BurnTime": "170"
+  },
+  {
+    "LogsItemId": "636",
+    "Level": "75",
+    "Experience": "75",
+    "BurnTime": "190"
   }
-}
+]

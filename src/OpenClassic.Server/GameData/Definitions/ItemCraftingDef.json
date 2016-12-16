@@ -1,97 +1,92 @@
-{
-  "ItemCraftingDef-array": {
-    "#comment": [],
-    "ItemCraftingDef": [
-      {/* Ring */
-        "requiredLvl": "5",
-        "itemID": "283",
-        "exp": "15"
-      },
-      {/* Necklace */
-        "requiredLvl": "6",
-        "itemID": "288",
-        "exp": "20"
-      },
-      {/* Amulet */
-        "requiredLvl": "8",
-        "itemID": "296",
-        "exp": "30"
-      },
-      {/* Ring */
-        "requiredLvl": "8",
-        "itemID": "284",
-        "exp": "40"
-      },
-      {/* Necklace */
-        "requiredLvl": "10",
-        "itemID": "289",
-        "exp": "55"
-      },
-      {/* Amulet */
-        "requiredLvl": "13",
-        "itemID": "297",
-        "exp": "65"
-      },
-      {/* Ring */
-        "requiredLvl": "18",
-        "itemID": "285",
-        "exp": "55"
-      },
-      {/* Necklace */
-        "requiredLvl": "24",
-        "itemID": "290",
-        "exp": "60"
-      },
-      {/* Amulet */
-        "requiredLvl": "30",
-        "itemID": "298",
-        "exp": "70"
-      },
-      {/* Ring */
-        "requiredLvl": "30",
-        "itemID": "286",
-        "exp": "70"
-      },
-      {/* Necklace */
-        "requiredLvl": "40",
-        "itemID": "291",
-        "exp": "75"
-      },
-      {/* Amulet */
-        "requiredLvl": "50",
-        "itemID": "299",
-        "exp": "85"
-      },
-      {/* Ring */
-        "requiredLvl": "42",
-        "itemID": "287",
-        "exp": "85"
-      },
-      {/* Necklace */
-        "requiredLvl": "56",
-        "itemID": "292",
-        "exp": "90"
-      },
-      {/* Amulet */
-        "requiredLvl": "70",
-        "itemID": "300",
-        "exp": "100"
-      },
-      {/* Ring */
-        "requiredLvl": "55",
-        "itemID": "543",
-        "exp": "100"
-      },
-      {/* Necklace */
-        "requiredLvl": "72",
-        "itemID": "544",
-        "exp": "105"
-      },
-      {/* Amulet */
-        "requiredLvl": "80",
-        "itemID": "524",
-        "exp": "150"
-      }
-    ]
+[
+  { /* Ring */
+    "RequiredLevel": "5",
+    "ItemId": "283",
+    "Experience": "15"
+  },
+  { /* Necklace */
+    "RequiredLevel": "6",
+    "ItemId": "288",
+    "Experience": "20"
+  },
+  { /* Amulet */
+    "RequiredLevel": "8",
+    "ItemId": "296",
+    "Experience": "30"
+  },
+  { /* Ring */
+    "RequiredLevel": "8",
+    "ItemId": "284",
+    "Experience": "40"
+  },
+  { /* Necklace */
+    "RequiredLevel": "10",
+    "ItemId": "289",
+    "Experience": "55"
+  },
+  { /* Amulet */
+    "RequiredLevel": "13",
+    "ItemId": "297",
+    "Experience": "65"
+  },
+  { /* Ring */
+    "RequiredLevel": "18",
+    "ItemId": "285",
+    "Experience": "55"
+  },
+  { /* Necklace */
+    "RequiredLevel": "24",
+    "ItemId": "290",
+    "Experience": "60"
+  },
+  { /* Amulet */
+    "RequiredLevel": "30",
+    "ItemId": "298",
+    "Experience": "70"
+  },
+  { /* Ring */
+    "RequiredLevel": "30",
+    "ItemId": "286",
+    "Experience": "70"
+  },
+  { /* Necklace */
+    "RequiredLevel": "40",
+    "ItemId": "291",
+    "Experience": "75"
+  },
+  { /* Amulet */
+    "RequiredLevel": "50",
+    "ItemId": "299",
+    "Experience": "85"
+  },
+  { /* Ring */
+    "RequiredLevel": "42",
+    "ItemId": "287",
+    "Experience": "85"
+  },
+  { /* Necklace */
+    "RequiredLevel": "56",
+    "ItemId": "292",
+    "Experience": "90"
+  },
+  { /* Amulet */
+    "RequiredLevel": "70",
+    "ItemId": "300",
+    "Experience": "100"
+  },
+  { /* Ring */
+    "RequiredLevel": "55",
+    "ItemId": "543",
+    "Experience": "100"
+  },
+  { /* Necklace */
+    "RequiredLevel": "72",
+    "ItemId": "544",
+    "Experience": "105"
+  },
+  { /* Amulet */
+    "RequiredLevel": "80",
+    "ItemId": "524",
+    "Experience": "150"
   }
-}
+]

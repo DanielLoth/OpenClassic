@@ -3,7 +3,7 @@
     "entry": [
       {
         "int": "11",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -16,7 +16,7 @@
       },
       {
         "int": "159",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -29,7 +29,7 @@
       },
       {
         "int": "574",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -42,7 +42,7 @@
       },
       {
         "int": "319",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -55,7 +55,7 @@
       },
       {
         "int": "318",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -68,7 +68,7 @@
       },
       {
         "int": "63",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -81,7 +81,7 @@
       },
       {
         "int": "342",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -94,7 +94,7 @@
       },
       {
         "int": "65",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -107,7 +107,7 @@
       },
       {
         "int": "738",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -120,7 +120,7 @@
       },
       {
         "int": "72",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -133,7 +133,7 @@
       },
       {
         "int": "324",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -146,7 +146,7 @@
       },
       {
         "int": "86",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -159,7 +159,7 @@
       },
       {
         "int": "322",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -172,7 +172,7 @@
       },
       {
         "int": "323",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -185,7 +185,7 @@
       },
       {
         "int": "320",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -198,7 +198,7 @@
       },
       {
         "int": "321",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -211,7 +211,7 @@
       },
       {
         "int": "100",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -224,7 +224,7 @@
       },
       {
         "int": "579",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -237,7 +237,7 @@
       },
       {
         "int": "580",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -250,7 +250,7 @@
       },
       {
         "int": "581",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -263,7 +263,7 @@
       },
       {
         "int": "582",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -276,7 +276,7 @@
       },
       {
         "int": "583",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -289,7 +289,7 @@
       },
       {
         "int": "585",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -302,7 +302,7 @@
       },
       {
         "int": "586",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -315,7 +315,7 @@
       },
       {
         "int": "591",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -328,7 +328,7 @@
       },
       {
         "int": "593",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -341,7 +341,7 @@
       },
       {
         "int": "592",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -354,7 +354,7 @@
       },
       {
         "int": "732",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",
@@ -367,7 +367,7 @@
       },
       {
         "int": "722",
-        "org.rscdaemon.server.entityhandling.defs.ThievableNPC": {
+        "ThievableNPC": {
           "loot": {
             "int": [
               "1",

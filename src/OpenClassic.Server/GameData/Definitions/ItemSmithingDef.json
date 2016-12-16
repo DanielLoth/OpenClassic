@@ -1,763 +1,758 @@
-{
-  "ItemSmithingDef-array": {
-    "#comment": [],
-    "ItemSmithingDef": [
-      {/* Dagger */
-        "level": "1",
-        "bars": "1",
-        "itemID": "62",
-        "amount": "1"
-      },
-      {/* Throwing Knife */
-        "level": "7",
-        "bars": "1",
-        "itemID": "1076",
-        "amount": "2"
-      },
-      {/* Short Sword */
-        "level": "4",
-        "bars": "1",
-        "itemID": "66",
-        "amount": "1"
-      },
-      {/* Long Sword */
-        "level": "6",
-        "bars": "2",
-        "itemID": "70",
-        "amount": "1"
-      },
-      {/* Scimitar */
-        "level": "5",
-        "bars": "2",
-        "itemID": "82",
-        "amount": "1"
-      },
-      {/* 2-handed Sword */
-        "level": "14",
-        "bars": "3",
-        "itemID": "76",
-        "amount": "1"
-      },
-      {/* Hatchet */
-        "level": "1",
-        "bars": "1",
-        "itemID": "87",
-        "amount": "1"
-      },
-      {/* Pickaxe */
-        "level": "1",
-        "bars": "1",
-        "itemID": "156",
-        "amount": "1"
-      },
-      {/* Battle Axe */
-        "level": "10",
-        "bars": "3",
-        "itemID": "205",
-        "amount": "1"
-      },
-      {/* Mace */
-        "level": "2",
-        "bars": "1",
-        "itemID": "94",
-        "amount": "1"
-      },
-      {/* Medium Helmet */
-        "level": "3",
-        "bars": "1",
-        "itemID": "104",
-        "amount": "1"
-      },
-      {/* Large Helmet */
-        "level": "7",
-        "bars": "2",
-        "itemID": "108",
-        "amount": "1"
-      },
-      {/* Square Shield */
-        "level": "8",
-        "bars": "2",
-        "itemID": "124",
-        "amount": "1"
-      },
-      {/* Kite Shield */
-        "level": "12",
-        "bars": "3",
-        "itemID": "128",
-        "amount": "1"
-      },
-      {/* Chain Mail Body */
-        "level": "11",
-        "bars": "3",
-        "itemID": "113",
-        "amount": "1"
-      },
-      {/* Plate Mail Body */
-        "level": "18",
-        "bars": "5",
-        "itemID": "117",
-        "amount": "1"
-      },
-      {/* Plate Mail Legs */
-        "level": "16",
-        "bars": "3",
-        "itemID": "206",
-        "amount": "1"
-      },
-      {/* Plated Skirt */
-        "level": "16",
-        "bars": "3",
-        "itemID": "214",
-        "amount": "1"
-      },
-      {/* Arrow Heads x10 */
-        "level": "5",
-        "bars": "1",
-        "itemID": "669",
-        "amount": "10"
-      },
-      {/* Arrow Heads x50 */
-        "level": "18",
-        "bars": "5",
-        "itemID": "669",
-        "amount": "50"
-      },
-      {/* Dart Tips */
-        "level": "4",
-        "bars": "1",
-        "itemID": "1062",
-        "amount": "7"
-      },
-      {/* Dagger */
-        "level": "15",
-        "bars": "1",
-        "itemID": "28",
-        "amount": "1"
-      },
-      {/* Throwing Knife */
-        "level": "22",
-        "bars": "1",
-        "itemID": "1075",
-        "amount": "2"
-      },
-      {/* Short Sword */
-        "level": "19",
-        "bars": "1",
-        "itemID": "1",
-        "amount": "1"
-      },
-      {/* Long Sword */
-        "level": "21",
-        "bars": "2",
-        "itemID": "71",
-        "amount": "1"
-      },
-      {/* Scimitar */
-        "level": "20",
-        "bars": "2",
-        "itemID": "83",
-        "amount": "1"
-      },
-      {/* 2-handed Sword */
-        "level": "29",
-        "bars": "3",
-        "itemID": "77",
-        "amount": "1"
-      },
-      {/* Hatchet */
-        "level": "16",
-        "bars": "1",
-        "itemID": "12",
-        "amount": "1"
-      },
-      {/* Pickaxe */
-        "level": "16",
-        "bars": "1",
-        "itemID": "1258",
-        "amount": "1"
-      },
-      {/* Battle Axe */
-        "level": "25",
-        "bars": "3",
-        "itemID": "89",
-        "amount": "1"
-      },
-      {/* Mace */
-        "level": "17",
-        "bars": "1",
-        "itemID": "0",
-        "amount": "1"
-      },
-      {/* Medium Helmet */
-        "level": "18",
-        "bars": "1",
-        "itemID": "5",
-        "amount": "1"
-      },
-      {/* Large Helmet */
-        "level": "22",
-        "bars": "2",
-        "itemID": "6",
-        "amount": "1"
-      },
-      {/* Square Shield */
-        "level": "23",
-        "bars": "2",
-        "itemID": "3",
-        "amount": "1"
-      },
-      {/* Kite Shield */
-        "level": "27",
-        "bars": "3",
-        "itemID": "2",
-        "amount": "1"
-      },
-      {/* Chain Mail Body */
-        "level": "25",
-        "bars": "3",
-        "itemID": "7",
-        "amount": "1"
-      },
-      {/* Plate Mail Body */
-        "level": "33",
-        "bars": "5",
-        "itemID": "8",
-        "amount": "1"
-      },
-      {/* Plate Mail Legs */
-        "level": "31",
-        "bars": "3",
-        "itemID": "9",
-        "amount": "1"
-      },
-      {/* Plated Skirt */
-        "level": "31",
-        "bars": "3",
-        "itemID": "215",
-        "amount": "1"
-      },
-      {/* Arrow Heads x10 */
-        "level": "20",
-        "bars": "1",
-        "itemID": "670",
-        "amount": "10"
-      },
-      {/* Arrow Heads x50 */
-        "level": "33",
-        "bars": "5",
-        "itemID": "670",
-        "amount": "50"
-      },
-      {/* Dart Tips */
-        "level": "19",
-        "bars": "1",
-        "itemID": "1063",
-        "amount": "7"
-      },
-      {/* Dagger */
-        "level": "30",
-        "bars": "1",
-        "itemID": "63",
-        "amount": "1"
-      },
-      {/* Throwing Knife */
-        "level": "37",
-        "bars": "1",
-        "itemID": "1077",
-        "amount": "2"
-      },
-      {/* Short Sword */
-        "level": "34",
-        "bars": "1",
-        "itemID": "67",
-        "amount": "1"
-      },
-      {/* Long Sword */
-        "level": "36",
-        "bars": "2",
-        "itemID": "72",
-        "amount": "1"
-      },
-      {/* Scimitar */
-        "level": "35",
-        "bars": "2",
-        "itemID": "84",
-        "amount": "1"
-      },
-      {/* 2-handed Sword */
-        "level": "44",
-        "bars": "3",
-        "itemID": "78",
-        "amount": "1"
-      },
-      {/* Hatchet */
-        "level": "31",
-        "bars": "1",
-        "itemID": "88",
-        "amount": "1"
-      },
-      {/* Pickaxe */
-        "level": "31",
-        "bars": "1",
-        "itemID": "1259",
-        "amount": "1"
-      },
-      {/* Battle Axe */
-        "level": "40",
-        "bars": "3",
-        "itemID": "90",
-        "amount": "1"
-      },
-      {/* Mace */
-        "level": "32",
-        "bars": "1",
-        "itemID": "95",
-        "amount": "1"
-      },
-      {/* Medium Helmet */
-        "level": "33",
-        "bars": "1",
-        "itemID": "105",
-        "amount": "1"
-      },
-      {/* Large Helmet */
-        "level": "37",
-        "bars": "2",
-        "itemID": "109",
-        "amount": "1"
-      },
-      {/* Square Shield */
-        "level": "38",
-        "bars": "2",
-        "itemID": "125",
-        "amount": "1"
-      },
-      {/* Kite Shield */
-        "level": "42",
-        "bars": "3",
-        "itemID": "129",
-        "amount": "1"
-      },
-      {/* Chain Mail Body */
-        "level": "41",
-        "bars": "3",
-        "itemID": "114",
-        "amount": "1"
-      },
-      {/* Plate Mail Body */
-        "level": "48",
-        "bars": "5",
-        "itemID": "118",
-        "amount": "1"
-      },
-      {/* Plate Mail Legs */
-        "level": "46",
-        "bars": "3",
-        "itemID": "121",
-        "amount": "1"
-      },
-      {/* Plated Skirt */
-        "level": "46",
-        "bars": "3",
-        "itemID": "225",
-        "amount": "1"
-      },
-      {/* Arrow Heads x10 */
-        "level": "35",
-        "bars": "1",
-        "itemID": "671",
-        "amount": "10"
-      },
-      {/* Arrow Heads x50 */
-        "level": "48",
-        "bars": "5",
-        "itemID": "671",
-        "amount": "50"
-      },
-      {/* Dart Tips */
-        "level": "34",
-        "bars": "1",
-        "itemID": "1064",
-        "amount": "7"
-      },
-      {/* Dagger */
-        "level": "50",
-        "bars": "1",
-        "itemID": "64",
-        "amount": "1"
-      },
-      {/* Throwing Knife */
-        "level": "57",
-        "bars": "1",
-        "itemID": "1078",
-        "amount": "2"
-      },
-      {/* Short Sword */
-        "level": "54",
-        "bars": "1",
-        "itemID": "68",
-        "amount": "1"
-      },
-      {/* Long Sword */
-        "level": "56",
-        "bars": "2",
-        "itemID": "73",
-        "amount": "1"
-      },
-      {/* Scimitar */
-        "level": "55",
-        "bars": "2",
-        "itemID": "85",
-        "amount": "1"
-      },
-      {/* 2-handed Sword */
-        "level": "64",
-        "bars": "3",
-        "itemID": "79",
-        "amount": "1"
-      },
-      {/* Hatchet */
-        "level": "51",
-        "bars": "1",
-        "itemID": "203",
-        "amount": "1"
-      },
-      {/* Pickaxe */
-        "level": "51",
-        "bars": "1",
-        "itemID": "1260",
-        "amount": "1"
-      },
-      {/* Battle Axe */
-        "level": "60",
-        "bars": "3",
-        "itemID": "91",
-        "amount": "1"
-      },
-      {/* Mace */
-        "level": "52",
-        "bars": "1",
-        "itemID": "96",
-        "amount": "1"
-      },
-      {/* Medium Helmet */
-        "level": "53",
-        "bars": "1",
-        "itemID": "106",
-        "amount": "1"
-      },
-      {/* Large Helmet */
-        "level": "57",
-        "bars": "2",
-        "itemID": "110",
-        "amount": "1"
-      },
-      {/* Square Shield */
-        "level": "58",
-        "bars": "2",
-        "itemID": "126",
-        "amount": "1"
-      },
-      {/* Kite Shield */
-        "level": "62",
-        "bars": "3",
-        "itemID": "130",
-        "amount": "1"
-      },
-      {/* Chain Mail Body */
-        "level": "61",
-        "bars": "3",
-        "itemID": "115",
-        "amount": "1"
-      },
-      {/* Plate Mail Body */
-        "level": "68",
-        "bars": "5",
-        "itemID": "119",
-        "amount": "1"
-      },
-      {/* Plate Mail Legs */
-        "level": "66",
-        "bars": "3",
-        "itemID": "122",
-        "amount": "1"
-      },
-      {/* Plated Skirt */
-        "level": "66",
-        "bars": "3",
-        "itemID": "226",
-        "amount": "1"
-      },
-      {/* Arrow Heads x10 */
-        "level": "55",
-        "bars": "1",
-        "itemID": "672",
-        "amount": "10"
-      },
-      {/* Arrow Heads x50 */
-        "level": "68",
-        "bars": "5",
-        "itemID": "672",
-        "amount": "50"
-      },
-      {/* Dart Tips */
-        "level": "54",
-        "bars": "1",
-        "itemID": "1065",
-        "amount": "7"
-      },
-      {/* Dagger */
-        "level": "70",
-        "bars": "1",
-        "itemID": "65",
-        "amount": "1"
-      },
-      {/* Throwing Knife */
-        "level": "77",
-        "bars": "1",
-        "itemID": "1079",
-        "amount": "2"
-      },
-      {/* Short Sword */
-        "level": "74",
-        "bars": "1",
-        "itemID": "69",
-        "amount": "1"
-      },
-      {/* Long Sword */
-        "level": "76",
-        "bars": "2",
-        "itemID": "74",
-        "amount": "1"
-      },
-      {/* Scimitar */
-        "level": "75",
-        "bars": "2",
-        "itemID": "86",
-        "amount": "1"
-      },
-      {/* 2-handed Sword */
-        "level": "84",
-        "bars": "3",
-        "itemID": "80",
-        "amount": "1"
-      },
-      {/* Hatchet */
-        "level": "71",
-        "bars": "1",
-        "itemID": "204",
-        "amount": "1"
-      },
-      {/* Pickaxe */
-        "level": "71",
-        "bars": "1",
-        "itemID": "1261",
-        "amount": "1"
-      },
-      {/* Battle Axe */
-        "level": "80",
-        "bars": "3",
-        "itemID": "92",
-        "amount": "1"
-      },
-      {/* Mace */
-        "level": "72",
-        "bars": "1",
-        "itemID": "97",
-        "amount": "1"
-      },
-      {/* Medium Helmet */
-        "level": "73",
-        "bars": "1",
-        "itemID": "107",
-        "amount": "1"
-      },
-      {/* Large Helmet */
-        "level": "77",
-        "bars": "2",
-        "itemID": "111",
-        "amount": "1"
-      },
-      {/* Square Shield */
-        "level": "78",
-        "bars": "2",
-        "itemID": "127",
-        "amount": "1"
-      },
-      {/* Kite Shield */
-        "level": "82",
-        "bars": "3",
-        "itemID": "131",
-        "amount": "1"
-      },
-      {/* Chain Mail Body */
-        "level": "81",
-        "bars": "3",
-        "itemID": "116",
-        "amount": "1"
-      },
-      {/* Plate Mail Body */
-        "level": "88",
-        "bars": "5",
-        "itemID": "120",
-        "amount": "1"
-      },
-      {/* Plate Mail Legs */
-        "level": "86",
-        "bars": "3",
-        "itemID": "123",
-        "amount": "1"
-      },
-      {/* Plated Skirt */
-        "level": "86",
-        "bars": "3",
-        "itemID": "227",
-        "amount": "1"
-      },
-      {/* Arrow Heads x10 */
-        "level": "75",
-        "bars": "1",
-        "itemID": "673",
-        "amount": "10"
-      },
-      {/* Arrow Heads x50 */
-        "level": "88",
-        "bars": "5",
-        "itemID": "673",
-        "amount": "50"
-      },
-      {/* Dart Tips */
-        "level": "74",
-        "bars": "1",
-        "itemID": "1066",
-        "amount": "7"
-      },
-      {/* Dagger */
-        "level": "85",
-        "bars": "1",
-        "itemID": "396",
-        "amount": "1"
-      },
-      {/* Throwing Knife */
-        "level": "92",
-        "bars": "1",
-        "itemID": "1080",
-        "amount": "2"
-      },
-      {/* Short Sword */
-        "level": "89",
-        "bars": "1",
-        "itemID": "397",
-        "amount": "1"
-      },
-      {/* Long Sword */
-        "level": "91",
-        "bars": "2",
-        "itemID": "75",
-        "amount": "1"
-      },
-      {/* Scimitar */
-        "level": "90",
-        "bars": "2",
-        "itemID": "398",
-        "amount": "1"
-      },
-      {/* 2-handed Sword */
-        "level": "99",
-        "bars": "3",
-        "itemID": "81",
-        "amount": "1"
-      },
-      {/* Hatchet */
-        "level": "86",
-        "bars": "1",
-        "itemID": "405",
-        "amount": "1"
-      },
-      {/* Pickaxe */
-        "level": "86",
-        "bars": "1",
-        "itemID": "1262",
-        "amount": "1"
-      },
-      {/* Battle Axe */
-        "level": "95",
-        "bars": "3",
-        "itemID": "93",
-        "amount": "1"
-      },
-      {/* Mace */
-        "level": "87",
-        "bars": "1",
-        "itemID": "98",
-        "amount": "1"
-      },
-      {/* Medium Helmet */
-        "level": "88",
-        "bars": "1",
-        "itemID": "399",
-        "amount": "1"
-      },
-      {/* Large Helmet */
-        "level": "93",
-        "bars": "2",
-        "itemID": "112",
-        "amount": "1"
-      },
-      {/* Square Shield */
-        "level": "92",
-        "bars": "2",
-        "itemID": "403",
-        "amount": "1"
-      },
-      {/* Kite Shield */
-        "level": "97",
-        "bars": "3",
-        "itemID": "404",
-        "amount": "1"
-      },
-      {/* Chain Mail Body */
-        "level": "96",
-        "bars": "3",
-        "itemID": "400",
-        "amount": "1"
-      },
-      {/* Plate Mail Body */
-        "level": "99",
-        "bars": "5",
-        "itemID": "401",
-        "amount": "1"
-      },
-      {/* Plate Mail Legs */
-        "level": "99",
-        "bars": "3",
-        "itemID": "402",
-        "amount": "1"
-      },
-      {/* Plated Skirt */
-        "level": "99",
-        "bars": "3",
-        "itemID": "406",
-        "amount": "1"
-      },
-      {/* Arrow Heads x10 */
-        "level": "90",
-        "bars": "1",
-        "itemID": "674",
-        "amount": "10"
-      },
-      {/* Arrow Heads x50 */
-        "level": "99",
-        "bars": "5",
-        "itemID": "674",
-        "amount": "50"
-      },
-      {/* Dart Tips */
-        "level": "89",
-        "bars": "1",
-        "itemID": "1067",
-        "amount": "7"
-      }
-    ]
+[
+  { /* Dagger */
+    "SmithingLevel": "1",
+    "BarsRequired": "1",
+    "ItemId": "62",
+    "Amount": "1"
+  },
+  { /* Throwing Knife */
+    "SmithingLevel": "7",
+    "BarsRequired": "1",
+    "ItemId": "1076",
+    "Amount": "2"
+  },
+  { /* Short Sword */
+    "SmithingLevel": "4",
+    "BarsRequired": "1",
+    "ItemId": "66",
+    "Amount": "1"
+  },
+  { /* Long Sword */
+    "SmithingLevel": "6",
+    "BarsRequired": "2",
+    "ItemId": "70",
+    "Amount": "1"
+  },
+  { /* Scimitar */
+    "SmithingLevel": "5",
+    "BarsRequired": "2",
+    "ItemId": "82",
+    "Amount": "1"
+  },
+  { /* 2-handed Sword */
+    "SmithingLevel": "14",
+    "BarsRequired": "3",
+    "ItemId": "76",
+    "Amount": "1"
+  },
+  { /* Hatchet */
+    "SmithingLevel": "1",
+    "BarsRequired": "1",
+    "ItemId": "87",
+    "Amount": "1"
+  },
+  { /* Pickaxe */
+    "SmithingLevel": "1",
+    "BarsRequired": "1",
+    "ItemId": "156",
+    "Amount": "1"
+  },
+  { /* Battle Axe */
+    "SmithingLevel": "10",
+    "BarsRequired": "3",
+    "ItemId": "205",
+    "Amount": "1"
+  },
+  { /* Mace */
+    "SmithingLevel": "2",
+    "BarsRequired": "1",
+    "ItemId": "94",
+    "Amount": "1"
+  },
+  { /* Medium Helmet */
+    "SmithingLevel": "3",
+    "BarsRequired": "1",
+    "ItemId": "104",
+    "Amount": "1"
+  },
+  { /* Large Helmet */
+    "SmithingLevel": "7",
+    "BarsRequired": "2",
+    "ItemId": "108",
+    "Amount": "1"
+  },
+  { /* Square Shield */
+    "SmithingLevel": "8",
+    "BarsRequired": "2",
+    "ItemId": "124",
+    "Amount": "1"
+  },
+  { /* Kite Shield */
+    "SmithingLevel": "12",
+    "BarsRequired": "3",
+    "ItemId": "128",
+    "Amount": "1"
+  },
+  { /* Chain Mail Body */
+    "SmithingLevel": "11",
+    "BarsRequired": "3",
+    "ItemId": "113",
+    "Amount": "1"
+  },
+  { /* Plate Mail Body */
+    "SmithingLevel": "18",
+    "BarsRequired": "5",
+    "ItemId": "117",
+    "Amount": "1"
+  },
+  { /* Plate Mail Legs */
+    "SmithingLevel": "16",
+    "BarsRequired": "3",
+    "ItemId": "206",
+    "Amount": "1"
+  },
+  { /* Plated Skirt */
+    "SmithingLevel": "16",
+    "BarsRequired": "3",
+    "ItemId": "214",
+    "Amount": "1"
+  },
+  { /* Arrow Heads x10 */
+    "SmithingLevel": "5",
+    "BarsRequired": "1",
+    "ItemId": "669",
+    "Amount": "10"
+  },
+  { /* Arrow Heads x50 */
+    "SmithingLevel": "18",
+    "BarsRequired": "5",
+    "ItemId": "669",
+    "Amount": "50"
+  },
+  { /* Dart Tips */
+    "SmithingLevel": "4",
+    "BarsRequired": "1",
+    "ItemId": "1062",
+    "Amount": "7"
+  },
+  { /* Dagger */
+    "SmithingLevel": "15",
+    "BarsRequired": "1",
+    "ItemId": "28",
+    "Amount": "1"
+  },
+  { /* Throwing Knife */
+    "SmithingLevel": "22",
+    "BarsRequired": "1",
+    "ItemId": "1075",
+    "Amount": "2"
+  },
+  { /* Short Sword */
+    "SmithingLevel": "19",
+    "BarsRequired": "1",
+    "ItemId": "1",
+    "Amount": "1"
+  },
+  { /* Long Sword */
+    "SmithingLevel": "21",
+    "BarsRequired": "2",
+    "ItemId": "71",
+    "Amount": "1"
+  },
+  { /* Scimitar */
+    "SmithingLevel": "20",
+    "BarsRequired": "2",
+    "ItemId": "83",
+    "Amount": "1"
+  },
+  { /* 2-handed Sword */
+    "SmithingLevel": "29",
+    "BarsRequired": "3",
+    "ItemId": "77",
+    "Amount": "1"
+  },
+  { /* Hatchet */
+    "SmithingLevel": "16",
+    "BarsRequired": "1",
+    "ItemId": "12",
+    "Amount": "1"
+  },
+  { /* Pickaxe */
+    "SmithingLevel": "16",
+    "BarsRequired": "1",
+    "ItemId": "1258",
+    "Amount": "1"
+  },
+  { /* Battle Axe */
+    "SmithingLevel": "25",
+    "BarsRequired": "3",
+    "ItemId": "89",
+    "Amount": "1"
+  },
+  { /* Mace */
+    "SmithingLevel": "17",
+    "BarsRequired": "1",
+    "ItemId": "0",
+    "Amount": "1"
+  },
+  { /* Medium Helmet */
+    "SmithingLevel": "18",
+    "BarsRequired": "1",
+    "ItemId": "5",
+    "Amount": "1"
+  },
+  { /* Large Helmet */
+    "SmithingLevel": "22",
+    "BarsRequired": "2",
+    "ItemId": "6",
+    "Amount": "1"
+  },
+  { /* Square Shield */
+    "SmithingLevel": "23",
+    "BarsRequired": "2",
+    "ItemId": "3",
+    "Amount": "1"
+  },
+  { /* Kite Shield */
+    "SmithingLevel": "27",
+    "BarsRequired": "3",
+    "ItemId": "2",
+    "Amount": "1"
+  },
+  { /* Chain Mail Body */
+    "SmithingLevel": "25",
+    "BarsRequired": "3",
+    "ItemId": "7",
+    "Amount": "1"
+  },
+  { /* Plate Mail Body */
+    "SmithingLevel": "33",
+    "BarsRequired": "5",
+    "ItemId": "8",
+    "Amount": "1"
+  },
+  { /* Plate Mail Legs */
+    "SmithingLevel": "31",
+    "BarsRequired": "3",
+    "ItemId": "9",
+    "Amount": "1"
+  },
+  { /* Plated Skirt */
+    "SmithingLevel": "31",
+    "BarsRequired": "3",
+    "ItemId": "215",
+    "Amount": "1"
+  },
+  { /* Arrow Heads x10 */
+    "SmithingLevel": "20",
+    "BarsRequired": "1",
+    "ItemId": "670",
+    "Amount": "10"
+  },
+  { /* Arrow Heads x50 */
+    "SmithingLevel": "33",
+    "BarsRequired": "5",
+    "ItemId": "670",
+    "Amount": "50"
+  },
+  { /* Dart Tips */
+    "SmithingLevel": "19",
+    "BarsRequired": "1",
+    "ItemId": "1063",
+    "Amount": "7"
+  },
+  { /* Dagger */
+    "SmithingLevel": "30",
+    "BarsRequired": "1",
+    "ItemId": "63",
+    "Amount": "1"
+  },
+  { /* Throwing Knife */
+    "SmithingLevel": "37",
+    "BarsRequired": "1",
+    "ItemId": "1077",
+    "Amount": "2"
+  },
+  { /* Short Sword */
+    "SmithingLevel": "34",
+    "BarsRequired": "1",
+    "ItemId": "67",
+    "Amount": "1"
+  },
+  { /* Long Sword */
+    "SmithingLevel": "36",
+    "BarsRequired": "2",
+    "ItemId": "72",
+    "Amount": "1"
+  },
+  { /* Scimitar */
+    "SmithingLevel": "35",
+    "BarsRequired": "2",
+    "ItemId": "84",
+    "Amount": "1"
+  },
+  { /* 2-handed Sword */
+    "SmithingLevel": "44",
+    "BarsRequired": "3",
+    "ItemId": "78",
+    "Amount": "1"
+  },
+  { /* Hatchet */
+    "SmithingLevel": "31",
+    "BarsRequired": "1",
+    "ItemId": "88",
+    "Amount": "1"
+  },
+  { /* Pickaxe */
+    "SmithingLevel": "31",
+    "BarsRequired": "1",
+    "ItemId": "1259",
+    "Amount": "1"
+  },
+  { /* Battle Axe */
+    "SmithingLevel": "40",
+    "BarsRequired": "3",
+    "ItemId": "90",
+    "Amount": "1"
+  },
+  { /* Mace */
+    "SmithingLevel": "32",
+    "BarsRequired": "1",
+    "ItemId": "95",
+    "Amount": "1"
+  },
+  { /* Medium Helmet */
+    "SmithingLevel": "33",
+    "BarsRequired": "1",
+    "ItemId": "105",
+    "Amount": "1"
+  },
+  { /* Large Helmet */
+    "SmithingLevel": "37",
+    "BarsRequired": "2",
+    "ItemId": "109",
+    "Amount": "1"
+  },
+  { /* Square Shield */
+    "SmithingLevel": "38",
+    "BarsRequired": "2",
+    "ItemId": "125",
+    "Amount": "1"
+  },
+  { /* Kite Shield */
+    "SmithingLevel": "42",
+    "BarsRequired": "3",
+    "ItemId": "129",
+    "Amount": "1"
+  },
+  { /* Chain Mail Body */
+    "SmithingLevel": "41",
+    "BarsRequired": "3",
+    "ItemId": "114",
+    "Amount": "1"
+  },
+  { /* Plate Mail Body */
+    "SmithingLevel": "48",
+    "BarsRequired": "5",
+    "ItemId": "118",
+    "Amount": "1"
+  },
+  { /* Plate Mail Legs */
+    "SmithingLevel": "46",
+    "BarsRequired": "3",
+    "ItemId": "121",
+    "Amount": "1"
+  },
+  { /* Plated Skirt */
+    "SmithingLevel": "46",
+    "BarsRequired": "3",
+    "ItemId": "225",
+    "Amount": "1"
+  },
+  { /* Arrow Heads x10 */
+    "SmithingLevel": "35",
+    "BarsRequired": "1",
+    "ItemId": "671",
+    "Amount": "10"
+  },
+  { /* Arrow Heads x50 */
+    "SmithingLevel": "48",
+    "BarsRequired": "5",
+    "ItemId": "671",
+    "Amount": "50"
+  },
+  { /* Dart Tips */
+    "SmithingLevel": "34",
+    "BarsRequired": "1",
+    "ItemId": "1064",
+    "Amount": "7"
+  },
+  { /* Dagger */
+    "SmithingLevel": "50",
+    "BarsRequired": "1",
+    "ItemId": "64",
+    "Amount": "1"
+  },
+  { /* Throwing Knife */
+    "SmithingLevel": "57",
+    "BarsRequired": "1",
+    "ItemId": "1078",
+    "Amount": "2"
+  },
+  { /* Short Sword */
+    "SmithingLevel": "54",
+    "BarsRequired": "1",
+    "ItemId": "68",
+    "Amount": "1"
+  },
+  { /* Long Sword */
+    "SmithingLevel": "56",
+    "BarsRequired": "2",
+    "ItemId": "73",
+    "Amount": "1"
+  },
+  { /* Scimitar */
+    "SmithingLevel": "55",
+    "BarsRequired": "2",
+    "ItemId": "85",
+    "Amount": "1"
+  },
+  { /* 2-handed Sword */
+    "SmithingLevel": "64",
+    "BarsRequired": "3",
+    "ItemId": "79",
+    "Amount": "1"
+  },
+  { /* Hatchet */
+    "SmithingLevel": "51",
+    "BarsRequired": "1",
+    "ItemId": "203",
+    "Amount": "1"
+  },
+  { /* Pickaxe */
+    "SmithingLevel": "51",
+    "BarsRequired": "1",
+    "ItemId": "1260",
+    "Amount": "1"
+  },
+  { /* Battle Axe */
+    "SmithingLevel": "60",
+    "BarsRequired": "3",
+    "ItemId": "91",
+    "Amount": "1"
+  },
+  { /* Mace */
+    "SmithingLevel": "52",
+    "BarsRequired": "1",
+    "ItemId": "96",
+    "Amount": "1"
+  },
+  { /* Medium Helmet */
+    "SmithingLevel": "53",
+    "BarsRequired": "1",
+    "ItemId": "106",
+    "Amount": "1"
+  },
+  { /* Large Helmet */
+    "SmithingLevel": "57",
+    "BarsRequired": "2",
+    "ItemId": "110",
+    "Amount": "1"
+  },
+  { /* Square Shield */
+    "SmithingLevel": "58",
+    "BarsRequired": "2",
+    "ItemId": "126",
+    "Amount": "1"
+  },
+  { /* Kite Shield */
+    "SmithingLevel": "62",
+    "BarsRequired": "3",
+    "ItemId": "130",
+    "Amount": "1"
+  },
+  { /* Chain Mail Body */
+    "SmithingLevel": "61",
+    "BarsRequired": "3",
+    "ItemId": "115",
+    "Amount": "1"
+  },
+  { /* Plate Mail Body */
+    "SmithingLevel": "68",
+    "BarsRequired": "5",
+    "ItemId": "119",
+    "Amount": "1"
+  },
+  { /* Plate Mail Legs */
+    "SmithingLevel": "66",
+    "BarsRequired": "3",
+    "ItemId": "122",
+    "Amount": "1"
+  },
+  { /* Plated Skirt */
+    "SmithingLevel": "66",
+    "BarsRequired": "3",
+    "ItemId": "226",
+    "Amount": "1"
+  },
+  { /* Arrow Heads x10 */
+    "SmithingLevel": "55",
+    "BarsRequired": "1",
+    "ItemId": "672",
+    "Amount": "10"
+  },
+  { /* Arrow Heads x50 */
+    "SmithingLevel": "68",
+    "BarsRequired": "5",
+    "ItemId": "672",
+    "Amount": "50"
+  },
+  { /* Dart Tips */
+    "SmithingLevel": "54",
+    "BarsRequired": "1",
+    "ItemId": "1065",
+    "Amount": "7"
+  },
+  { /* Dagger */
+    "SmithingLevel": "70",
+    "BarsRequired": "1",
+    "ItemId": "65",
+    "Amount": "1"
+  },
+  { /* Throwing Knife */
+    "SmithingLevel": "77",
+    "BarsRequired": "1",
+    "ItemId": "1079",
+    "Amount": "2"
+  },
+  { /* Short Sword */
+    "SmithingLevel": "74",
+    "BarsRequired": "1",
+    "ItemId": "69",
+    "Amount": "1"
+  },
+  { /* Long Sword */
+    "SmithingLevel": "76",
+    "BarsRequired": "2",
+    "ItemId": "74",
+    "Amount": "1"
+  },
+  { /* Scimitar */
+    "SmithingLevel": "75",
+    "BarsRequired": "2",
+    "ItemId": "86",
+    "Amount": "1"
+  },
+  { /* 2-handed Sword */
+    "SmithingLevel": "84",
+    "BarsRequired": "3",
+    "ItemId": "80",
+    "Amount": "1"
+  },
+  { /* Hatchet */
+    "SmithingLevel": "71",
+    "BarsRequired": "1",
+    "ItemId": "204",
+    "Amount": "1"
+  },
+  { /* Pickaxe */
+    "SmithingLevel": "71",
+    "BarsRequired": "1",
+    "ItemId": "1261",
+    "Amount": "1"
+  },
+  { /* Battle Axe */
+    "SmithingLevel": "80",
+    "BarsRequired": "3",
+    "ItemId": "92",
+    "Amount": "1"
+  },
+  { /* Mace */
+    "SmithingLevel": "72",
+    "BarsRequired": "1",
+    "ItemId": "97",
+    "Amount": "1"
+  },
+  { /* Medium Helmet */
+    "SmithingLevel": "73",
+    "BarsRequired": "1",
+    "ItemId": "107",
+    "Amount": "1"
+  },
+  { /* Large Helmet */
+    "SmithingLevel": "77",
+    "BarsRequired": "2",
+    "ItemId": "111",
+    "Amount": "1"
+  },
+  { /* Square Shield */
+    "SmithingLevel": "78",
+    "BarsRequired": "2",
+    "ItemId": "127",
+    "Amount": "1"
+  },
+  { /* Kite Shield */
+    "SmithingLevel": "82",
+    "BarsRequired": "3",
+    "ItemId": "131",
+    "Amount": "1"
+  },
+  { /* Chain Mail Body */
+    "SmithingLevel": "81",
+    "BarsRequired": "3",
+    "ItemId": "116",
+    "Amount": "1"
+  },
+  { /* Plate Mail Body */
+    "SmithingLevel": "88",
+    "BarsRequired": "5",
+    "ItemId": "120",
+    "Amount": "1"
+  },
+  { /* Plate Mail Legs */
+    "SmithingLevel": "86",
+    "BarsRequired": "3",
+    "ItemId": "123",
+    "Amount": "1"
+  },
+  { /* Plated Skirt */
+    "SmithingLevel": "86",
+    "BarsRequired": "3",
+    "ItemId": "227",
+    "Amount": "1"
+  },
+  { /* Arrow Heads x10 */
+    "SmithingLevel": "75",
+    "BarsRequired": "1",
+    "ItemId": "673",
+    "Amount": "10"
+  },
+  { /* Arrow Heads x50 */
+    "SmithingLevel": "88",
+    "BarsRequired": "5",
+    "ItemId": "673",
+    "Amount": "50"
+  },
+  { /* Dart Tips */
+    "SmithingLevel": "74",
+    "BarsRequired": "1",
+    "ItemId": "1066",
+    "Amount": "7"
+  },
+  { /* Dagger */
+    "SmithingLevel": "85",
+    "BarsRequired": "1",
+    "ItemId": "396",
+    "Amount": "1"
+  },
+  { /* Throwing Knife */
+    "SmithingLevel": "92",
+    "BarsRequired": "1",
+    "ItemId": "1080",
+    "Amount": "2"
+  },
+  { /* Short Sword */
+    "SmithingLevel": "89",
+    "BarsRequired": "1",
+    "ItemId": "397",
+    "Amount": "1"
+  },
+  { /* Long Sword */
+    "SmithingLevel": "91",
+    "BarsRequired": "2",
+    "ItemId": "75",
+    "Amount": "1"
+  },
+  { /* Scimitar */
+    "SmithingLevel": "90",
+    "BarsRequired": "2",
+    "ItemId": "398",
+    "Amount": "1"
+  },
+  { /* 2-handed Sword */
+    "SmithingLevel": "99",
+    "BarsRequired": "3",
+    "ItemId": "81",
+    "Amount": "1"
+  },
+  { /* Hatchet */
+    "SmithingLevel": "86",
+    "BarsRequired": "1",
+    "ItemId": "405",
+    "Amount": "1"
+  },
+  { /* Pickaxe */
+    "SmithingLevel": "86",
+    "BarsRequired": "1",
+    "ItemId": "1262",
+    "Amount": "1"
+  },
+  { /* Battle Axe */
+    "SmithingLevel": "95",
+    "BarsRequired": "3",
+    "ItemId": "93",
+    "Amount": "1"
+  },
+  { /* Mace */
+    "SmithingLevel": "87",
+    "BarsRequired": "1",
+    "ItemId": "98",
+    "Amount": "1"
+  },
+  { /* Medium Helmet */
+    "SmithingLevel": "88",
+    "BarsRequired": "1",
+    "ItemId": "399",
+    "Amount": "1"
+  },
+  { /* Large Helmet */
+    "SmithingLevel": "93",
+    "BarsRequired": "2",
+    "ItemId": "112",
+    "Amount": "1"
+  },
+  { /* Square Shield */
+    "SmithingLevel": "92",
+    "BarsRequired": "2",
+    "ItemId": "403",
+    "Amount": "1"
+  },
+  { /* Kite Shield */
+    "SmithingLevel": "97",
+    "BarsRequired": "3",
+    "ItemId": "404",
+    "Amount": "1"
+  },
+  { /* Chain Mail Body */
+    "SmithingLevel": "96",
+    "BarsRequired": "3",
+    "ItemId": "400",
+    "Amount": "1"
+  },
+  { /* Plate Mail Body */
+    "SmithingLevel": "99",
+    "BarsRequired": "5",
+    "ItemId": "401",
+    "Amount": "1"
+  },
+  { /* Plate Mail Legs */
+    "SmithingLevel": "99",
+    "BarsRequired": "3",
+    "ItemId": "402",
+    "Amount": "1"
+  },
+  { /* Plated Skirt */
+    "SmithingLevel": "99",
+    "BarsRequired": "3",
+    "ItemId": "406",
+    "Amount": "1"
+  },
+  { /* Arrow Heads x10 */
+    "SmithingLevel": "90",
+    "BarsRequired": "1",
+    "ItemId": "674",
+    "Amount": "10"
+  },
+  { /* Arrow Heads x50 */
+    "SmithingLevel": "99",
+    "BarsRequired": "5",
+    "ItemId": "674",
+    "Amount": "50"
+  },
+  { /* Dart Tips */
+    "SmithingLevel": "89",
+    "BarsRequired": "1",
+    "ItemId": "1067",
+    "Amount": "7"
   }
-}
+]

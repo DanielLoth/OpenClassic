@@ -1,97 +1,93 @@
-{
-  "ItemHerbSecond-array": {
-    "ItemHerbSecond": [
-      {
-        "secondID": "270",
-        "unfinishedID": "454",
-        "potionID": "474",
-        "requiredLvl": "1",
-        "exp": "13"
-      },
-      {
-        "secondID": "473",
-        "unfinishedID": "455",
-        "potionID": "566",
-        "requiredLvl": "5",
-        "exp": "19"
-      },
-      {
-        "secondID": "220",
-        "unfinishedID": "456",
-        "potionID": "222",
-        "requiredLvl": "12",
-        "exp": "25"
-      },
-      {
-        "secondID": "219",
-        "unfinishedID": "457",
-        "potionID": "477",
-        "requiredLvl": "22",
-        "exp": "31"
-      },
-      {
-        "secondID": "471",
-        "unfinishedID": "458",
-        "potionID": "480",
-        "requiredLvl": "30",
-        "exp": "38"
-      },
-      {
-        "secondID": "469",
-        "unfinishedID": "458",
-        "potionID": "483",
-        "requiredLvl": "38",
-        "exp": "54"
-      },
-      {
-        "secondID": "270",
-        "unfinishedID": "459",
-        "potionID": "486",
-        "requiredLvl": "45",
-        "exp": "50"
-      },
-      {
-        "secondID": "473",
-        "unfinishedID": "459",
-        "potionID": "569",
-        "requiredLvl": "48",
-        "exp": "58"
-      },
-      {
-        "secondID": "469",
-        "unfinishedID": "460",
-        "potionID": "489",
-        "requiredLvl": "50",
-        "exp": "57"
-      },
-      {
-        "secondID": "220",
-        "unfinishedID": "461",
-        "potionID": "492",
-        "requiredLvl": "55",
-        "exp": "63"
-      },
-      {
-        "secondID": "472",
-        "unfinishedID": "461",
-        "potionID": "572",
-        "requiredLvl": "60",
-        "exp": "70"
-      },
-      {
-        "secondID": "471",
-        "unfinishedID": "462",
-        "potionID": "495",
-        "requiredLvl": "66",
-        "exp": "75"
-      },
-      {
-        "secondID": "501",
-        "unfinishedID": "463",
-        "potionID": "498",
-        "requiredLvl": "72",
-        "exp": "81"
-      }
-    ]
+[
+  {
+    "SecondIngredientId": "270",
+    "UnfinishedPotionId": "454",
+    "PotionId": "474",
+    "RequiredLevel": "1",
+    "Experience": "13"
+  },
+  {
+    "SecondIngredientId": "473",
+    "UnfinishedPotionId": "455",
+    "PotionId": "566",
+    "RequiredLevel": "5",
+    "Experience": "19"
+  },
+  {
+    "SecondIngredientId": "220",
+    "UnfinishedPotionId": "456",
+    "PotionId": "222",
+    "RequiredLevel": "12",
+    "Experience": "25"
+  },
+  {
+    "SecondIngredientId": "219",
+    "UnfinishedPotionId": "457",
+    "PotionId": "477",
+    "RequiredLevel": "22",
+    "Experience": "31"
+  },
+  {
+    "SecondIngredientId": "471",
+    "UnfinishedPotionId": "458",
+    "PotionId": "480",
+    "RequiredLevel": "30",
+    "Experience": "38"
+  },
+  {
+    "SecondIngredientId": "469",
+    "UnfinishedPotionId": "458",
+    "PotionId": "483",
+    "RequiredLevel": "38",
+    "Experience": "54"
+  },
+  {
+    "SecondIngredientId": "270",
+    "UnfinishedPotionId": "459",
+    "PotionId": "486",
+    "RequiredLevel": "45",
+    "Experience": "50"
+  },
+  {
+    "SecondIngredientId": "473",
+    "UnfinishedPotionId": "459",
+    "PotionId": "569",
+    "RequiredLevel": "48",
+    "Experience": "58"
+  },
+  {
+    "SecondIngredientId": "469",
+    "UnfinishedPotionId": "460",
+    "PotionId": "489",
+    "RequiredLevel": "50",
+    "Experience": "57"
+  },
+  {
+    "SecondIngredientId": "220",
+    "UnfinishedPotionId": "461",
+    "PotionId": "492",
+    "RequiredLevel": "55",
+    "Experience": "63"
+  },
+  {
+    "SecondIngredientId": "472",
+    "UnfinishedPotionId": "461",
+    "PotionId": "572",
+    "RequiredLevel": "60",
+    "Experience": "70"
+  },
+  {
+    "SecondIngredientId": "471",
+    "UnfinishedPotionId": "462",
+    "PotionId": "495",
+    "RequiredLevel": "66",
+    "Experience": "75"
+  },
+  {
+    "SecondIngredientId": "501",
+    "UnfinishedPotionId": "463",
+    "PotionId": "498",
+    "RequiredLevel": "72",
+    "Experience": "81"
   }
-}
+]
