@@ -5,6 +5,7 @@ using OpenClassic.Server.Collections;
 using OpenClassic.Server.Domain;
 using OpenClassic.Server.Networking;
 using OpenClassic.Server.Networking.Rscd;
+using OpenClassic.Server.Util;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -74,13 +75,32 @@ namespace OpenClassic.Server.Configuration
                 players.Add(newPlayer);
             }
 
-            var npcs = new List<INpc>(2000);
+            var npcLocations = DataLoader.GetNpcLocations();
+            var npcs = new List<INpc>(npcLocations.Count);
             for (var i = 0; i < npcs.Capacity; i++)
             {
                 var newNpc = container.Resolve<INpc>();
                 newNpc.Index = (short)i;
+                newNpc.Active = true;
+
+                var npcLoc = npcLocations[i];
+                newNpc.Id = npcLoc.NpcId;
+
+                newNpc.StartX = npcLoc.StartX;
+                newNpc.StartY = npcLoc.StartY;
+
+                newNpc.MinX = npcLoc.MinX;
+                newNpc.MinY = npcLoc.MinY;
+
+                newNpc.MaxX = npcLoc.MaxX;
+                newNpc.MaxY = npcLoc.MaxY;
+
+                var startPoint = new Point(npcLoc.StartX, npcLoc.StartY);
+                newNpc.Location = startPoint;
 
                 npcs.Add(newNpc);
+
+                world.NpcSpatialMap.Add(newNpc);
             }
 
             world.InitialiseWorld(players, npcs);

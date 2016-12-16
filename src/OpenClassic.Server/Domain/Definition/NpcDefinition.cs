@@ -2,6 +2,17 @@
 
 namespace OpenClassic.Server.Domain.Definition
 {
+    public class NpcLocation
+    {
+        public short NpcId { get; set; }
+        public short StartX { get; set; }
+        public short StartY { get; set; }
+        public short MinX { get; set; }
+        public short MaxX { get; set; }
+        public short MinY { get; set; }
+        public short MaxY { get; set; }
+    }
+
     public class NpcDefinition
     {
         public string Name { get; set; }

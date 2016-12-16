@@ -1,9 +1,13 @@
-﻿using System;
+﻿using OpenClassic.Server.Collections;
+using System;
+using System.Diagnostics;
 
 namespace OpenClassic.Server.Domain
 {
     public class Npc : INpc, IEquatable<Npc>
     {
+        private readonly ISpatialDictionary<INpc> _npcSpatialMap;
+
         public bool Active { get; set; }
 
         public short Id { get; set; }
@@ -15,7 +19,33 @@ namespace OpenClassic.Server.Domain
         public Point Location
         {
             get { return _location; }
-            set { _location = value; }
+            set {
+                var oldLocation = _location;
+
+                // Set the new location.
+                _location = value;
+
+                _npcSpatialMap.UpdateLocation(this, oldLocation, value);
+            }
+        }
+
+        public short StartX { get; set; }
+
+        public short StartY { get; set; }
+
+        public short MinX { get; set; }
+
+        public short MaxX { get; set; }
+
+        public short MinY { get; set; }
+
+        public short MaxY { get; set; }
+
+        public Npc(ISpatialDictionary<INpc> npcSpatialMap)
+        {
+            Debug.Assert(npcSpatialMap != null);
+
+            _npcSpatialMap = npcSpatialMap;
         }
 
         public bool Equals(INpc other) => other == this;

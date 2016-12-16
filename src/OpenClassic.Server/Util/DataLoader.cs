@@ -1,20 +1,44 @@
 ﻿using Newtonsoft.Json;
+using OpenClassic.Server.Domain.Definition;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Text;
-using System.Diagnostics;
 using System.Xml.Linq;
 
 namespace OpenClassic.Server.Util
 {
     public static class DataLoader
     {
-        public static void LoadFolder(string folderPath)
+        public static List<NpcDefinition> GetNpcDefinitions()
+        {
+            var file = @"C:\Users\daniel\Source\Repos\OpenClassic\src\OpenClassic.Server\GameData\Definitions\NPCDef.json";
+            var fileText = File.ReadAllText(file);
+
+            var settings = new JsonSerializerSettings();
+            settings.MissingMemberHandling = MissingMemberHandling.Error;
+
+            var results = JsonConvert.DeserializeObject<List<NpcDefinition>>(fileText, settings);
+
+            return results;
+        }
+
+        public static List<NpcLocation> GetNpcLocations()
+        {
+            var file = @"./GameData/Locations/NpcLoc.json";
+            var fileText = File.ReadAllText(file);
+
+            var settings = new JsonSerializerSettings();
+            settings.MissingMemberHandling = MissingMemberHandling.Error;
+
+            var results = JsonConvert.DeserializeObject<List<NpcLocation>>(fileText, settings);
+
+            return results;
+        }
+
+        private static void LoadFolder(string folderPath)
         {
             var filePaths = Directory.GetFiles(folderPath);
 
@@ -36,12 +60,13 @@ namespace OpenClassic.Server.Util
                 }
                 catch (Exception ex)
                 {
-                    var xxx = 1;
+                    ex.ToString();
+                    throw;
                 }
             }
         }
 
-        public static string LoadFileAsJson(string filepath)
+        private static string LoadFileAsJson(string filepath)
         {
             if (string.IsNullOrEmpty(filepath) || !File.Exists(filepath))
             {
