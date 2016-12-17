@@ -11,6 +11,8 @@ namespace OpenClassic.Server.Configuration
         public int IntTest { get; set; }
         public string StringTest { get; set; }
 
+        public string DataFilePath { get; set; }
+
         public string ServerProtocol { get; set; }
 
         public string RsaEncryptionKey { get; set; }

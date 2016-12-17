@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using OpenClassic.Server.Configuration;
 using OpenClassic.Server.Domain.Definition;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,25 @@ namespace OpenClassic.Server.Util
 {
     public static class DataLoader
     {
+        private static readonly IConfig Config;
+        private static readonly string BasePath;
+
+        static DataLoader()
+        {
+            var configProvider = new JsonConfigProvider();
+            Config = configProvider.GetConfig();
+
+            var dataPath = Config.DataFilePath.Trim();
+            var dataPathWithTrailingSlash = dataPath.EndsWith("/", StringComparison.OrdinalIgnoreCase) ||
+                dataPath.EndsWith(@"\", StringComparison.OrdinalIgnoreCase) ? dataPath : $"{dataPath}/";
+
+            BasePath = dataPathWithTrailingSlash;
+        }
+
         public static List<NpcDefinition> GetNpcDefinitions()
         {
-            var file = @"./GameData/Definitions/NPCDef.json";
-            var fileText = File.ReadAllText(file);
+            var filePath = $"{BasePath}/Definitions/NPCDef.json";
+            var fileText = File.ReadAllText(filePath);
 
             var settings = new JsonSerializerSettings();
             settings.MissingMemberHandling = MissingMemberHandling.Error;
@@ -27,8 +43,8 @@ namespace OpenClassic.Server.Util
 
         public static List<NpcLocation> GetNpcLocations()
         {
-            var file = @"./GameData/Locations/NpcLoc.json";
-            var fileText = File.ReadAllText(file);
+            var filePath = $"{BasePath}/Locations/NpcLoc.json";
+            var fileText = File.ReadAllText(filePath);
 
             var settings = new JsonSerializerSettings();
             settings.MissingMemberHandling = MissingMemberHandling.Error;

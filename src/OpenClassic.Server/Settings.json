@@ -3,6 +3,8 @@
   "IntTest": 1337,
   "StringTest": "Hello World",
 
+  "DataFilePath": "../../data/",
+
   "ServerProtocol": "RSCD",
 
   // RsaEncryptionKey is the public key as found in the client.

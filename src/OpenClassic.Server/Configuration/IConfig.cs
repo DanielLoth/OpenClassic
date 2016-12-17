@@ -6,6 +6,8 @@
         int IntTest { get; set; }
         string StringTest { get; set; }
 
+        string DataFilePath { get; set; }
+
         string ServerProtocol { get; set; }
 
         string RsaEncryptionKey { get; set; }

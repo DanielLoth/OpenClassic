@@ -1,5 +1,7 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Transport.Channels.Embedded;
+using DryIoc;
+using OpenClassic.Server.Configuration;
 using OpenClassic.Server.Networking;
 using System.Collections.Generic;
 using Xunit;
@@ -11,24 +13,32 @@ namespace OpenClassic.Server.Tests.Networking
         readonly byte[] RequestSession = { 32, 55 };
         readonly byte[] SendPrivacySetings = { 64, 1, 2, 3, 4 };
 
-        private GameConnectionHandler NewGameConHandler() => new GameConnectionHandler(new EmbeddedChannel());
+        private readonly GameConnectionHandler ConnectionHandler;
+
         private IByteBuffer NewMessage() => Unpooled.CopiedBuffer(SendPrivacySetings);
+
+        public GameConnectionHandlerTests()
+        {
+            var container = DependencyResolver.Current;
+            var gameEngine = container.Resolve<IGameEngine>();
+            var packetHandlers = container.Resolve<IPacketHandler[]>();
+            
+            GameConnectionHandler.Init(gameEngine, packetHandlers);
+            ConnectionHandler = new GameConnectionHandler(new EmbeddedChannel());
+        }
 
         [Fact]
         public void GameConnectionHandlerIsNotSharable()
         {
-            var conHandler = NewGameConHandler();
-
             // DotNetty does not allow sharing of these pipeline items.
 
-            Assert.False(conHandler.IsSharable);
+            Assert.False(ConnectionHandler.IsSharable);
         }
 
         [Fact]
         public void DotNettyDoesNotDecreaseReferenceCount()
         {
-            var conHandler = NewGameConHandler();
-            var channel = new EmbeddedChannel(conHandler);
+            var channel = new EmbeddedChannel(ConnectionHandler);
             var packet = Unpooled.WrappedBuffer(RequestSession);
 
             var startingRefCount = packet.ReferenceCount;
@@ -41,13 +51,12 @@ namespace OpenClassic.Server.Tests.Networking
         [Fact]
         public void AddsNewMessageToPacketQueue()
         {
-            var conHandler = NewGameConHandler();
-            var channel = new EmbeddedChannel(conHandler);
+            var channel = new EmbeddedChannel(ConnectionHandler);
             var message = NewMessage();
 
             channel.WriteInbound(message);
 
-            var packetsHandled = conHandler.Pulse();
+            var packetsHandled = ConnectionHandler.Pulse();
 
             Assert.Equal(1, packetsHandled);
         }
@@ -55,14 +64,13 @@ namespace OpenClassic.Server.Tests.Networking
         [Fact]
         public void InvokingPulseResultsInPacketProcessingAndQueueClearing()
         {
-            var conHandler = NewGameConHandler();
-            var channel = new EmbeddedChannel(conHandler);
+            var channel = new EmbeddedChannel(ConnectionHandler);
 
             for (var i = 0; i < 50; i++)
             {
                 channel.WriteInbound(NewMessage());
 
-                var packetsHandled = conHandler.Pulse();
+                var packetsHandled = ConnectionHandler.Pulse();
 
                 Assert.Equal(1, packetsHandled);
             }
@@ -71,8 +79,7 @@ namespace OpenClassic.Server.Tests.Networking
         [Fact]
         public void InvokingPulseResultsInByteBufferRelease()
         {
-            var conHandler = NewGameConHandler();
-            var channel = new EmbeddedChannel(conHandler);
+            var channel = new EmbeddedChannel(ConnectionHandler);
             var messages = new List<IByteBuffer>();
 
             const int messageCount = 50;
@@ -91,7 +98,7 @@ namespace OpenClassic.Server.Tests.Networking
                 channel.WriteInbound(message);
             }
 
-            conHandler.Pulse();
+            ConnectionHandler.Pulse();
 
             foreach (var message in messages)
             {
@@ -102,18 +109,17 @@ namespace OpenClassic.Server.Tests.Networking
         [Fact]
         public void ChannelReadAddsMessageToQueue()
         {
-            var conHandler = NewGameConHandler();
-            var channel = new EmbeddedChannel(conHandler);
+            var channel = new EmbeddedChannel(ConnectionHandler);
             var chanHandlerCtx = channel.Pipeline.FirstContext();
 
             const int messageCount = 50;
 
             for (var i = 0; i < messageCount; i++)
             {
-                conHandler.ChannelRead(chanHandlerCtx, NewMessage());
+                ConnectionHandler.ChannelRead(chanHandlerCtx, NewMessage());
             }
 
-            var packetsHandled = conHandler.Pulse();
+            var packetsHandled = ConnectionHandler.Pulse();
 
             Assert.Equal(messageCount, packetsHandled);
         }
