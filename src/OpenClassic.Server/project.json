@@ -6,10 +6,10 @@
     "copyToOutput": {
       "include": [
         "Settings.json",
-        "GameData/*",
-        "GameData/Definitions/*",
-        "GameData/Locations/*",
-        "GameData/Landscape/*"
+        "../../data/*",
+        "../../data/Definitions/*",
+        "../../data/Locations/*",
+        "../../data/Landscape/*"
       ]
     }
   },
@@ -17,10 +17,10 @@
   "publishOptions": {
     "include": [
       "Settings.json",
-      "GameData/*",
-      "GameData/Definitions/*",
-      "GameData/Locations/*",
-      "GameData/Landscape/*"
+      "../../data/*",
+      "../../data/Definitions/*",
+      "../../data/Locations/*",
+      "../../data/Landscape/*"
     ]
   },
 
