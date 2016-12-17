@@ -14,7 +14,7 @@ namespace OpenClassic.Server.Util
     {
         public static List<NpcDefinition> GetNpcDefinitions()
         {
-            var file = @"C:\Users\daniel\Source\Repos\OpenClassic\src\OpenClassic.Server\GameData\Definitions\NPCDef.json";
+            var file = @"./GameData/Definitions/NPCDef.json";
             var fileText = File.ReadAllText(file);
 
             var settings = new JsonSerializerSettings();
