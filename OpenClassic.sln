@@ -20,6 +20,61 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Definitions", "Definitions", "{2C51E55B-A3EC-46DC-B69C-23894C02FA8F}"
+	ProjectSection(SolutionItems) = preProject
+		data\Definitions\DoorDef.json = data\Definitions\DoorDef.json
+		data\Definitions\FiremakingDef.json = data\Definitions\FiremakingDef.json
+		data\Definitions\GameObjectDef.json = data\Definitions\GameObjectDef.json
+		data\Definitions\ItemAffectedTypes.json = data\Definitions\ItemAffectedTypes.json
+		data\Definitions\ItemArrowHeadDef.json = data\Definitions\ItemArrowHeadDef.json
+		data\Definitions\ItemBowStringDef.json = data\Definitions\ItemBowStringDef.json
+		data\Definitions\ItemCookingDef.json = data\Definitions\ItemCookingDef.json
+		data\Definitions\ItemCraftingDef.json = data\Definitions\ItemCraftingDef.json
+		data\Definitions\ItemDartTipDef.json = data\Definitions\ItemDartTipDef.json
+		data\Definitions\ItemDef.json = data\Definitions\ItemDef.json
+		data\Definitions\ItemEdibleHeals.json = data\Definitions\ItemEdibleHeals.json
+		data\Definitions\ItemGemDef.json = data\Definitions\ItemGemDef.json
+		data\Definitions\ItemHerbDef.json = data\Definitions\ItemHerbDef.json
+		data\Definitions\ItemHerbSecond.json = data\Definitions\ItemHerbSecond.json
+		data\Definitions\ItemLogCutDef.json = data\Definitions\ItemLogCutDef.json
+		data\Definitions\ItemSmeltingDef.json = data\Definitions\ItemSmeltingDef.json
+		data\Definitions\ItemSmithingDef.json = data\Definitions\ItemSmithingDef.json
+		data\Definitions\ItemUnIdentHerbDef.json = data\Definitions\ItemUnIdentHerbDef.json
+		data\Definitions\ItemWieldableDef.json = data\Definitions\ItemWieldableDef.json
+		data\Definitions\KeyChestLoot.json = data\Definitions\KeyChestLoot.json
+		data\Definitions\NpcCerters.json = data\Definitions\NpcCerters.json
+		data\Definitions\NPCDef.json = data\Definitions\NPCDef.json
+		data\Definitions\ObjectFishing.json = data\Definitions\ObjectFishing.json
+		data\Definitions\ObjectMining.json = data\Definitions\ObjectMining.json
+		data\Definitions\ObjectWoodcutting.json = data\Definitions\ObjectWoodcutting.json
+		data\Definitions\PrayerDef.json = data\Definitions\PrayerDef.json
+		data\Definitions\SpellAggressiveLvl.json = data\Definitions\SpellAggressiveLvl.json
+		data\Definitions\SpellDef.json = data\Definitions\SpellDef.json
+		data\Definitions\ThievableNpcs.json = data\Definitions\ThievableNpcs.json
+		data\Definitions\ThievableObjects.json = data\Definitions\ThievableObjects.json
+		data\Definitions\TileDef.json = data\Definitions\TileDef.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locations", "Locations", "{AE0587BB-EB46-4C6B-93B1-95BAB3058B44}"
+	ProjectSection(SolutionItems) = preProject
+		data\Locations\GameObjectLoc.json = data\Locations\GameObjectLoc.json
+		data\Locations\ItemLoc.json = data\Locations\ItemLoc.json
+		data\Locations\NpcLoc.json = data\Locations\NpcLoc.json
+		data\Locations\ObjectTelePoints.json = data\Locations\ObjectTelePoints.json
+		data\Locations\Shops.json = data\Locations\Shops.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Landscape", "Landscape", "{ACD606C8-D365-481B-9761-4CF5E5F77A23}"
+	ProjectSection(SolutionItems) = preProject
+		data\Landscape\Landscape.rscd = data\Landscape\Landscape.rscd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other Files", "Other Files", "{76EDD5B1-D8B4-45DC-B30D-AADED850C700}"
+	ProjectSection(SolutionItems) = preProject
+		data\ClientRuntimeParams.txt = data\ClientRuntimeParams.txt
+		data\ItemList.txt = data\ItemList.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,5 +96,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A17B0A2B-087A-4ADC-BFB1-06D188D4BF8F} = {384C65B8-A866-4587-BF59-95F4FDBBA8EF}
 		{F2BA5B38-14F2-4399-8954-54FDC8D95AA9} = {77708C4B-F8B2-4EC6-998C-F904311A53EE}
+		{2C51E55B-A3EC-46DC-B69C-23894C02FA8F} = {7D0CED69-09A1-4147-9EDB-0538E17A0F94}
+		{AE0587BB-EB46-4C6B-93B1-95BAB3058B44} = {7D0CED69-09A1-4147-9EDB-0538E17A0F94}
+		{ACD606C8-D365-481B-9761-4CF5E5F77A23} = {7D0CED69-09A1-4147-9EDB-0538E17A0F94}
+		{76EDD5B1-D8B4-45DC-B30D-AADED850C700} = {7D0CED69-09A1-4147-9EDB-0538E17A0F94}
 	EndGlobalSection
 EndGlobal
