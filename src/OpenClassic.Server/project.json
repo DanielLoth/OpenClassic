@@ -5,22 +5,14 @@
     "emitEntryPoint": true,
     "copyToOutput": {
       "include": [
-        "Settings.json",
-        "../../data/*",
-        "../../data/Definitions/*",
-        "../../data/Locations/*",
-        "../../data/Landscape/*"
+        "Settings.json"
       ]
     }
   },
 
   "publishOptions": {
     "include": [
-      "Settings.json",
-      "../../data/*",
-      "../../data/Definitions/*",
-      "../../data/Locations/*",
-      "../../data/Landscape/*"
+      "Settings.json"
     ]
   },
 
