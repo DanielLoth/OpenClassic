@@ -162,11 +162,15 @@ namespace OpenClassic.Server
             {
                 if (player.Active)
                 {
-                    player.RevalidateWatchedNpcs();
                     player.RevalidateWatchedPlayers();
+                    player.RevalidateWatchedObjects();
+                    // items
+                    player.RevalidateWatchedNpcs();
 
-                    player.UpdateWatchedNpcs();
                     player.UpdateWatchedPlayers();
+                    player.UpdateWatchedObjects();
+                    // items
+                    player.UpdateWatchedNpcs();
                 }
             }
 
@@ -185,6 +189,7 @@ namespace OpenClassic.Server
                 if (player.Active)
                 {
                     player.WatchedPlayers.Update();
+                    player.WatchedObjects.Update();
                     player.WatchedNpcs.Update();
                 }
             }

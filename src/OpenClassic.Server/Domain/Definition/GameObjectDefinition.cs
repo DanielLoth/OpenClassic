@@ -18,7 +18,7 @@
         public short Id { get; set; }
         public short X { get; set; }
         public short Y { get; set; }
-        public int Direction { get; set; }
+        public sbyte Direction { get; set; }
         public int Type { get; set; }
     }
 }

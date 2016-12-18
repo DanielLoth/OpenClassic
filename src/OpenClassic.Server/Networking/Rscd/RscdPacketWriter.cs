@@ -264,8 +264,8 @@ namespace OpenClassic.Server.Networking.Rscd
             // TODO: Loop through each new NPC here
             foreach (var npc in newNpcs)
             {
-                var xOffset = GetOffset(npc.Location.X, player.Location.X);
-                var yOffset = GetOffset(npc.Location.Y, player.Location.Y);
+                var xOffset = GetMobOffset(npc.Location.X, player.Location.X);
+                var yOffset = GetMobOffset(npc.Location.Y, player.Location.Y);
 
                 WriteBits(session, npc.Index, 16);
                 WriteBits(session, xOffset, 5);
@@ -284,7 +284,7 @@ namespace OpenClassic.Server.Networking.Rscd
             FormatPacket(session);
         }
 
-        private byte GetOffset(short ord1, short ord2)
+        private byte GetMobOffset(short ord1, short ord2)
         {
             var offset = (byte)(ord1 - ord2);
             if (ord2 > ord1)
@@ -295,6 +295,11 @@ namespace OpenClassic.Server.Networking.Rscd
             {
                 return (byte)(ord1 - ord2);
             }
+        }
+
+        private byte GetObjectOffset(short ord1, short ord2)
+        {
+            return (byte)(ord1 - ord2);
         }
 
         //public static byte[] getMobPositionOffsets(Point p1, Point p2)
@@ -322,15 +327,41 @@ namespace OpenClassic.Server.Networking.Rscd
             // TODO: Implement the 'send game objects' packet.
             // Note: Only send this packet if the player's watched game objects have changed.
 
-            if (false) // If the player's visible game objects have changed...
+            var player = session.Player;
+            var watchedObjects = player.WatchedObjects;
+
+            if (watchedObjects.Changed) // If the player's visible game objects have changed...
             {
-#pragma warning disable CS0162 // Unreachable code detected
                 CreatePacket(session, 27);
-#pragma warning restore CS0162 // Unreachable code detected
 
-                // TODO: Loop through known objects, remove any that are no longer visible.
+                foreach (var obj in watchedObjects.KnownReadOnly)
+                {
+                    if (obj.Type != 0) continue;
 
-                // TODO: Loop through new objects.
+                    if (watchedObjects.Removing(obj))
+                    {
+                        var xOffset = GetObjectOffset(obj.Location.X, player.Location.X);
+                        var yOffset = GetObjectOffset(obj.Location.Y, player.Location.Y);
+
+                        WriteShort(session, 60000);
+                        WriteByte(session, xOffset);
+                        WriteByte(session, yOffset);
+                        WriteByte(session, obj.Direction);
+                    }
+                }
+
+                foreach (var obj in watchedObjects.AddedReadOnly)
+                {
+                    if (obj.Type != 0) continue;
+
+                    var xOffset = GetObjectOffset(obj.Location.X, player.Location.X);
+                    var yOffset = GetObjectOffset(obj.Location.Y, player.Location.Y);
+
+                    WriteShort(session, obj.Id);
+                    WriteByte(session, xOffset);
+                    WriteByte(session, yOffset);
+                    WriteByte(session, obj.Direction);
+                }
 
                 FormatPacket(session);
             }
@@ -343,15 +374,41 @@ namespace OpenClassic.Server.Networking.Rscd
             // TODO: Implement the 'send wall objects' packet.
             // Note: Only send this packet if the player's watched wall objects have changed.
 
-            if (false) // If the player's visible wall objects have changed...
+            var player = session.Player;
+            var watchedObjects = player.WatchedObjects;
+
+            if (watchedObjects.Changed) // If the player's visible wall objects have changed...
             {
-#pragma warning disable CS0162 // Unreachable code detected
                 CreatePacket(session, 95);
-#pragma warning restore CS0162 // Unreachable code detected
 
-                // TODO: Loop through known wall objects, remove any that are no longer visible.
+                foreach (var obj in watchedObjects.KnownReadOnly)
+                {
+                    if (obj.Type != 1) continue;
 
-                // TODO: Loop through new wall objects.
+                    if (watchedObjects.Removing(obj))
+                    {
+                        var xOffset = GetObjectOffset(obj.Location.X, player.Location.X);
+                        var yOffset = GetObjectOffset(obj.Location.Y, player.Location.Y);
+
+                        WriteShort(session, 60000);
+                        WriteByte(session, xOffset);
+                        WriteByte(session, yOffset);
+                        WriteByte(session, obj.Direction);
+                    }
+                }
+
+                foreach (var obj in watchedObjects.AddedReadOnly)
+                {
+                    if (obj.Type != 1) continue;
+
+                    var xOffset = GetObjectOffset(obj.Location.X, player.Location.X);
+                    var yOffset = GetObjectOffset(obj.Location.Y, player.Location.Y);
+
+                    WriteShort(session, obj.Id);
+                    WriteByte(session, xOffset);
+                    WriteByte(session, yOffset);
+                    WriteByte(session, obj.Direction);
+                }
 
                 FormatPacket(session);
             }

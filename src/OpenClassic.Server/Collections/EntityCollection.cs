@@ -93,10 +93,7 @@ namespace OpenClassic.Server.Collections
             return removed.Contains(entity);
         }
 
-        public bool Changed()
-        {
-            return !(added.Count == 0 && removed.Count == 0);
-        }
+        public bool Changed => !(added.Count == 0 && removed.Count == 0);
 
         public void Update()
         {

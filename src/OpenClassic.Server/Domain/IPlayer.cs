@@ -29,11 +29,14 @@ namespace OpenClassic.Server.Domain
 
         EntityCollection<IPlayer> WatchedPlayers { get; }
         EntityCollection<INpc> WatchedNpcs { get; }
+        EntityCollection<IGameObject> WatchedObjects { get; }
 
         void RevalidateWatchedNpcs();
+        void RevalidateWatchedObjects();
         void RevalidateWatchedPlayers();
 
         void UpdateWatchedNpcs();
+        void UpdateWatchedObjects();
         void UpdateWatchedPlayers();
 
         #endregion

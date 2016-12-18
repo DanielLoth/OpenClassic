@@ -1,6 +1,7 @@
 ﻿using DryIoc;
 using OpenClassic.Server.Collections;
 using OpenClassic.Server.Domain;
+using System.Collections.Generic;
 using Xunit;
 
 namespace OpenClassic.Server.Tests.Collections
@@ -19,6 +20,32 @@ namespace OpenClassic.Server.Tests.Collections
 
                 return container;
             }
+        }
+
+        [Theory]
+        [InlineData(10, 10, 1, 9)]
+        [InlineData(10, 10, 2, 25)]
+        [InlineData(100, 100, 16, 1089)]
+        public void GenerateTilesInRange(short xOrdinate, short yOrdinate, short range, int expectedTileCount)
+        {
+            var points = new List<Point>();
+
+            var startX = xOrdinate - range;
+            var endX = xOrdinate + range;
+
+            var startY = yOrdinate - range;
+            var endY = yOrdinate + range;
+
+            for (var x = startX; x <= endX; x++)
+            {
+                for (var y = startY; y <= endY; y++)
+                {
+                    points.Add(new Point((short)x, (short)y));
+                }
+            }
+
+            Assert.NotEmpty(points);
+            Assert.Equal(expectedTileCount, points.Count);
         }
 
         [Theory]

@@ -7,11 +7,15 @@ namespace OpenClassic.Server.Domain
     {
         private readonly ISpatialDictionary<IGameObject> _gameObjectSpatialMap;
 
-        public bool Active { get; set; }
+        public bool Active { get; set; } = true;
 
         public short Id { get; set; }
 
         public short Index { get; set; }
+
+        public int Type { get; set; }
+
+        public sbyte Direction { get; set; }
 
         private Point _location;
         public Point Location

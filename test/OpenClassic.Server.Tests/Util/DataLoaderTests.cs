@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;
+using OpenClassic.Server.Domain;
 using OpenClassic.Server.Util;
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace OpenClassic.Server.Tests.Util
@@ -50,6 +52,8 @@ namespace OpenClassic.Server.Tests.Util
 
             Assert.NotNull(objectDefs);
             Assert.NotEmpty(objectDefs);
+
+            var xxx = objectDefs.Select(o => o.Type).Distinct().ToList();
         }
 
         [Fact]
@@ -59,6 +63,11 @@ namespace OpenClassic.Server.Tests.Util
 
             Assert.NotNull(objectLocs);
             Assert.NotEmpty(objectLocs);
+
+            var directions = objectLocs.Select(o => o.Direction).Distinct().ToList();
+
+            var minPoint = new Point(objectLocs.Min(o => o.X), objectLocs.Min(o => o.Y));
+            var maxPoint = new Point(objectLocs.Max(o => o.X), objectLocs.Max(o => o.Y));
         }
     }
 

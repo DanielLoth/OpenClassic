@@ -65,7 +65,7 @@ namespace OpenClassic.Server.Tests.Collections
 
             entities.Add(players);
 
-            Assert.True(entities.Changed());
+            Assert.True(entities.Changed);
         }
 
         [Fact]
@@ -76,7 +76,7 @@ namespace OpenClassic.Server.Tests.Collections
 
             entities.Remove(player);
 
-            Assert.True(entities.Changed());
+            Assert.True(entities.Changed);
         }
 
         [Fact]
@@ -90,7 +90,7 @@ namespace OpenClassic.Server.Tests.Collections
             entities.Add(player1);
             entities.Remove(player2);
 
-            Assert.True(entities.Changed());
+            Assert.True(entities.Changed);
         }
 
         [Fact]
@@ -98,7 +98,7 @@ namespace OpenClassic.Server.Tests.Collections
         {
             var entities = new EntityCollection<IPlayer>();
 
-            Assert.False(entities.Changed());
+            Assert.False(entities.Changed);
         }
 
         [Fact]
