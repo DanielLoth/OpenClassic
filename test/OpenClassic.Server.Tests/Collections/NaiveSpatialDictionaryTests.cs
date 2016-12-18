@@ -15,6 +15,7 @@ namespace OpenClassic.Server.Tests.Collections
                 container.Register<IPlayer, Player>();
                 container.Register<ISpatialDictionary<IPlayer>, NaiveSpatialDictionary<IPlayer>>();
                 container.Register<ISpatialDictionary<INpc>, NaiveSpatialDictionary<INpc>>();
+                container.Register<ISpatialDictionary<IGameObject>, NaiveSpatialDictionary<IGameObject>>();
 
                 return container;
             }

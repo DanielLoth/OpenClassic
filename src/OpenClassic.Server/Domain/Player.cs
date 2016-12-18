@@ -11,6 +11,7 @@ namespace OpenClassic.Server.Domain
         // TODO: Remove the player from the spatial map on logout.
         private readonly ISpatialDictionary<IPlayer> _playerSpatialMap;
         private readonly ISpatialDictionary<INpc> _npcSpatialMap;
+        private readonly ISpatialDictionary<IGameObject> _objectSpatialMap;
 
         public short Index { get; set; }
 
@@ -31,13 +32,16 @@ namespace OpenClassic.Server.Domain
         }
 
         public Player(ISpatialDictionary<IPlayer> playerSpatialMap,
-            ISpatialDictionary<INpc> npcSpatialMap)
+            ISpatialDictionary<INpc> npcSpatialMap,
+            ISpatialDictionary<IGameObject> objSpatialMap)
         {
             Debug.Assert(playerSpatialMap != null);
             Debug.Assert(npcSpatialMap != null);
+            Debug.Assert(objSpatialMap != null);
 
             _playerSpatialMap = playerSpatialMap;
             _npcSpatialMap = npcSpatialMap;
+            _objectSpatialMap = objSpatialMap;
         }
 
         public bool Equals(IPlayer other) => other == this;
