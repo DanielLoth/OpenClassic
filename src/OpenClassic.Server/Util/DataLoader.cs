@@ -52,6 +52,18 @@ namespace OpenClassic.Server.Util
             return DeserialiseJsonFile<NpcLocation>(filePath);
         }
 
+        public static List<GameObjectDefinition> GetObjectDefinitions()
+        {
+            var filePath = $"{BasePath}/Definitions/GameObjectDef.json";
+            return DeserialiseJsonFile<GameObjectDefinition>(filePath);
+        }
+
+        public static List<GameObjectLocation> GetObjectLocations()
+        {
+            var filePath = $"{BasePath}/Locations/GameObjectLoc.json";
+            return DeserialiseJsonFile<GameObjectLocation>(filePath);
+        }
+
         private static List<T> DeserialiseJsonFile<T>(string filePath)
         {
             var settings = new JsonSerializerSettings();

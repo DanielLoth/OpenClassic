@@ -42,6 +42,24 @@ namespace OpenClassic.Server.Tests.Util
             Assert.NotNull(itemLocs);
             Assert.NotEmpty(itemLocs);
         }
+
+        [Fact]
+        public void LoadsGameObjectDefinitions()
+        {
+            var objectDefs = DataLoader.GetObjectDefinitions();
+
+            Assert.NotNull(objectDefs);
+            Assert.NotEmpty(objectDefs);
+        }
+
+        [Fact]
+        public void LoadsGameObjectLocations()
+        {
+            var objectLocs = DataLoader.GetObjectLocations();
+
+            Assert.NotNull(objectLocs);
+            Assert.NotEmpty(objectLocs);
+        }
     }
 
     #region Scratchpad
