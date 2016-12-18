@@ -15,9 +15,9 @@
 
     public class GameObjectLocation
     {
-        public int Id { get; set; }
-        public int X { get; set; }
-        public int Y { get; set; }
+        public short Id { get; set; }
+        public short X { get; set; }
+        public short Y { get; set; }
         public int Direction { get; set; }
         public int Type { get; set; }
     }
