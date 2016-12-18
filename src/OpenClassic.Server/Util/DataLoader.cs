@@ -28,28 +28,37 @@ namespace OpenClassic.Server.Util
             BasePath = dataPathWithTrailingSlash;
         }
 
+        public static List<ItemDefinition> GetItemDefinitions()
+        {
+            var filePath = $"{BasePath}/Definitions/ItemDef.json";
+            return DeserialiseJsonFile<ItemDefinition>(filePath);
+        }
+
+        public static List<ItemLocation> GetItemLocations()
+        {
+            var filePath = $"{BasePath}/Locations/ItemLoc.json";
+            return DeserialiseJsonFile<ItemLocation>(filePath);
+        }
+
         public static List<NpcDefinition> GetNpcDefinitions()
         {
             var filePath = $"{BasePath}/Definitions/NPCDef.json";
-            var fileText = File.ReadAllText(filePath);
-
-            var settings = new JsonSerializerSettings();
-            settings.MissingMemberHandling = MissingMemberHandling.Error;
-
-            var results = JsonConvert.DeserializeObject<List<NpcDefinition>>(fileText, settings);
-
-            return results;
+            return DeserialiseJsonFile<NpcDefinition>(filePath);
         }
 
         public static List<NpcLocation> GetNpcLocations()
         {
             var filePath = $"{BasePath}/Locations/NpcLoc.json";
-            var fileText = File.ReadAllText(filePath);
+            return DeserialiseJsonFile<NpcLocation>(filePath);
+        }
 
+        private static List<T> DeserialiseJsonFile<T>(string filePath)
+        {
             var settings = new JsonSerializerSettings();
             settings.MissingMemberHandling = MissingMemberHandling.Error;
 
-            var results = JsonConvert.DeserializeObject<List<NpcLocation>>(fileText, settings);
+            var fileText = File.ReadAllText(filePath);
+            var results = JsonConvert.DeserializeObject<List<T>>(fileText, settings);
 
             return results;
         }

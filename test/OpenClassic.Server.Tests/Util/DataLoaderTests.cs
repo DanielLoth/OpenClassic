@@ -8,22 +8,39 @@ namespace OpenClassic.Server.Tests.Util
     public class DataLoaderTests
     {
         [Fact]
-        public void Blah()
+        public void LoadsNpcDefinitions()
         {
-            //var folderPath = @"C:\Users\daniel\Source\Repos\OpenClassic\src\OpenClassic.Server\GameData\Locations";
+            var npcDefs = DataLoader.GetNpcDefinitions();
 
-            //DataLoader.LoadFolder(folderPath);
-
-            //var xxx = DataLoader.LoadFile(
-            //    @"C:\Users\daniel\Source\Repos\OpenClassic\src\OpenClassic.Server\GameData\Definitions\NPCDef.xml.gz");
+            Assert.NotNull(npcDefs);
+            Assert.NotEmpty(npcDefs);
         }
 
         [Fact]
-        public void Blah2()
+        public void LoadsNpcLocations()
         {
-            //var npcDefs = DataLoader.GetNpcDefinitions();
+            var npcLocs = DataLoader.GetNpcLocations();
 
-            //var json = JsonConvert.SerializeObject(npcDefs, Formatting.Indented);
+            Assert.NotNull(npcLocs);
+            Assert.NotEmpty(npcLocs);
+        }
+
+        [Fact]
+        public void LoadsItemDefinitions()
+        {
+            var itemDefs = DataLoader.GetItemDefinitions();
+
+            Assert.NotNull(itemDefs);
+            Assert.NotEmpty(itemDefs);
+        }
+
+        [Fact]
+        public void LoadsItemLocations()
+        {
+            var itemLocs = DataLoader.GetItemLocations();
+
+            Assert.NotNull(itemLocs);
+            Assert.NotEmpty(itemLocs);
         }
     }
 
