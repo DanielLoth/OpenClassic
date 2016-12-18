@@ -47,9 +47,11 @@ namespace OpenClassic.Server.Configuration
 
             container.Register<ISpatialDictionary<IPlayer>, NaiveSpatialDictionary<IPlayer>>(Reuse.Singleton);
             container.Register<ISpatialDictionary<INpc>, NaiveSpatialDictionary<INpc>>(Reuse.Singleton);
+            container.Register<ISpatialDictionary<IGameObject>, NaiveSpatialDictionary<IGameObject>>(Reuse.Singleton);
 
             container.Register<IPlayer, Player>(Reuse.Transient);
             container.Register<INpc, Npc>(Reuse.Transient);
+            container.Register<IGameObject, GameObject>(Reuse.Transient);
         }
 
         static void InitialiseDependencies(IContainer container)
@@ -114,6 +116,24 @@ namespace OpenClassic.Server.Configuration
                 npcs.Add(newNpc);
 
                 world.NpcSpatialMap.Add(newNpc);
+            }
+
+            var gameObjectLocs = DataLoader.GetObjectLocations();
+            var gameObjects = new List<IGameObject>(gameObjectLocs.Count);
+            for (var i = 0; i < gameObjectLocs.Count; i++)
+            {
+                var newGameObject = container.Resolve<IGameObject>();
+                newGameObject.Index = (short)i;
+
+                var objLoc = gameObjectLocs[i];
+                newGameObject.Id = objLoc.Id;
+
+                var location = new Point(objLoc.X, objLoc.Y);
+                newGameObject.Location = location;
+
+                gameObjects.Add(newGameObject);
+
+                world.ObjectSpatialMap.Add(newGameObject);
             }
 
             world.InitialiseWorld(players, npcs);

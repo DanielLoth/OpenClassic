@@ -11,18 +11,23 @@ namespace OpenClassic.Server.Domain
 
         private readonly ISpatialDictionary<IPlayer> _playerSpatialMap;
         private readonly ISpatialDictionary<INpc> _npcSpatialMap;
+        private readonly ISpatialDictionary<IGameObject> _objectSpatialMap;
 
         public ISpatialDictionary<IPlayer> PlayerSpatialMap => _playerSpatialMap;
         public ISpatialDictionary<INpc> NpcSpatialMap => _npcSpatialMap;
+        public ISpatialDictionary<IGameObject> ObjectSpatialMap => _objectSpatialMap;
 
         public World(ISpatialDictionary<IPlayer> playerSpatialMap,
-            ISpatialDictionary<INpc> npcSpatialMap)
+            ISpatialDictionary<INpc> npcSpatialMap,
+            ISpatialDictionary<IGameObject> objSpatialMap)
         {
             Debug.Assert(playerSpatialMap != null);
             Debug.Assert(npcSpatialMap != null);
+            Debug.Assert(objSpatialMap != null);
 
             _playerSpatialMap = playerSpatialMap;
             _npcSpatialMap = npcSpatialMap;
+            _objectSpatialMap = objSpatialMap;
         }
 
         public void InitialiseWorld(List<IPlayer> players, List<INpc> npcs)

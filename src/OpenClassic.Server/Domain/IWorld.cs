@@ -10,6 +10,7 @@ namespace OpenClassic.Server.Domain
 
         ISpatialDictionary<IPlayer> PlayerSpatialMap { get; }
         ISpatialDictionary<INpc> NpcSpatialMap { get; }
+        ISpatialDictionary<IGameObject> ObjectSpatialMap { get; }
 
         void InitialiseWorld(List<IPlayer> players, List<INpc> npcs);
 
