@@ -130,7 +130,6 @@ namespace OpenClassic.Server.Networking.Rscd
         private IByteBuffer DecryptRsa(IByteBuffer buffer, int rsaBlockSize)
         {
             Debug.Assert(buffer != null);
-            Debug.Assert(rsaBlockSize == 64);
             Debug.Assert(buffer.ReadableBytes == rsaBlockSize);
 
             var encryptedPayload = new byte[rsaBlockSize];
