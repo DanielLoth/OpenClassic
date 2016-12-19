@@ -52,7 +52,7 @@ namespace OpenClassic.Server.Domain
 
         public override string ToString()
         {
-            return $"GameObject - Id={Id}, Index={Index}, Location={Location}";
+            return $"GameObject - Id={Id}, Index={Index}, Location={Location}, Direction={Direction}, Type={Type}";
         }
     }
 }

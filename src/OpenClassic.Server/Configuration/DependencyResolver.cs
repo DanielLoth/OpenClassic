@@ -118,7 +118,6 @@ namespace OpenClassic.Server.Configuration
                 world.NpcSpatialMap.Add(newNpc);
             }
 
-            var gameObjectDefs = DataLoader.GetObjectDefinitions();
             var gameObjectLocs = DataLoader.GetObjectLocations();
             var gameObjects = new List<IGameObject>(gameObjectLocs.Count);
             for (var i = 0; i < gameObjectLocs.Count; i++)
@@ -127,10 +126,9 @@ namespace OpenClassic.Server.Configuration
                 newGameObject.Index = (short)i;
 
                 var objLoc = gameObjectLocs[i];
-                var objDef = gameObjectDefs[objLoc.Id];
 
                 newGameObject.Id = objLoc.Id;
-                newGameObject.Type = objDef.Type;
+                newGameObject.Type = objLoc.Type;
                 newGameObject.Direction = objLoc.Direction;
 
                 var location = new Point(objLoc.X, objLoc.Y);

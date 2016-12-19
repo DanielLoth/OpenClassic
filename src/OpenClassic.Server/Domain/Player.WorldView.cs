@@ -33,7 +33,7 @@ namespace OpenClassic.Server.Domain
         {
             foreach (var obj in watchedObjects.KnownReadOnly)
             {
-                if (!obj.Active || !WithinRange(obj, 16))
+                if (!obj.Active || !WithinRange(obj, 21))
                 {
                     watchedObjects.Remove(obj);
                 }
@@ -58,7 +58,7 @@ namespace OpenClassic.Server.Domain
 
         public void UpdateWatchedObjects()
         {
-            foreach (var obj in _objectSpatialMap.GetObjectsInProximityLazy(_location, 16))
+            foreach (var obj in _objectSpatialMap.GetObjectsInProximityLazy(_location, 21))
             {
                 if (obj.Active && !watchedObjects.Contains(obj))
                 {

@@ -20,5 +20,10 @@
         public short Y { get; set; }
         public sbyte Direction { get; set; }
         public int Type { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id={Id}, Location=({X}, {Y}), Direction={Direction}, Type={Type}";
+        }
     }
 }

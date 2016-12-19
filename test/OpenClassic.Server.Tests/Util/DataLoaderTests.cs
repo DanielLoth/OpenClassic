@@ -2,6 +2,7 @@
 using OpenClassic.Server.Domain;
 using OpenClassic.Server.Util;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Xunit;
 
@@ -68,6 +69,12 @@ namespace OpenClassic.Server.Tests.Util
 
             var minPoint = new Point(objectLocs.Min(o => o.X), objectLocs.Min(o => o.Y));
             var maxPoint = new Point(objectLocs.Max(o => o.X), objectLocs.Max(o => o.Y));
+
+            var minDir = objectLocs.Min(x => x.Direction);
+            var maxDir = objectLocs.Max(x => x.Direction);
+
+            var minType = objectLocs.Min(x => x.Type);
+            var maxType = objectLocs.Max(x => x.Type);
         }
     }
 
