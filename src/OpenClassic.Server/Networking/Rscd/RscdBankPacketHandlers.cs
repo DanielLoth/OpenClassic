@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace OpenClassic.Server.Networking.Rscd
 {
-    internal class DepositBankItemPacketHandler : IPacketHandler
+    internal class DepositBankItemPacketHandler : IRscdPacketHandlerMarker
     {
         public int Opcode => 198;
 
@@ -14,7 +14,7 @@ namespace OpenClassic.Server.Networking.Rscd
         }
     }
 
-    internal class WithdrawBankItemPacketHandler : IPacketHandler
+    internal class WithdrawBankItemPacketHandler : IRscdPacketHandlerMarker
     {
         public int Opcode => 183;
 

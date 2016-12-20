@@ -40,5 +40,16 @@ namespace OpenClassic.Server.Domain
         void UpdateWatchedPlayers();
 
         #endregion
+
+        #region Movement fields
+
+        byte[] XOffsets { get; }
+        byte[] YOffsets { get; }
+
+        short StartX { get; set; }
+        short StartY { get; set; }
+        int StepCount { get; set; }
+
+        #endregion
     }
 }

@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace OpenClassic.Server.Networking.Rscd
 {
-    internal class AddFriendPacketHandler : IPacketHandler
+    internal class AddFriendPacketHandler : IRscdPacketHandlerMarker
     {
         public int Opcode => 168;
 
@@ -14,7 +14,7 @@ namespace OpenClassic.Server.Networking.Rscd
         }
     }
 
-    internal class RemoveFriendPacketHandler : IPacketHandler
+    internal class RemoveFriendPacketHandler : IRscdPacketHandlerMarker
     {
         public int Opcode => 52;
 
@@ -25,7 +25,7 @@ namespace OpenClassic.Server.Networking.Rscd
         }
     }
 
-    internal class AddIgnorePacketHandler : IPacketHandler
+    internal class AddIgnorePacketHandler : IRscdPacketHandlerMarker
     {
         public int Opcode => 25;
 
@@ -36,7 +36,7 @@ namespace OpenClassic.Server.Networking.Rscd
         }
     }
 
-    internal class RemoveIgnorePacketHandler : IPacketHandler
+    internal class RemoveIgnorePacketHandler : IRscdPacketHandlerMarker
     {
         public int Opcode => 108;
 
@@ -47,7 +47,7 @@ namespace OpenClassic.Server.Networking.Rscd
         }
     }
 
-    internal class PublicChatPacketHandler : IPacketHandler
+    internal class PublicChatPacketHandler : IRscdPacketHandlerMarker
     {
         public int Opcode => 145;
 
