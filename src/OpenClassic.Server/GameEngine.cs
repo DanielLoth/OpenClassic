@@ -82,6 +82,7 @@ namespace OpenClassic.Server
                 {
                     PulseSessions(); // Processes inbound packets.
                     ProcessTasks(); // Runs any queued scheduled to run this tick.
+                    UpdateState();
                     SendClientUpdates();
                 }
                 finally
@@ -176,6 +177,17 @@ namespace OpenClassic.Server
 
                 taskQueue.Clear();
                 Debug.Assert(taskQueue.Count == 0);
+            }
+        }
+
+        private void UpdateState()
+        {
+            foreach (var player in World.Players)
+            {
+                if (isMajorTick)
+                {
+                    player.UpdatePosition();
+                }
             }
         }
 

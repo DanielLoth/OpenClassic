@@ -50,6 +50,8 @@ namespace OpenClassic.Server.Domain
         short StartY { get; set; }
         int StepCount { get; set; }
 
+        void UpdatePosition();
+
         #endregion
     }
 }
