@@ -21,7 +21,12 @@ namespace OpenClassic.Server
 
         private readonly IWorld World;
 
+        private long lastTickTime;
+        private long lastMajorTickTime;
+        private bool isMajorTick;
+
         public bool IsOnGameThread => Thread.CurrentThread == GameThread;
+        public bool IsMajorTick => isMajorTick;
 
         static GameEngine()
         {
@@ -49,6 +54,9 @@ namespace OpenClassic.Server
                 throw new InvalidOperationException("An attempt has been made to re-enter GameEngine.GameLoop() even though the game loop has been shutdown.");
             }
 
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+
             while (IsRunning)
             {
                 // RSCD uses the following approach:
@@ -57,11 +65,34 @@ namespace OpenClassic.Server
                 // 3. processEvents()
                 // 4. processClients()
 
-                PulseSessions(); // Processes inbound packets.
-                ProcessTasks(); // Runs any queued scheduled to run this tick.
-                SendClientUpdates();
+                var elapsedSinceStartup = stopwatch.ElapsedMilliseconds;
+                var elapsedSinceLastTick = elapsedSinceStartup - lastTickTime;
+                var elapsedSinceLastMajorTick = elapsedSinceStartup - lastMajorTickTime;
 
-                Thread.Sleep(50);
+                isMajorTick = elapsedSinceLastMajorTick >= 600;
+
+                var shouldTick = isMajorTick || elapsedSinceLastTick >= 50;
+                if (!shouldTick)
+                {
+                    Thread.Sleep(10);
+                    continue;
+                }
+
+                try
+                {
+                    PulseSessions(); // Processes inbound packets.
+                    ProcessTasks(); // Runs any queued scheduled to run this tick.
+                    SendClientUpdates();
+                }
+                finally
+                {
+                    lastTickTime = elapsedSinceStartup;
+
+                    if (isMajorTick)
+                    {
+                        lastMajorTickTime = elapsedSinceStartup;
+                    }
+                }
             }
 
             // TODO: Loop stopped - gracefully disconnect all users.
