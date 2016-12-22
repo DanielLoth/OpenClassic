@@ -30,4 +30,4 @@ before_install:
 script:
   - dotnet restore --disable-parallel
   - dotnet build ./src/OpenClassic.Server
-  #- dotnet test test/OpenClassic.Server.Tests -verbose
+  - dotnet test ./test/OpenClassic.Server.Tests -verbose
