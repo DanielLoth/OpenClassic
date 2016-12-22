@@ -1,5 +1,5 @@
 language: csharp
-solution: src/OpenClassic.sln
+solution: OpenClassic.sln
 mono: none
 dotnet: 1.0.0-preview2-003131
 dist: trusty
@@ -29,5 +29,5 @@ before_install:
 # Run the build script
 script:
   - dotnet restore --disable-parallel
-  - dotnet build src/OpenClassic.Server.sln
+  - dotnet build src/OpenClassic.Server
   #- dotnet test test/OpenClassic.Server.Tests -verbose
