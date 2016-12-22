@@ -29,5 +29,5 @@ before_install:
 # Run the build script
 script:
   - dotnet restore --disable-parallel
-  - dotnet build src/OpenClassic.Server
+  - dotnet build src/OpenClassic.Server/project.json
   #- dotnet test test/OpenClassic.Server.Tests -verbose
