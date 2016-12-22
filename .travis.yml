@@ -31,4 +31,4 @@ script:
   - dotnet restore --disable-parallel
   - dotnet build ./src/OpenClassic.Server
   - dotnet build ./test/OpenClassic.Server.Tests
-  #- dotnet test ./test/OpenClassic.Server.Tests -verbose
+  - dotnet test ./test/OpenClassic.Server.Tests -verbose
