@@ -23,10 +23,10 @@ before_install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
   - export PATH="$DOTNET_INSTALL_DIR:$PATH"  
   
-install:
-  - travis_retry curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
+#install:
+#  - travis_retry curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
 
 # Run the build script
 script:
-  - travis_retry dotnet restore --disable-parallel
+  - dotnet restore --disable-parallel
   - dotnet test test/OpenClassic.Server.Tests -verbose
