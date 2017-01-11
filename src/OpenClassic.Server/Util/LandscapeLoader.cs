@@ -83,7 +83,7 @@ namespace OpenClassic.Server.Util
             if (actualSectorContentLength < SectorContentLength)
             {
                 throw new InvalidDataException("Invalid sector content length. " +
-                    $"Expected: {SectorTileCount} - " +
+                    $"Expected: {SectorContentLength} - " +
                     $"Actual: {actualSectorContentLength}");
             }
         }
