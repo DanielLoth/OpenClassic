@@ -76,12 +76,6 @@ namespace OpenClassic.Server.Tests.Util
             var minType = objectLocs.Min(x => x.Type);
             var maxType = objectLocs.Max(x => x.Type);
         }
-
-        [Fact]
-        public void Blah()
-        {
-            LandscapeLoader.LoadLandscape();
-        }
     }
 
     #region Scratchpad

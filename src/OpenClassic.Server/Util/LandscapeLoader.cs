@@ -1,4 +1,5 @@
 ﻿using OpenClassic.Server.Configuration;
+using OpenClassic.Server.Domain;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,27 +29,17 @@ namespace OpenClassic.Server.Util
             BasePath = dataPathWithTrailingSlash;
         }
 
-        private struct Tile
-        {
-            public byte GroundElevation;
-            public byte GroundTexture;
-            public byte GroundOverlay;
-            public byte RoofTexture;
-            public byte HorizontalWall;
-            public byte VerticalWall;
-            public int DiagonalWalls;
-        }
-
-        public static void LoadLandscape()
+        public static Dictionary<string, List<Tile>> LoadLandscape()
         {
             var landscapeFilePath = $"{BasePath}/Landscape/Landscape.rscd";
-
-            // 32 KiB buffer - all unzipped landscape sector files are 23 KiB
-            var buffer = new byte[32768];
-            var ms = new MemoryStream(buffer);
+            var sectorMap = new Dictionary<string, List<Tile>>();
 
             using (var archive = ZipFile.OpenRead(landscapeFilePath))
             {
+                // 32 KiB buffer - all unzipped landscape sector files are 23 KiB
+                var buffer = new byte[32768];
+                var ms = new MemoryStream(buffer);
+
                 foreach (var archiveEntry in archive.Entries)
                 {
                     using (var entryStream = archiveEntry.Open())
@@ -61,7 +52,9 @@ namespace OpenClassic.Server.Util
                         // Reset the pointer to the start for reading.
                         ms.Seek(0, SeekOrigin.Begin);
 
-                        ProcessSector(ms);
+                        var sectorName = archiveEntry.Name;
+                        var sectorTiles = LoadTiles(ms);
+                        sectorMap[sectorName] = sectorTiles;
 
                         // Cleanup: Reset the MemoryStream's position pointer
                         // for the next iteration.
@@ -69,11 +62,8 @@ namespace OpenClassic.Server.Util
                     }
                 }
             }
-        }
 
-        private static void ProcessSector(MemoryStream ms)
-        {
-            var tiles = LoadTiles(ms);
+            return sectorMap;
         }
 
         private static void CheckContentLength(MemoryStream ms)
@@ -86,6 +76,11 @@ namespace OpenClassic.Server.Util
                     $"Expected: {SectorContentLength} - " +
                     $"Actual: {actualSectorContentLength}");
             }
+        }
+
+        private static void ProcessSector(MemoryStream ms)
+        {
+            var tiles = LoadTiles(ms);
         }
 
         private static List<Tile> LoadTiles(MemoryStream ms)
