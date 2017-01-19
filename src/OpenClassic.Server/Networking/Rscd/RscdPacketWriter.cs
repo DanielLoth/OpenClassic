@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenClassic.Server.Domain;
+using System;
 using System.Diagnostics;
 using System.Text;
 
@@ -37,7 +38,7 @@ namespace OpenClassic.Server.Networking.Rscd
             WriteShort(session, 2304);
             WriteShort(session, 1776);
             WriteShort(session, 0);
-            WriteShort(session, 944);
+            WriteShort(session, World.WorldWidth);
             FormatPacket(session);
         }
 
