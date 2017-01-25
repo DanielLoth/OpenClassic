@@ -29,6 +29,10 @@ namespace OpenClassic.Server.Networking
 
         Task WriteAndFlushSessionBuffer();
 
+        Task WriteAndFlush(IByteBuffer buffer);
+
         Task WriteFlushClose();
+
+        IByteBuffer GetNewBuffer();
     }
 }

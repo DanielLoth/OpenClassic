@@ -228,6 +228,11 @@ namespace OpenClassic.Server.Networking
             // Invocation of this method should be on the game thread.
             Debug.Assert(gameEngine.IsOnGameThread);
 
+            if (_buffer.WriterIndex <= _buffer.ReaderIndex)
+            {
+                return Task.CompletedTask;
+            }
+
             var bufferBeforeFlush = _buffer;
             Debug.Assert(bufferBeforeFlush != null);
             Debug.Assert(bufferBeforeFlush.ReferenceCount == 1);
@@ -239,6 +244,23 @@ namespace OpenClassic.Server.Networking
             var bufferAfterFlush = _buffer;
             Debug.Assert(bufferAfterFlush != null);
             Debug.Assert(bufferAfterFlush.ReferenceCount == 1);
+
+            return writeAndFlushResult;
+        }
+
+        public Task WriteAndFlush(IByteBuffer buffer)
+        {
+            Debug.Assert(buffer != null);
+
+            // Invocation of this method should be on the game thread.
+            Debug.Assert(gameEngine.IsOnGameThread);
+
+            if (buffer.WriterIndex <= buffer.ReaderIndex)
+            {
+                return Task.CompletedTask;
+            }
+
+            var writeAndFlushResult = gameChannel.WriteAndFlushAsync(buffer);
 
             return writeAndFlushResult;
         }
@@ -276,7 +298,12 @@ namespace OpenClassic.Server.Networking
 
             // TODO: Consider using a single-threaded allocator here that belongs exclusively to the game thread.
 
-            _buffer = gameChannel.Allocator.Buffer(8192);
+            _buffer = GetNewBuffer();
+        }
+
+        public IByteBuffer GetNewBuffer()
+        {
+            return gameChannel.Allocator.Buffer(8192);
         }
     }
 }
