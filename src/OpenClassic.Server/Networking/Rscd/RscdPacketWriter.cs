@@ -198,6 +198,15 @@ namespace OpenClassic.Server.Networking.Rscd
             // TODO: Finish
         }
 
+        public void SendMessage(ISession session, string message)
+        {
+            Debug.Assert(session != null);
+
+            CreatePacket(session, 48);
+            WriteBytes(session, Encoding.UTF8.GetBytes(message));
+            FormatPacket(session);
+        }
+
         #region Update packets
 
         public void SendPlayerPositionUpdate(ISession session)
