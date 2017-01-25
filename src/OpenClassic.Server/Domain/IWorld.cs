@@ -8,6 +8,8 @@ namespace OpenClassic.Server.Domain
         List<IPlayer> Players { get; }
         List<INpc> Npcs { get; }
 
+        TileValue[,] TileValues { get; }
+
         ISpatialDictionary<IPlayer> PlayerSpatialMap { get; }
         ISpatialDictionary<INpc> NpcSpatialMap { get; }
         ISpatialDictionary<IGameObject> ObjectSpatialMap { get; }

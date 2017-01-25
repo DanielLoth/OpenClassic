@@ -1,4 +1,5 @@
 ﻿using OpenClassic.Server.Collections;
+using OpenClassic.Server.Domain.Definition;
 using OpenClassic.Server.Util;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -20,7 +21,11 @@ namespace OpenClassic.Server.Domain
         private readonly ISpatialDictionary<INpc> _npcSpatialMap;
         private readonly ISpatialDictionary<IGameObject> _objectSpatialMap;
 
-        private readonly Tile[,] _tiles = new Tile[WorldWidth, WorldHeight];
+        private readonly TileValue[,] _tileValues = new TileValue[WorldWidth, WorldHeight];
+        public TileValue[,] TileValues => _tileValues;
+
+        private readonly List<DoorDefinition> DoorDefs;
+        private readonly List<TileDefinition> TileDefs;
 
         public ISpatialDictionary<IPlayer> PlayerSpatialMap => _playerSpatialMap;
         public ISpatialDictionary<INpc> NpcSpatialMap => _npcSpatialMap;
@@ -37,6 +42,9 @@ namespace OpenClassic.Server.Domain
             _playerSpatialMap = playerSpatialMap;
             _npcSpatialMap = npcSpatialMap;
             _objectSpatialMap = objSpatialMap;
+
+            DoorDefs = DataLoader.GetDoorDefinitions();
+            TileDefs = DataLoader.GetTileDefinitions();
 
             InitialiseWorldTileData();
         }
@@ -66,13 +74,38 @@ namespace OpenClassic.Server.Domain
                             Debug.Fail($"Sector tile data could not be loaded for sectorName {sectorName}");
                         }
 
-                        InitialiseSectorTileData(x, y, lvl, sectorTiles, bigX, bigY);
+                        InitialiseSectorTileData(sectorTiles, bigX, bigY);
                     }
                 }
             }
+
+            //PrintTileValues();
         }
 
-        private void InitialiseSectorTileData(int sectorX, int sectorY, int height, List<Tile> sectorTiles, int bigX, int bigY)
+        // TODO: REMOVE
+        //public void PrintTileValues()
+        //{
+        //    using (var file = File.CreateText("C:/RSCLogs/OpenClassicTileData.txt"))
+        //    {
+        //        for (int x = 0; x < WorldWidth; x++)
+        //        {
+        //            for (int y = 0; y < WorldHeight; y++)
+        //            {
+        //                var tile = _tileValues[x, y];
+        //                var output = tile.MapValue == 0 ?
+        //                    $"({x},{y}) - NULL" : 
+        //                    $"({x},{y}) - MV={tile.MapValue} - OV={tile.ObjectValue}";
+        //                file.WriteLine(output);
+        //            }
+
+        //        }
+        //    }
+
+        //    var done = 1;
+        //}
+
+
+        private void InitialiseSectorTileData(List<Tile> sectorTiles, int bigX, int bigY)
         {
             for (var y = 0; y < SectorHeight; y++)
             {
@@ -86,43 +119,45 @@ namespace OpenClassic.Server.Domain
                         continue;
                     }
 
-                    if ((_tiles[x,y].GroundOverlay & 0xff) == 250)
+                    var tile = sectorTiles[x * SectorWidth + y];
+
+                    if ((tile.GroundOverlay & 0xff) == 250)
                     {
-                        _tiles[x, y].GroundOverlay = (byte)2;
+                        tile.GroundOverlay = (byte)2;
                     }
 
                     // TODO: Finish loading tile data.
 
                     /** break in shit **/
-                    //int groundOverlay = _tiles[x, y].GroundOverlay & 0xFF;
-                    //if (groundOverlay > 0 && EntityHandler.getTileDef(groundOverlay - 1).getObjectType() != 0)
-                    //{
-                    //    world.getTileValue(bx, by).mapValue |= 0x40; // 64
-                    //}
+                    int groundOverlay = tile.GroundOverlay & 0xFF;
+                    if (groundOverlay > 0 && TileDefs[groundOverlay - 1].ObjectType != 0)
+                    {
+                        _tileValues[bx, by].MapValue |= 0x40; // 64
+                    }
 
-                    //int verticalWall = s.getTile(x, y).verticalWall & 0xFF;
-                    //if (verticalWall > 0 && EntityHandler.getDoorDef(verticalWall - 1).getUnknown() == 0 && EntityHandler.getDoorDef(verticalWall - 1).getDoorType() != 0)
-                    //{
-                    //    world.getTileValue(bx, by).mapValue |= 1; // 1
-                    //    world.getTileValue(bx, by - 1).mapValue |= 4; // 4
-                    //}
+                    int verticalWall = tile.VerticalWall & 0xFF;
+                    if (verticalWall > 0 && DoorDefs[verticalWall - 1].Unknown == 0 && DoorDefs[verticalWall - 1].DoorType != 0)
+                    {
+                        _tileValues[bx, by].MapValue |= 1; // 1
+                        _tileValues[bx, by - 1].MapValue |= 4; // 4
+                    }
 
-                    //int horizontalWall = s.getTile(x, y).horizontalWall & 0xFF;
-                    //if (horizontalWall > 0 && EntityHandler.getDoorDef(horizontalWall - 1).getUnknown() == 0 && EntityHandler.getDoorDef(horizontalWall - 1).getDoorType() != 0)
-                    //{
-                    //    world.getTileValue(bx, by).mapValue |= 2; // 2
-                    //    world.getTileValue(bx - 1, by).mapValue |= 8; // 8
-                    //}
+                    int horizontalWall = tile.HorizontalWall & 0xFF;
+                    if (horizontalWall > 0 && DoorDefs[horizontalWall - 1].Unknown == 0 && DoorDefs[horizontalWall - 1].DoorType != 0)
+                    {
+                        _tileValues[bx, by].MapValue |= 2; // 2
+                        _tileValues[bx - 1, by].MapValue |= 8; // 8
+                    }
 
-                    //int diagonalWalls = s.getTile(x, y).diagonalWalls;
-                    //if (diagonalWalls > 0 && diagonalWalls < 12000 && EntityHandler.getDoorDef(diagonalWalls - 1).getUnknown() == 0 && EntityHandler.getDoorDef(diagonalWalls - 1).getDoorType() != 0)
-                    //{
-                    //    world.getTileValue(bx, by).mapValue |= 0x20; // 32
-                    //}
-                    //if (diagonalWalls > 12000 && diagonalWalls < 24000 && EntityHandler.getDoorDef(diagonalWalls - 12001).getUnknown() == 0 && EntityHandler.getDoorDef(diagonalWalls - 12001).getDoorType() != 0)
-                    //{
-                    //    world.getTileValue(bx, by).mapValue |= 0x10; // 16
-                    //}
+                    int diagonalWalls = tile.DiagonalWalls;
+                    if (diagonalWalls > 0 && diagonalWalls < 12000 && DoorDefs[diagonalWalls - 1].Unknown == 0 && DoorDefs[diagonalWalls - 1].DoorType != 0)
+                    {
+                        _tileValues[bx, by].MapValue |= 0x20; // 32
+                    }
+                    if (diagonalWalls > 12000 && diagonalWalls < 24000 && DoorDefs[diagonalWalls - 12001].Unknown == 0 && DoorDefs[diagonalWalls - 12001].DoorType != 0)
+                    {
+                        _tileValues[bx, by].MapValue |= 0x10; // 16
+                    }
                 }
             }
         }
