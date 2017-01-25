@@ -12,6 +12,7 @@ namespace OpenClassic.Server.Domain
         private readonly ISpatialDictionary<IPlayer> _playerSpatialMap;
         private readonly ISpatialDictionary<INpc> _npcSpatialMap;
         private readonly ISpatialDictionary<IGameObject> _objectSpatialMap;
+        private readonly IWorld _world;
 
         public short Index { get; set; }
 
@@ -33,15 +34,18 @@ namespace OpenClassic.Server.Domain
 
         public Player(ISpatialDictionary<IPlayer> playerSpatialMap,
             ISpatialDictionary<INpc> npcSpatialMap,
-            ISpatialDictionary<IGameObject> objSpatialMap)
+            ISpatialDictionary<IGameObject> objSpatialMap,
+            IWorld world)
         {
             Debug.Assert(playerSpatialMap != null);
             Debug.Assert(npcSpatialMap != null);
             Debug.Assert(objSpatialMap != null);
+            Debug.Assert(world != null);
 
             _playerSpatialMap = playerSpatialMap;
             _npcSpatialMap = npcSpatialMap;
             _objectSpatialMap = objSpatialMap;
+            _world = world;
         }
 
         public bool Equals(IPlayer other) => other == this;

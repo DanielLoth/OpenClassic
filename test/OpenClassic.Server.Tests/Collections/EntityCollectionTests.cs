@@ -13,6 +13,7 @@ namespace OpenClassic.Server.Tests.Collections
             get
             {
                 var container = new Container();
+                container.Register<IWorld, World>();
                 container.Register<IPlayer, Player>();
                 container.Register<ISpatialDictionary<IPlayer>, NaiveSpatialDictionary<IPlayer>>();
                 container.Register<ISpatialDictionary<INpc>, NaiveSpatialDictionary<INpc>>();
