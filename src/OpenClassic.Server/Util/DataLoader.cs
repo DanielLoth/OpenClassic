@@ -64,6 +64,18 @@ namespace OpenClassic.Server.Util
             return DeserialiseJsonFile<GameObjectLocation>(filePath);
         }
 
+        public static List<TileDefinition> GetTileDefinitions()
+        {
+            var filePath = $"{BasePath}/Definitions/TileDef.json";
+            return DeserialiseJsonFile<TileDefinition>(filePath);
+        }
+
+        public static List<DoorDefinition> GetDoorDefinitions()
+        {
+            var filePath = $"{BasePath}/Definitions/DoorDef.json";
+            return DeserialiseJsonFile<DoorDefinition>(filePath);
+        }
+
         private static List<T> DeserialiseJsonFile<T>(string filePath)
         {
             var settings = new JsonSerializerSettings();
