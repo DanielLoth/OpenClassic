@@ -177,6 +177,9 @@ namespace OpenClassic.Server.Networking.Rscd
 
             packetWriter.SendLogout(session);
             session.WriteAndFlushSessionBuffer();
+
+            var player = session.Player;
+            player.Active = false;
         }
     }
 
