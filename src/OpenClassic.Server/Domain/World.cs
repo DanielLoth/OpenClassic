@@ -78,32 +78,7 @@ namespace OpenClassic.Server.Domain
                     }
                 }
             }
-
-            //PrintTileValues();
         }
-
-        // TODO: REMOVE
-        //public void PrintTileValues()
-        //{
-        //    using (var file = File.CreateText("C:/RSCLogs/OpenClassicTileData.txt"))
-        //    {
-        //        for (int x = 0; x < WorldWidth; x++)
-        //        {
-        //            for (int y = 0; y < WorldHeight; y++)
-        //            {
-        //                var tile = _tileValues[x, y];
-        //                var output = tile.MapValue == 0 ?
-        //                    $"({x},{y}) - NULL" : 
-        //                    $"({x},{y}) - MV={tile.MapValue} - OV={tile.ObjectValue}";
-        //                file.WriteLine(output);
-        //            }
-
-        //        }
-        //    }
-
-        //    var done = 1;
-        //}
-
 
         private void InitialiseSectorTileData(List<Tile> sectorTiles, int bigX, int bigY)
         {
@@ -125,8 +100,6 @@ namespace OpenClassic.Server.Domain
                     {
                         tile.GroundOverlay = (byte)2;
                     }
-
-                    // TODO: Finish loading tile data.
 
                     /** break in shit **/
                     int groundOverlay = tile.GroundOverlay & 0xFF;
