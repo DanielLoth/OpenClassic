@@ -67,7 +67,7 @@ namespace OpenClassic.Server.Tests.Collections
                 var entityLoc = new Point(10, 10);
                 var targetLoc = new Point(50, 50);
 
-                for (var dist = 0; dist < 200; dist++)
+                for (var dist = 0; dist < 10; dist++)
                 {
                     var expectToFind = Point.WithinRange(entityLoc, targetLoc, dist);
 
