@@ -43,14 +43,10 @@ namespace OpenClassic.Server.Domain
 
         #region Movement fields
 
-        byte[] XOffsets { get; }
-        byte[] YOffsets { get; }
-
-        short StartX { get; set; }
-        short StartY { get; set; }
-        int StepCount { get; set; }
 
         void UpdatePosition();
+        void SetPath(Path path);
+        void ResetPath();
 
         #endregion
     }
