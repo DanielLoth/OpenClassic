@@ -50,7 +50,7 @@ namespace OpenClassic.Server.Util
                         CheckContentLength(ms);
 
                         // Reset the pointer to the start for reading.
-                        ms.Seek(0, SeekOrigin.Begin);
+                        ms.Position = 0;
 
                         var sectorName = archiveEntry.Name;
                         var sectorTiles = LoadTiles(ms);
