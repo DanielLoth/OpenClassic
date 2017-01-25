@@ -65,18 +65,14 @@ namespace OpenClassic.Server
                 // 3. processEvents()
                 // 4. processClients()
 
+                Thread.Sleep(50);
+
                 var elapsedSinceStartup = stopwatch.ElapsedMilliseconds;
                 var elapsedSinceLastTick = elapsedSinceStartup - lastTickTime;
                 var elapsedSinceLastMajorTick = elapsedSinceStartup - lastMajorTickTime;
 
                 isMajorTick = elapsedSinceLastMajorTick >= 600;
 
-                var shouldTick = isMajorTick || elapsedSinceLastTick >= 50;
-                if (!shouldTick)
-                {
-                    Thread.Sleep(10);
-                    continue;
-                }
 
                 try
                 {
@@ -184,6 +180,8 @@ namespace OpenClassic.Server
         {
             foreach (var player in World.Players)
             {
+                if (!player.Active) continue;
+
                 if (isMajorTick)
                 {
                     player.UpdatePosition();
