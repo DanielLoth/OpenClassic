@@ -73,13 +73,14 @@ namespace OpenClassic.Server
 
                 isMajorTick = elapsedSinceLastMajorTick >= 600;
 
-
                 try
                 {
                     PulseSessions(); // Processes inbound packets.
                     ProcessTasks(); // Runs any queued scheduled to run this tick.
                     UpdateState();
                     SendClientUpdates();
+
+                    FlushSessions();
                 }
                 finally
                 {
@@ -233,6 +234,14 @@ namespace OpenClassic.Server
                     player.WatchedObjects.Update();
                     player.WatchedNpcs.Update();
                 }
+            }
+        }
+
+        private void FlushSessions()
+        {
+            foreach (var session in Sessions)
+            {
+                session.WriteAndFlushSessionBuffer();
             }
         }
     }
