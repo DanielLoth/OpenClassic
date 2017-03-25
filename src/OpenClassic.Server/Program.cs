@@ -7,16 +7,33 @@ namespace OpenClassic.Server
 {
     public class Program
     {
-        private static readonly GameServer Server;
+        private static readonly NettyGameServer Server;
         private static readonly IGameEngine Engine;
 
         static Program()
         {
             var resolver = DependencyResolver.Current;
 
-            Server = resolver.Resolve<GameServer>();
+            Server = resolver.Resolve<NettyGameServer>();
             Engine = resolver.Resolve<IGameEngine>();
         }
+
+        //private static async Task InitServer()
+        //{
+        //    var server = new DefaultGameServer();
+
+        //    await Task.CompletedTask;
+        //}
+
+        //public static void Main(string[] args)
+        //{
+        //    AsyncContext.Run(InitServer);
+
+        //    for (;;)
+        //    {
+        //        Thread.Sleep(100);
+        //    }
+        //}
 
 #pragma warning disable RECS0154 // Parameter is never used
         public static void Main(string[] args)

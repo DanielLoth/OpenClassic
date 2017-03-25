@@ -94,6 +94,7 @@ namespace OpenClassic.Server.Domain
             {
                 int[] coords = { startX, startY };
                 bool myXBlocked = false, myYBlocked = false, newXBlocked = false, newYBlocked = false;
+
                 if (startX > destX)
                 {
                     myXBlocked = isBlocking(startX - 1, startY, 8); // Check right tiles left wall
@@ -154,7 +155,7 @@ namespace OpenClassic.Server.Domain
 
                 return coords;
             }
-            catch (Exception e)
+            catch
             {
                 return CancelCoords();
             }
@@ -181,6 +182,7 @@ namespace OpenClassic.Server.Domain
             {
                 return true;
             }
+
             if (_path.Length > 0)
             {
                 return AtWaypoint(_path.Length - 1);
@@ -196,6 +198,11 @@ namespace OpenClassic.Server.Domain
          */
         protected bool AtWaypoint(int waypoint)
         {
+            if (_path == null)
+            {
+                return false;
+            }
+
             return _path.GetWaypointX(waypoint) == _location.X && _path.GetWaypointY(waypoint) == _location.Y;
         }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OpenClassic.Server.Networking
 {
-    public class GameServer
+    public class NettyGameServer : IGameServer
     {
         private readonly IEventLoopGroup BossGroup;
         private readonly IEventLoopGroup WorkerGroup;
@@ -16,7 +16,7 @@ namespace OpenClassic.Server.Networking
 
         private IChannel BootstrapChannel;
 
-        public GameServer(ChannelInitializer<ISocketChannel> channelInitializer)
+        public NettyGameServer(ChannelInitializer<ISocketChannel> channelInitializer)
         {
             Debug.Assert(channelInitializer != null);
 
@@ -36,11 +36,10 @@ namespace OpenClassic.Server.Networking
             var bootstrap = new ServerBootstrap()
                 .Group(BossGroup, WorkerGroup)
                 .Channel<TcpServerSocketChannel>()
-                .Option(ChannelOption.Allocator, PooledByteBufferAllocator.Default)
-                .Option(ChannelOption.SoBacklog, 100)
+                .Option(ChannelOption.Allocator, UnpooledByteBufferAllocator.Default)
+                .Option(ChannelOption.SoBacklog, 10)
                 .Option(ChannelOption.TcpNodelay, true)
-                .ChildOption(ChannelOption.Allocator, PooledByteBufferAllocator.Default)
-                .ChildOption(ChannelOption.SoKeepalive, true)
+                .ChildOption(ChannelOption.Allocator, UnpooledByteBufferAllocator.Default)
                 .ChildOption(ChannelOption.TcpNodelay, true)
                 .ChildHandler(ChannelInitializer);
 

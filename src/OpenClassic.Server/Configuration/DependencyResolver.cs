@@ -41,7 +41,7 @@ namespace OpenClassic.Server.Configuration
 
             container.UseInstance<IConfig>(config);
 
-            container.Register<GameServer>(Reuse.Singleton);
+            container.Register<NettyGameServer>(Reuse.Singleton);
             container.Register<IGameEngine, GameEngine>(Reuse.Singleton);
             container.Register<IWorld, World>(Reuse.Singleton);
 

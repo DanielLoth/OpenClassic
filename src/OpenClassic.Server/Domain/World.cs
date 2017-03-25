@@ -140,7 +140,7 @@ namespace OpenClassic.Server.Domain
             Debug.Assert(players != null);
             Debug.Assert(npcs != null);
 
-            _players.AddRange(players);
+            //_players.AddRange(players);
             _npcs.AddRange(npcs);
         }
 
@@ -150,17 +150,31 @@ namespace OpenClassic.Server.Domain
 
         public IPlayer GetAvailablePlayer()
         {
-            for (var i = 0; i < _players.Count; i++)
+            if (_players.Count >= _players.Capacity)
             {
-                var player = _players[i];
-                if (!player.Active)
-                {
-                    player.Active = true;
-                    return player;
-                }
+                return null; // No more space.
             }
 
-            return null;
+            var player = new Player(_playerSpatialMap, _npcSpatialMap, _objectSpatialMap, this)
+            {
+                Active = true
+            };
+
+            _players.Add(player);
+
+            return player;
+
+            //for (var i = 0; i < _players.Count; i++)
+            //{
+            //    var player = _players[i];
+            //    if (!player.Active)
+            //    {
+            //        player.Active = true;
+            //        return player;
+            //    }
+            //}
+
+            //return null;
         }
 
         public bool PointWithinWorld(int x, int y)
