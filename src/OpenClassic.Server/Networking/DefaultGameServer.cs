@@ -9,6 +9,7 @@ namespace OpenClassic.Server.Networking
     {
         private readonly SocketAsyncEventArgs acceptArgs = new SocketAsyncEventArgs();
         private readonly EventHandler<SocketAsyncEventArgs> acceptCompleteEventHandler;
+        private readonly EventHandler<SocketAsyncEventArgs> readWriteCompleteEventHandler;
 
         private readonly Socket acceptSocket;
 
@@ -18,6 +19,8 @@ namespace OpenClassic.Server.Networking
         {
             acceptCompleteEventHandler = new EventHandler<SocketAsyncEventArgs>(AcceptCompletion);
             acceptArgs.Completed += acceptCompleteEventHandler;
+
+            readWriteCompleteEventHandler = new EventHandler<SocketAsyncEventArgs>(ReadWriteCompletion);
 
             var addr = IPAddress.Loopback;
             acceptSocket = Bind(new IPEndPoint(addr, 43594));
@@ -71,7 +74,7 @@ namespace OpenClassic.Server.Networking
 
         private void AcceptStart()
         {
-            bool willRaiseEvent = false;
+            var willRaiseEvent = false;
             var args = acceptArgs;
 
             do
@@ -103,35 +106,54 @@ namespace OpenClassic.Server.Networking
 
         private void AcceptCompletion(object sender, SocketAsyncEventArgs e)
         {
-            var thread = Thread.CurrentThread;
-            if (firstThread == null)
-            {
-                firstThread = thread;
-            }
-
-            var ctx = SynchronizationContext.Current;
-
-            if (thread != firstThread)
-            {
-                Console.WriteLine("AcceptCompletion ran on different thread.");
-            }
-
             AcceptProcess(e);
             AcceptStart();
         }
 
+        private void ReadWriteCompletion(object sender, SocketAsyncEventArgs e)
+        {
+            switch (e.LastOperation)
+            {
+                case SocketAsyncOperation.Receive:
+                    break;
+                case SocketAsyncOperation.Send:
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void AcceptProcess(SocketAsyncEventArgs e)
         {
-            if (e.SocketError == SocketError.Success)
+            var readWriteArgs = new SocketAsyncEventArgs();
+            readWriteArgs.Completed += readWriteCompleteEventHandler;
+
+            var willRaiseEvent = e.AcceptSocket.ReceiveAsync(readWriteArgs);
+            if (!willRaiseEvent)
             {
-                Enqueue(e.AcceptSocket);
-            }
-            else
-            {
-                Release(e.AcceptSocket);
+                ReceiveProcess(readWriteArgs);
             }
 
+            //if (e.SocketError == SocketError.Success)
+            //{
+            //    Enqueue(e.AcceptSocket);
+            //}
+            //else
+            //{
+            //    Release(e.AcceptSocket);
+            //}
+
             e.AcceptSocket = null;
+        }
+
+        private void ReceiveProcess(SocketAsyncEventArgs e)
+        {
+
+        }
+
+        private void SendProcess(SocketAsyncEventArgs e)
+        {
+
         }
 
         private void Enqueue(Socket socket)
